@@ -1,0 +1,11 @@
+F := FreeGroup("x","y");;
+x := F.1;; y := F.2;;
+comm := function(u,v) return u*v*u^-1*v^-1; end;;
+h := GroupHomomorphismByImages(F, F, [x,y], [y^-1, y*x]);;
+c := comm(x,y);;
+Print("h fixes [x,y] (top convention): ", Image(h,c) = c, "\n");
+h2 := CompositionMapping(h,h);; h3 := CompositionMapping(h2,h);; h6 := CompositionMapping(h3,h3);;
+Print("h^6 = conj by c^-1: ", (Image(h6,x) = c^-1*x*c) and (Image(h6,y) = c^-1*y*c), "\n");
+Print("h^6 = conj by c:    ", (Image(h6,x) = c*x*c^-1) and (Image(h6,y) = c*y*c^-1), "\n");
+Print("h^3(x)=", Image(h3,x), "  h^3(y)=", Image(h3,y), "\n");
+QUIT_GAP(0);

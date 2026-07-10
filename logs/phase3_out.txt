@@ -1,0 +1,377 @@
+# Phase-3 verdicts — COMPLETE 2026-07-10: all 122 jobs, zero hits (manifest phase3_done.txt)
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target L2_53 [0s] ===
+  no quotient onto L2_53 [2052s]
+JOB DONE case 1 target L2_53 [2052s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target LI7 [0s] ===
+  low-index<=7: 1 subgroup(s) [0s]
+JOB DONE case 1 target LI7 [0s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target M12 [0s] ===
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target L2_53 [0s] ===
+  no quotient onto L2_53 [2053s]
+JOB DONE case 2 target L2_53 [2053s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target LI7 [0s] ===
+  low-index<=7: 1 subgroup(s) [0s]
+JOB DONE case 2 target LI7 [0s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target M12 [0s] ===
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target L2_53 [0s] ===
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target LI7 [0s] ===
+  low-index<=7: 1 subgroup(s) [0s]
+JOB DONE case 3 target LI7 [0s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target M12 [0s] ===
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target L2_53 [0s] ===
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target LI7 [0s] ===
+  low-index<=7: 1 subgroup(s) [0s]
+JOB DONE case 4 target LI7 [0s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target M12 [0s] ===
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target LI7 [0s] ===
+  low-index<=7: 1 subgroup(s) [0s]
+JOB DONE case 5 target LI7 [0s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target M12 [0s] ===
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target LI7 [0s] ===
+  low-index<=7: 1 subgroup(s) [2s]
+JOB DONE case 6 target LI7 [2s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target M12 [0s] ===
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target LI7 [0s] ===
+  low-index<=7: 1 subgroup(s) [0s]
+JOB DONE case 7 target LI7 [0s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target M12 [0s] ===
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target LI7 [0s] ===
+  low-index<=7: 1 subgroup(s) [0s]
+JOB DONE case 8 target LI7 [0s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target M12 [0s] ===
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target A8 [0s] ===
+  no quotient onto A8 [331s]
+JOB DONE case 1 target A8 [331s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target L2_32 [0s] ===
+  no quotient onto L2_32 [916s]
+JOB DONE case 1 target L2_32 [916s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target L2_37 [0s] ===
+  no quotient onto L2_37 [489s]
+JOB DONE case 1 target L2_37 [489s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target L2_41 [0s] ===
+  no quotient onto L2_41 [886s]
+JOB DONE case 1 target L2_41 [886s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target L2_43 [0s] ===
+  no quotient onto L2_43 [1168s]
+JOB DONE case 1 target L2_43 [1168s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target L2_47 [0s] ===
+  no quotient onto L2_47 [1883s]
+JOB DONE case 1 target L2_47 [1883s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target L2_49 [0s] ===
+  no quotient onto L2_49 [2385s]
+JOB DONE case 1 target L2_49 [2385s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target L3_4 [0s] ===
+  no quotient onto L3_4 [282s]
+JOB DONE case 1 target L3_4 [282s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target M12 [0s] ===
+  no quotient onto M12 [6412s]
+JOB DONE case 1 target M12 [6412s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target Sz_8 [0s] ===
+  no quotient onto Sz_8 [558s]
+JOB DONE case 1 target Sz_8 [558s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target U3_3 [0s] ===
+  no quotient onto U3_3 [44s]
+JOB DONE case 1 target U3_3 [44s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target U3_4 [0s] ===
+  no quotient onto U3_4 [3238s]
+JOB DONE case 1 target U3_4 [3238s]
+=== case 1 cell(1,1) e=[ 1, 1, 1, 1, 1 ] target U4_2 [0s] ===
+  no quotient onto U4_2 [589s]
+JOB DONE case 1 target U4_2 [589s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target A8 [0s] ===
+  no quotient onto A8 [332s]
+JOB DONE case 2 target A8 [332s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target L2_32 [0s] ===
+  no quotient onto L2_32 [916s]
+JOB DONE case 2 target L2_32 [916s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target L2_37 [0s] ===
+  no quotient onto L2_37 [492s]
+JOB DONE case 2 target L2_37 [492s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target L2_41 [0s] ===
+  no quotient onto L2_41 [883s]
+JOB DONE case 2 target L2_41 [883s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target L2_43 [0s] ===
+  no quotient onto L2_43 [1174s]
+JOB DONE case 2 target L2_43 [1174s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target L2_47 [0s] ===
+  no quotient onto L2_47 [1885s]
+JOB DONE case 2 target L2_47 [1885s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target L2_49 [0s] ===
+  no quotient onto L2_49 [2374s]
+JOB DONE case 2 target L2_49 [2374s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target L3_4 [0s] ===
+  no quotient onto L3_4 [282s]
+JOB DONE case 2 target L3_4 [282s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target M12 [0s] ===
+  no quotient onto M12 [6452s]
+JOB DONE case 2 target M12 [6452s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target Sz_8 [0s] ===
+  no quotient onto Sz_8 [558s]
+JOB DONE case 2 target Sz_8 [558s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target U3_3 [0s] ===
+  no quotient onto U3_3 [44s]
+JOB DONE case 2 target U3_3 [44s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target U3_4 [0s] ===
+  no quotient onto U3_4 [3235s]
+JOB DONE case 2 target U3_4 [3235s]
+=== case 2 cell(1,1) e=[ -1, -1, -1, -1, -1 ] target U4_2 [0s] ===
+  no quotient onto U4_2 [590s]
+JOB DONE case 2 target U4_2 [590s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target A5 [0s] ===
+  no quotient onto A5 [0s]
+JOB DONE case 3 target A5 [0s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target A8 [0s] ===
+  no quotient onto A8 [400s]
+JOB DONE case 3 target A8 [400s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target L2_32 [0s] ===
+  no quotient onto L2_32 [1025s]
+JOB DONE case 3 target L2_32 [1025s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target L2_37 [0s] ===
+  no quotient onto L2_37 [555s]
+JOB DONE case 3 target L2_37 [555s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target L2_41 [0s] ===
+  no quotient onto L2_41 [999s]
+JOB DONE case 3 target L2_41 [999s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target L2_43 [0s] ===
+  no quotient onto L2_43 [1319s]
+JOB DONE case 3 target L2_43 [1319s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target L2_47 [0s] ===
+  no quotient onto L2_47 [2148s]
+JOB DONE case 3 target L2_47 [2148s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target L2_49 [0s] ===
+  no quotient onto L2_49 [2698s]
+JOB DONE case 3 target L2_49 [2698s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target L2_53 [0s] ===
+  no quotient onto L2_53 [4338s]
+JOB DONE case 3 target L2_53 [4338s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target L3_4 [0s] ===
+  no quotient onto L3_4 [324s]
+JOB DONE case 3 target L3_4 [324s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target M12 [0s] ===
+  no quotient onto M12 [7500s]
+JOB DONE case 3 target M12 [7500s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target Sz_8 [0s] ===
+  no quotient onto Sz_8 [640s]
+JOB DONE case 3 target Sz_8 [640s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target U3_3 [0s] ===
+  no quotient onto U3_3 [47s]
+JOB DONE case 3 target U3_3 [47s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target U3_4 [0s] ===
+  no quotient onto U3_4 [3727s]
+JOB DONE case 3 target U3_4 [3727s]
+=== case 3 cell(1,1) e=[ 1, -1, 1, -1, 1 ] target U4_2 [0s] ===
+  no quotient onto U4_2 [658s]
+JOB DONE case 3 target U4_2 [658s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target A5 [0s] ===
+  no quotient onto A5 [0s]
+JOB DONE case 4 target A5 [0s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target A8 [0s] ===
+  no quotient onto A8 [398s]
+JOB DONE case 4 target A8 [398s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target L2_32 [0s] ===
+  no quotient onto L2_32 [1025s]
+JOB DONE case 4 target L2_32 [1025s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target L2_37 [0s] ===
+  no quotient onto L2_37 [557s]
+JOB DONE case 4 target L2_37 [557s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target L2_41 [0s] ===
+  no quotient onto L2_41 [1001s]
+JOB DONE case 4 target L2_41 [1001s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target L2_43 [0s] ===
+  no quotient onto L2_43 [1387s]
+JOB DONE case 4 target L2_43 [1387s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target L2_47 [0s] ===
+  no quotient onto L2_47 [2151s]
+JOB DONE case 4 target L2_47 [2151s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target L2_49 [0s] ===
+  no quotient onto L2_49 [2692s]
+JOB DONE case 4 target L2_49 [2692s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target L2_53 [0s] ===
+  no quotient onto L2_53 [4369s]
+JOB DONE case 4 target L2_53 [4369s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target L3_4 [0s] ===
+  no quotient onto L3_4 [323s]
+JOB DONE case 4 target L3_4 [323s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target M12 [0s] ===
+  no quotient onto M12 [7496s]
+JOB DONE case 4 target M12 [7496s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target Sz_8 [0s] ===
+  no quotient onto Sz_8 [637s]
+JOB DONE case 4 target Sz_8 [637s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target U3_3 [0s] ===
+  no quotient onto U3_3 [47s]
+JOB DONE case 4 target U3_3 [47s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target U3_4 [0s] ===
+  no quotient onto U3_4 [3720s]
+JOB DONE case 4 target U3_4 [3720s]
+=== case 4 cell(1,1) e=[ -1, 1, -1, 1, -1 ] target U4_2 [0s] ===
+  no quotient onto U4_2 [658s]
+JOB DONE case 4 target U4_2 [658s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target A8 [0s] ===
+  no quotient onto A8 [331s]
+JOB DONE case 5 target A8 [331s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target L2_32 [0s] ===
+  no quotient onto L2_32 [917s]
+JOB DONE case 5 target L2_32 [917s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target L2_37 [0s] ===
+  no quotient onto L2_37 [495s]
+JOB DONE case 5 target L2_37 [495s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target L2_41 [0s] ===
+  no quotient onto L2_41 [885s]
+JOB DONE case 5 target L2_41 [885s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target L2_43 [0s] ===
+  no quotient onto L2_43 [1176s]
+JOB DONE case 5 target L2_43 [1176s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target L2_47 [0s] ===
+  no quotient onto L2_47 [1911s]
+JOB DONE case 5 target L2_47 [1911s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target L2_49 [0s] ===
+  no quotient onto L2_49 [2389s]
+JOB DONE case 5 target L2_49 [2389s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target L2_53 [0s] ===
+  no quotient onto L2_53 [3839s]
+JOB DONE case 5 target L2_53 [3839s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target L3_4 [0s] ===
+  no quotient onto L3_4 [282s]
+JOB DONE case 5 target L3_4 [282s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target M12 [0s] ===
+  no quotient onto M12 [6426s]
+JOB DONE case 5 target M12 [6426s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target Sz_8 [0s] ===
+  no quotient onto Sz_8 [557s]
+JOB DONE case 5 target Sz_8 [557s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target U3_3 [0s] ===
+  no quotient onto U3_3 [44s]
+JOB DONE case 5 target U3_3 [44s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target U3_4 [0s] ===
+  no quotient onto U3_4 [3206s]
+JOB DONE case 5 target U3_4 [3206s]
+=== case 5 cell(-1,1) e=[ 1, 1, 1, 1, 1 ] target U4_2 [0s] ===
+  no quotient onto U4_2 [585s]
+JOB DONE case 5 target U4_2 [585s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target A8 [0s] ===
+  no quotient onto A8 [429s]
+JOB DONE case 6 target A8 [429s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target L2_32 [0s] ===
+  no quotient onto L2_32 [1245s]
+JOB DONE case 6 target L2_32 [1245s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target L2_37 [0s] ===
+  no quotient onto L2_37 [686s]
+JOB DONE case 6 target L2_37 [686s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target L2_41 [0s] ===
+  no quotient onto L2_41 [1228s]
+JOB DONE case 6 target L2_41 [1228s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target L2_43 [0s] ===
+  no quotient onto L2_43 [1633s]
+JOB DONE case 6 target L2_43 [1633s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target L2_47 [0s] ===
+  no quotient onto L2_47 [2698s]
+JOB DONE case 6 target L2_47 [2698s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target L2_49 [0s] ===
+  no quotient onto L2_49 [3349s]
+JOB DONE case 6 target L2_49 [3349s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target L2_53 [0s] ===
+  no quotient onto L2_53 [5364s]
+JOB DONE case 6 target L2_53 [5364s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target L3_4 [0s] ===
+  no quotient onto L3_4 [406s]
+JOB DONE case 6 target L3_4 [406s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target M12 [0s] ===
+  no quotient onto M12 [9365s]
+JOB DONE case 6 target M12 [9365s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target Sz_8 [0s] ===
+  no quotient onto Sz_8 [801s]
+JOB DONE case 6 target Sz_8 [801s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target U3_3 [0s] ===
+  no quotient onto U3_3 [49s]
+JOB DONE case 6 target U3_3 [49s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target U3_4 [0s] ===
+  no quotient onto U3_4 [4357s]
+JOB DONE case 6 target U3_4 [4357s]
+=== case 6 cell(-1,1) e=[ -1, -1, -1, -1, -1 ] target U4_2 [0s] ===
+  no quotient onto U4_2 [788s]
+JOB DONE case 6 target U4_2 [788s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target A8 [0s] ===
+  no quotient onto A8 [353s]
+JOB DONE case 7 target A8 [353s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target L2_32 [0s] ===
+  no quotient onto L2_32 [1029s]
+JOB DONE case 7 target L2_32 [1029s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target L2_37 [0s] ===
+  no quotient onto L2_37 [559s]
+JOB DONE case 7 target L2_37 [559s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target L2_41 [0s] ===
+  no quotient onto L2_41 [994s]
+JOB DONE case 7 target L2_41 [994s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target L2_43 [0s] ===
+  no quotient onto L2_43 [1326s]
+JOB DONE case 7 target L2_43 [1326s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target L2_47 [0s] ===
+  no quotient onto L2_47 [2183s]
+JOB DONE case 7 target L2_47 [2183s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target L2_49 [0s] ===
+  no quotient onto L2_49 [2705s]
+JOB DONE case 7 target L2_49 [2705s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target L2_53 [0s] ===
+  no quotient onto L2_53 [4352s]
+JOB DONE case 7 target L2_53 [4352s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target L3_4 [0s] ===
+  no quotient onto L3_4 [323s]
+JOB DONE case 7 target L3_4 [323s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target M12 [0s] ===
+  no quotient onto M12 [7497s]
+JOB DONE case 7 target M12 [7497s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target Sz_8 [0s] ===
+  no quotient onto Sz_8 [640s]
+JOB DONE case 7 target Sz_8 [640s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target U3_3 [0s] ===
+  no quotient onto U3_3 [43s]
+JOB DONE case 7 target U3_3 [43s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target U3_4 [0s] ===
+  no quotient onto U3_4 [3653s]
+JOB DONE case 7 target U3_4 [3653s]
+=== case 7 cell(-1,1) e=[ 1, -1, 1, -1, 1 ] target U4_2 [0s] ===
+  no quotient onto U4_2 [655s]
+JOB DONE case 7 target U4_2 [655s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target A8 [0s] ===
+  no quotient onto A8 [315s]
+JOB DONE case 8 target A8 [315s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target L2_32 [0s] ===
+  no quotient onto L2_32 [1030s]
+JOB DONE case 8 target L2_32 [1030s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target L2_37 [0s] ===
+  no quotient onto L2_37 [559s]
+JOB DONE case 8 target L2_37 [559s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target L2_41 [0s] ===
+  no quotient onto L2_41 [993s]
+JOB DONE case 8 target L2_41 [993s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target L2_43 [0s] ===
+  no quotient onto L2_43 [1324s]
+JOB DONE case 8 target L2_43 [1324s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target L2_47 [0s] ===
+  no quotient onto L2_47 [2195s]
+JOB DONE case 8 target L2_47 [2195s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target L2_49 [0s] ===
+  no quotient onto L2_49 [2703s]
+JOB DONE case 8 target L2_49 [2703s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target L2_53 [0s] ===
+  no quotient onto L2_53 [4339s]
+JOB DONE case 8 target L2_53 [4339s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target L3_4 [0s] ===
+  no quotient onto L3_4 [323s]
+JOB DONE case 8 target L3_4 [323s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target M12 [0s] ===
+  no quotient onto M12 [7475s]
+JOB DONE case 8 target M12 [7475s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target Sz_8 [0s] ===
+  no quotient onto Sz_8 [637s]
+JOB DONE case 8 target Sz_8 [637s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target U3_3 [0s] ===
+  no quotient onto U3_3 [42s]
+JOB DONE case 8 target U3_3 [42s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target U3_4 [0s] ===
+  no quotient onto U3_4 [3644s]
+JOB DONE case 8 target U3_4 [3644s]
+=== case 8 cell(-1,1) e=[ -1, 1, -1, 1, -1 ] target U4_2 [0s] ===
+  no quotient onto U4_2 [658s]
+JOB DONE case 8 target U4_2 [658s]

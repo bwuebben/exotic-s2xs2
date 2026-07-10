@@ -1,0 +1,136 @@
+=== CONTROLS ===
+pi1(R) | H1=[ 0, 0 ]
+R+S1 | H1=[ 0 ]
+R+S2 | H1=[ 0 ]
+=== A: corrected dual [s,B] ===
+LPs (1,1) | |G|=1
+LPs (1,-1) | |G|=1
+LPs (-1,1) | |G|=1
+LPs (-1,-1) | |G|=1
+=== B: G_clean (broken relations dropped) ===
+Gclean-s (1,1) | H1=[ 0, 0 ]
+Gclean-s (1,-1) | H1=[ 0, 0 ]
+Gclean-s (-1,1) | H1=[ 0, 0 ]
+Gclean-s (-1,-1) | H1=[ 0, 0 ]
+=== C: correction sensitivity, 120 trials ===
+C#1 | |G|=1
+C#2 | |G|=1
+C#3 | enum-blowup (not visibly trivial)
+C#4 | |G|=1
+C#5 | enum-blowup (not visibly trivial)
+C#6 | enum-blowup (not visibly trivial)
+C#7 | enum-blowup (not visibly trivial)
+C#8 | |G|=1
+C#9 | |G|=1
+C#10 | |G|=1
+C#11 | enum-blowup (not visibly trivial)
+C#12 | |G|=1
+C#13 | |G|=1
+C#14 | enum-blowup (not visibly trivial)
+C#15 | enum-blowup (not visibly trivial)
+C#16 | enum-blowup (not visibly trivial)
+C#17 | enum-blowup (not visibly trivial)
+C#18 | |G|=1
+C#19 | enum-blowup (not visibly trivial)
+C#20 | enum-blowup (not visibly trivial)
+C#21 | |G|=1
+C#22 | enum-blowup (not visibly trivial)
+C#23 | |G|=1
+C#24 | enum-blowup (not visibly trivial)
+C#25 | |G|=1
+C#26 | |G|=1
+C#27 | |G|=1
+C#28 | |G|=1
+C#29 | |G|=1
+C#30 | |G|=1
+C#31 | enum-blowup (not visibly trivial)
+C#32 | |G|=1
+C#33 | enum-blowup (not visibly trivial)
+C#34 | |G|=1
+C#35 | enum-blowup (not visibly trivial)
+C#36 | |G|=1
+C#37 | H1=[ 3 ]
+C#38 | |G|=1
+C#39 | enum-blowup (not visibly trivial)
+C#40 | enum-blowup (not visibly trivial)
+C#41 | |G|=1
+C#42 | enum-blowup (not visibly trivial)
+C#43 | |G|=1
+C#44 | enum-blowup (not visibly trivial)
+C#45 | |G|=1
+C#46 | enum-blowup (not visibly trivial)
+C#47 | |G|=1
+C#48 | H1=[ 3 ]
+C#49 | H1=[ 3 ]
+C#50 | |G|=1
+C#51 | |G|=1
+C#52 | |G|=1
+C#53 | |G|=1
+C#54 | H1=[ 3 ]
+C#55 | enum-blowup (not visibly trivial)
+C#56 | enum-blowup (not visibly trivial)
+C#57 | |G|=1
+C#58 | enum-blowup (not visibly trivial)
+C#59 | |G|=1
+C#60 | |G|=1
+C#61 | H1=[ 3 ]
+C#62 | enum-blowup (not visibly trivial)
+C#63 | |G|=1
+C#64 | |G|=1
+C#65 | enum-blowup (not visibly trivial)
+C#66 | |G|=1
+C#67 | enum-blowup (not visibly trivial)
+C#68 | |G|=1
+C#69 | enum-blowup (not visibly trivial)
+C#70 | |G|=1
+C#71 | enum-blowup (not visibly trivial)
+C#72 | enum-blowup (not visibly trivial)
+C#73 | enum-blowup (not visibly trivial)
+C#74 | enum-blowup (not visibly trivial)
+C#75 | enum-blowup (not visibly trivial)
+C#76 | |G|=1
+C#77 | enum-blowup (not visibly trivial)
+C#78 | enum-blowup (not visibly trivial)
+C#79 | |G|=1
+C#80 | |G|=1
+C#81 | |G|=1
+C#82 | enum-blowup (not visibly trivial)
+C#83 | enum-blowup (not visibly trivial)
+C#84 | |G|=1
+C#85 | enum-blowup (not visibly trivial)
+C#86 | enum-blowup (not visibly trivial)
+C#87 | |G|=1
+C#88 | |G|=1
+C#89 | enum-blowup (not visibly trivial)
+C#90 | |G|=1
+C#91 | enum-blowup (not visibly trivial)
+C#92 | |G|=1
+C#93 | enum-blowup (not visibly trivial)
+C#94 | enum-blowup (not visibly trivial)
+C#95 | |G|=1
+C#96 | |G|=1
+C#97 | |G|=1
+C#98 | |G|=1
+C#99 | |G|=1
+C#100 | enum-blowup (not visibly trivial)
+C#101 | enum-blowup (not visibly trivial)
+C#102 | |G|=1
+C#103 | enum-blowup (not visibly trivial)
+C#104 | enum-blowup (not visibly trivial)
+C#105 | enum-blowup (not visibly trivial)
+C#106 | enum-blowup (not visibly trivial)
+C#107 | |G|=1
+C#108 | |G|=1
+C#109 | H1=[ 3 ]
+C#110 | enum-blowup (not visibly trivial)
+C#111 | enum-blowup (not visibly trivial)
+C#112 | |G|=1
+C#113 | |G|=1
+C#114 | |G|=1
+C#115 | enum-blowup (not visibly trivial)
+C#116 | enum-blowup (not visibly trivial)
+C#117 | H1=[ 3 ]
+C#118 | enum-blowup (not visibly trivial)
+C#119 | enum-blowup (not visibly trivial)
+C#120 | |G|=1
+SUMMARY C: TRIVIAL=58 FINITE=0 H1=7 BLOWUP=55

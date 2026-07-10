@@ -1,0 +1,74 @@
+=== crossing decks g_out(i) (Dehn-reduced) ===
+  g_out(E1) = xYX
+  g_out(E2) = xyxYX
+  g_out(E3) = xyX
+  g_out(E4) = xyXYX
+  g_out(E5) = xyXYS
+  g_out(E6) = srS
+  g_out(E7) = syxYX
+  g_out(E8) = sRS
+
+=== V1: edge-loop parallels reproduce the generators ===
+parallel E1 (V1 -> V2)             = x   OK
+parallel E2 (V2 -> V3)             = y   OK
+parallel E3 (V3 -> V4)             = X   OK
+parallel E5 (V5 -> V6)             = r   OK
+parallel E6 (V6 -> V7)             = s   OK
+parallel E8 (V8 -> V1)             = S   OK
+
+=== V2: the vertex-link loop is contractible ===
+product around the vertex link     = 1   OK
+
+=== V3: push-off curve certificates ===
+a  (whisker V3)                    = X   OK
+b  (whisker V2)                    = y   OK
+e  (whisker V7)                    = R   OK
+d  (whisker V6)                    = s   OK
+swap(a@V3) == e@V7                 = R   OK
+swap(b@V2) == d@V6                 = s   OK
+
+=== D1: the invariant curve c ===
+  c (whisker V2) = XR   abel=(-1, 0, -1, 0)
+  c (whisker V3) = YXRy   abel=(-1, 0, -1, 0)
+  c (whisker V5) = rsRSRyXY   abel=(-1, 0, -1, 0)
+  c (whisker V1) = RX   abel=(-1, 0, -1, 0)
+c free class check (whisker V2)    = XR   OK
+c reversed (whisker V2)            = rx   OK
+swap(c@V2) == c@V6                 = RX   OK
+
+=== D2: the invariant curve z — certificate search ===
+  candidates (whisker V2):
+    crossings [E1,E5]: XYSx  abel=(0, -1, 0, -1)
+    crossings [E3,E7]: yXsyxY  abel=(0, 1, 0, 1)
+    crossings [E5,E1]: yXYSxY  abel=(0, -1, 0, -1)
+    crossings [E7,E3]: Xsyx  abel=(0, 1, 0, 1)
+
+(select the z certificate matching class ys/sy up to whisker+orientation;
+ disjointness from b,d to be certified at the figure level)
+
+=== D3: lasso words for the corrections ===
+  delta  (route arc2)          = R   abel=(0, 0, -1, 0)
+  delta' (route arc1)          = x   abel=(1, 0, 0, 0)
+  delta'.delta^-1              = xr   abel=(1, 0, 1, 0)
+  V4 OK: delta'.delta^-1 ~ rx (conjugator 'x')
+
+=== D4: position tables (normal-curve data, derived by disjointness) ===
+  s-edge (based loop s = E6 from V6 to V7):
+     order of marked points from the start:  [ c-crossing P_s' ] < [ e-crossing s_e ]
+     (e's corner arc crosses ray E8-start, i.e. E6 near its END; c's endpoint must
+      avoid e's strip along E7 and the V8-corner => P_s' in the middle.  c.e = 0
+      pins the order.)
+  y-edge (based loop y = E2 from V2 to V3):
+     order:  [ c-crossing c_y (middle) ] < [ a-crossing (near END, ray E4-start) ]
+     (only c matters for the lassos; a is not a torus fiber.)
+  Realization checks recorded: c crosses d's strip immediately on leaving E6
+  (c.d = 1) and b's strip immediately on leaving E2 (c.b = 1); c avoids a, e, O, p;
+  z's E7-crossing in the middle of E7 meets e's strip once (z.e = 1) and avoids
+  d's corner arc (z.d = 0).  Side-of-O choice for arc1 is immaterial for words
+  (O is not removed in C) and for SS23 (c misses O either way).
+
+=== D5: the third basis element of pi_1(F - nu(c)) ===
+  kappa_3 = SRyx   abel=(1, 1, -1, -1)
+  <kappa_3, c> = 0   (must be 0)
+  psi(kappa_3) = RSx
+  (R3: B kappa_3 B^-1 = psi(kappa_3) — the T_alpha completion relation)

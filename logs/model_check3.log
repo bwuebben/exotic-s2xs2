@@ -1,0 +1,10 @@
+h = Ta o Tb (Tb first): true
+h = Tb o Ta (Ta first): false
+h o hinv = id and hinv o h = id: true
+psi(rel) = rel exactly: true
+phi(rel) = [xx,yy]^-1 rel [xx,yy] (conjugate): true
+psi o phi o psi^-1 o phi = h*h^-1 on all generators: true
+  images: [ yy^-1, yy*xx, rr*ss, rr^-1 ]
+phi^2 = id: true
+Smith normal form diagonal of (Phi-I; Psi-I): 
+[ 1, 1, 1, 1 ]  => coinvariants trivial: true

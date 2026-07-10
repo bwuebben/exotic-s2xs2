@@ -9,7 +9,7 @@ Scripts, certificates and run logs for the papers
 
 by Bernd J. Wuebben (arXiv links to follow). Everything needed to reproduce every
 number in both papers is here; total runtime is minutes on a laptop (except the
-optional deep certification of the two open cells, ~56 CPU-hours).
+optional finite-quotient sweep, ~56 CPU-hours).
 
 ## The result
 
@@ -24,15 +24,19 @@ based model with machine-checkable certificates, complete presentations of
 $\pi_1(V')$ for the whole admissible family and decides them by coset
 enumeration:
 
-> **π₁(V) = 1 for the Lidman–Piccirillo piece itself** (and for six of the eight
-> variant cells), in every sign, placement and diagram convention swept.
+> **π₁(V′) = 1 for the Lidman–Piccirillo piece and for all eight variant
+> cells** — the full admissible grid, in every sign, placement and diagram
+> convention swept.
 
-For the two remaining cells no assertion is made in either direction. A certified
-quotient sweep (the phase-2/3 scripts below) shows that in eight representative
-sign conventions those groups are perfect, have **no proper subgroup of index
-≤ 7**, and admit **no nontrivial finite quotient of order ≤ 10⁵** (no epimorphism
-onto any of the 31 nonabelian simple groups from A₅ through M₁₂) — consistent
-with these variants being genuinely non-simply-connected.
+Seven cells are decided by coset enumeration. The two cells that resist it —
+past 10⁸ cosets (`tc_deep.g`), having also survived a 56-CPU-hour
+finite-quotient search (the phase-2/3 scripts below: perfect, no subgroup of
+index ≤ 7, no nontrivial finite quotient of order ≤ 10⁵) — are decided by
+**Knuth–Bendix completion** (`kb_certify.g`): the confluent rewriting system of
+each presented group **reduces every generator to the identity**, a triviality
+certificate independent even of the confluence claim. The same certificates
+re-derive the entire grid (288/288) and pass the independent second-diagram
+cross-check (128/128), with positive and negative controls.
 
 Together: an exotic $S^2\times S^2$, the first pair of homeomorphic closed
 4-manifolds distinguished by unconstrained knot slicing, and a simply connected
@@ -40,9 +44,12 @@ exotic $\mathbb{CP}^2\sharp \overline{\mathbb{CP}}^2$.
 
 ## Requirements
 
-- **GAP 4** (developed on 4.16.0; core library only). GAP is not in Homebrew or
-  MacPorts; see `docs/INSTALL_GAP.md` for a minimal source build on macOS, or use
-  your distribution's package on Linux (`apt install gap`).
+- **GAP 4** (developed on 4.16.0; core library only, except that
+  `kb_certify.g` additionally needs the **kbmag** package, built from
+  https://github.com/gap-packages/kbmag into GAP's `pkg/` directory). GAP is
+  not in Homebrew or MacPorts; see `docs/INSTALL_GAP.md` for a minimal source
+  build on macOS, or use your distribution's package on Linux
+  (`apt install gap`).
 - **Python 3** (standard library only) for the developing engine.
 
 Run any script with
@@ -69,6 +76,8 @@ python3 scripts/develop.py
 | `decide2.g` | the **completed** presentation (adds R₃): the final sweep | `logs/complete_run.log`: 7 of 9 cells trivial in all 32 conventions | ~2 min |
 | `phase2_parallel.sh` (+ `phase2_common.g`, `phase2_worker.g`) | the two open cells, 8 representative sign cases: Tietze to 3 gen/7 rel; enumeration past 8×10⁶ cosets; no subgroup of index ≤ 6; no quotient onto the 17 simples ≤ 14880 (except U₃(3)) | `logs/phase2_par_out.txt` | ~6 min (8-wide) |
 | `phase3_resume.sh` (+ `phase3_worker.g`; `phase3_parallel.sh` from scratch) | same 8 cases: no subgroup of index ≤ 7; no quotient onto the remaining simples ≤ 10⁵ (U₃(3), A₈, L₃(4), …, U₃(4), L₂(53), M₁₂) ⇒ **no nontrivial finite quotient of order ≤ 10⁵** | `logs/phase3_out.txt`, manifest `logs/phase3_done.txt` (122 jobs, zero hits) | ~56 CPU-h |
+| `kb_certify.g` (needs kbmag; run from `scripts/` or repo root) | **the decisive certificates**: Knuth–Bendix trivializes the full grid (288/288) and the second diagram (128/128), every generator reduced to the identity; positive control (surface group → Size ∞) and negative control (partial relations → no completion) | `logs/kb_certify_out.txt` | ~3 min |
+| `tc_deep.g` | the deep-enumeration record: both former blowup cells exceed 10⁸ cosets without terminating — on groups now known trivial | `logs/tc_deep_out.txt` | ~2 min |
 
 All logs in `logs/` are the actual outputs of these scripts; every presented
 group in every sweep has H₁ = 0, and no run anywhere produced a finite

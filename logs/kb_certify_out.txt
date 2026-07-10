@@ -1,0 +1,15 @@
+GAP 4.16.0 + kbmag 1.5.11
+C1 surface group: automatic, Size = infinity  (must be infinity)
+C2 partial-relations group: confluent = false  (must be false: KB does not com\
+plete spuriously here)
+G1 cell(-1,-1): certified trivial 32/32
+G1 cell(-1,0): certified trivial 32/32
+G1 cell(-1,1): certified trivial 32/32
+G1 cell(0,-1): certified trivial 32/32
+G1 cell(0,0): certified trivial 32/32
+G1 cell(0,1): certified trivial 32/32
+G1 cell(1,-1): certified trivial 32/32
+G1 cell(1,0): certified trivial 32/32
+G1 cell(1,1): certified trivial 32/32
+G1 TOTAL: 288/288 certified trivial
+G2 TOTAL: 128/128 certified trivial

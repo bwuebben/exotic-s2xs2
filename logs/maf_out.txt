@@ -1,0 +1,33 @@
+case 1: The accepted language contains 1 words
+  reduce(_g1): Word reduces to: IdWord
+  reduce(_g3): Word reduces to: IdWord
+  reduce(_g5): Word reduces to: IdWord
+case 2: The accepted language contains 1 words
+  reduce(_g1): Word reduces to: IdWord
+  reduce(_g3): Word reduces to: IdWord
+  reduce(_g5): Word reduces to: IdWord
+case 3: The accepted language contains 1 words
+  reduce(_g1): Word reduces to: IdWord
+  reduce(_g3): Word reduces to: IdWord
+  reduce(_g5): Word reduces to: IdWord
+case 4: The accepted language contains 1 words
+  reduce(_g1): Word reduces to: IdWord
+  reduce(_g3): Word reduces to: IdWord
+  reduce(_g5): Word reduces to: IdWord
+case 5: The accepted language contains 1 words
+  reduce(_g1): Word reduces to: IdWord
+  reduce(_g3): Word reduces to: IdWord
+  reduce(_g5): Word reduces to: IdWord
+case 6: The accepted language contains 1 words
+  reduce(_g1): Word reduces to: IdWord
+  reduce(_g3): Word reduces to: IdWord
+  reduce(_g5): Word reduces to: IdWord
+case 7: The accepted language contains 1 words
+  reduce(_g1): Word reduces to: IdWord
+  reduce(_g3): Word reduces to: IdWord
+  reduce(_g5): Word reduces to: IdWord
+case 8: The accepted language contains 1 words
+  reduce(_g1): Word reduces to: IdWord
+  reduce(_g3): Word reduces to: IdWord
+  reduce(_g5): Word reduces to: IdWord
+surface control: The accepted language is infinite

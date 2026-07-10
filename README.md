@@ -36,7 +36,9 @@ index ≤ 7, no nontrivial finite quotient of order ≤ 10⁵) — are decided b
 each presented group **reduces every generator to the identity**, a triviality
 certificate independent even of the confluence claim. The same certificates
 re-derive the entire grid (288/288) and pass the independent second-diagram
-cross-check (128/128), with positive and negative controls.
+cross-check (128/128), with positive and negative controls — and a second,
+independently implemented engine (MAF, `maf_certify.sh`) reproduces all eight
+verdicts.
 
 Together: an exotic $S^2\times S^2$, the first pair of homeomorphic closed
 4-manifolds distinguished by unconstrained knot slicing, and a simply connected
@@ -78,6 +80,7 @@ python3 scripts/develop.py
 | `phase3_resume.sh` (+ `phase3_worker.g`; `phase3_parallel.sh` from scratch) | same 8 cases: no subgroup of index ≤ 7; no quotient onto the remaining simples ≤ 10⁵ (U₃(3), A₈, L₃(4), …, U₃(4), L₂(53), M₁₂) ⇒ **no nontrivial finite quotient of order ≤ 10⁵** | `logs/phase3_out.txt`, manifest `logs/phase3_done.txt` (122 jobs, zero hits) | ~56 CPU-h |
 | `kb_certify.g` (needs kbmag; run from `scripts/` or repo root) | **the decisive certificates**: Knuth–Bendix trivializes the full grid (288/288) and the second diagram (128/128), every generator reduced to the identity; positive control (surface group → Size ∞) and negative control (partial relations → no completion) | `logs/kb_certify_out.txt` | ~3 min |
 | `tc_deep.g` | the deep-enumeration record: both former blowup cells exceed 10⁸ cosets without terminating — on groups now known trivial | `logs/tc_deep_out.txt` | ~2 min |
+| `maf_export.g` + `maf_certify.sh` | **independent-engine cross-check**: the 8 representative presentations re-decided by MAF (Alun Williams' Monoid Automata Factory — no shared code with GAP/kbmag): word acceptor = 1 word, every generator → IdWord; surface control infinite. Build MAF from https://sourceforge.net/projects/maffsa/ at `-O0` (an optimized arm64 build miscompiles) | `logs/maf_out.txt` | ~1 min |
 
 All logs in `logs/` are the actual outputs of these scripts; every presented
 group in every sweep has H₁ = 0, and no run anywhere produced a finite

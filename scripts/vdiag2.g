@@ -9,7 +9,10 @@ comm := function(u,v) return u*v*u^-1*v^-1; end;;
 R0 := comm(x,y)*comm(r,s);;
 base := [R0, A*x*A^-1*r^-1, A*y*A^-1*s^-1, A*r*A^-1*x^-1, B*x*B^-1*y, B*r*B^-1*r^-1];;
 dirTaBase := A*r^-1;;  dirTaFib := (r*x)^-1;;
-dirTbBase := B;;       dirTbFib := s*r^-1*s^-1;;
+# LOGGED FIX 2026-07-15 (paper: the pushoff-basing correction): honest
+# dirTbBase, sign anti-coupled to e5 (element identity holds in both diagrams).
+dirTbBase := function(e5) return r^-1*M^(-e5)*r * B; end;;
+dirTbFib := s*r^-1*s^-1;;
 cnt := rec(triv:=0, blow:=0, h1:=0, fin:=0);;
 for mn in Cartesian([-1,0,1],[-1,0,1]) do
   ct := rec(triv:=0, blow:=0, h1:=0, fin:=0);
@@ -20,7 +23,7 @@ for mn in Cartesian([-1,0,1],[-1,0,1]) do
           B*y*B^-1*(M^e4*y*x)^-1,
           B*s*B^-1*(N^e6 * r^-1*M^e5*r * s)^-1,
           M*(dirTaBase*dirTaFib^mn[2])^eA,
-          N*(dirTbBase*dirTbFib^mn[1])^eB ]);
+          N*(dirTbBase(e5)*dirTbFib^mn[1])^eB ]);
       G := F / rels;
       ab := AbelianInvariants(G);
       if Length(ab) > 0 then ct.h1 := ct.h1 + 1;

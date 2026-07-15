@@ -29,7 +29,11 @@ INPUT := rec(
   # the pre-registered protocol — this enables the honest run. Outcome provisional until V-DIAG.
   dirTaBase := A*r^-1,         # lambda = A.delta: half-rotation drift = the lasso
   dirTaFib  := (r*x)^-1,       # c-pushoff at the y1-basing (engine: c@V2 = XR)
-  dirTbBase := B,              # product framing, psi_0 fixes e pointwise
+  # LOGGED FIX 2026-07-15 (paper: the pushoff-basing correction): the s2-based
+  # pushoff's bundle identity sweeps s2 around beta-bar; that membrane crosses
+  # T_alpha once at (P_s', wrap), so the honest word carries the
+  # corr_Bs-lasso-conjugated meridian, sign ANTI-coupled to the Bs sign e5:
+  dirTbBase := function(e5) return r^-1*M^(-e5)*r * B; end,
   dirTbFib  := s*r^-1*s^-1     # e-pushoff at the s2-basing (= s.(e@V7).s^-1)
 );;
 
@@ -98,7 +102,7 @@ else
           Concatenation(base,
             [mkAs(e3), mkBy(e4), mkBs(e5),
              M*(INPUT.dirTaBase*INPUT.dirTaFib^mn[2])^eA,
-             N*(INPUT.dirTbBase*INPUT.dirTbFib^mn[1])^eB]), false);
+             N*(INPUT.dirTbBase(e5)*INPUT.dirTbFib^mn[1])^eB]), false);
       od; od; od;
     od; od;
   od;

@@ -23,10 +23,27 @@
 #       cells x 64 signs = 128 cases.
 #
 # Expected output: 288/288 and 128/128 certified trivial; controls behave.
+# 2026-07-15 NOTE (paper: the pushoff-basing correction): with the honest
+# dirTbBase (logged fix), G1 stays 288/288, but G2 WITHOUT a completion
+# relation becomes KB-inconclusive (0/128 "not certified" = no confluence,
+# never an adverse verdict; see diag_g2_probe.g). The diagram-2 certification
+# now lives in kb_diag2_full.g (full 9-cell grid, R3 added — true and
+# diagram-independent).
 
 LoadPackage("kbmag");
 if IsReadableFile("phase2_common.g") then Read("phase2_common.g");
 else Read("scripts/phase2_common.g"); fi;
+
+# LOGGED FIX 2026-07-15 (paper: the pushoff-basing correction): honest
+# dirTbBase = r^-1*M^(-e5)*r*B (sign anti-coupled to e5). mkG overridden
+# LOCALLY — phase2_common.g stays untouched as the quotient-sweep record.
+mkG := function(m, n, e3, e4, e5, eA, eB)
+  return F / Concatenation(base,
+    [ A*s*A^-1*(N^e3*y)^-1, B*y*B^-1*(M^e4*y*x)^-1,
+      B*s*B^-1*(r^-1*M^e5*r*s)^-1,
+      M*((A*r^-1)*((r*x)^-1)^n)^eA,
+      N*((r^-1*M^(-e5)*r*B)*(s*r^-1*s^-1)^m)^eB ]);
+end;;
 
 certify := function(G)
   local H, rws, kb;
@@ -89,7 +106,7 @@ Print("G1 TOTAL: ", t1, "/", n1, " certified trivial\n");
 # below is in the correct convention.
 base2 := [comm(x,y)*comm(r,s), A*x*A^-1*r^-1, A*y*A^-1*s^-1, A*r*A^-1*x^-1,
           B*x*B^-1*y, B*r*B^-1*r^-1];;
-dTaB := A*r^-1;; dTaF := (r*x)^-1;; dTbB := B;; dTbF := s*r^-1*s^-1;;
+dTaB := A*r^-1;; dTaF := (r*x)^-1;; dTbF := s*r^-1*s^-1;;  # dTbB inlined below (2026-07-15 fix)
 t2 := 0;; n2 := 0;;
 for m in [1,-1] do
   for e3 in [1,-1] do for e4 in [1,-1] do for e5 in [1,-1] do
@@ -98,7 +115,9 @@ for m in [1,-1] do
     G2 := F / Concatenation(base2,
       [ A*s*A^-1*(N^e3*y)^-1, B*y*B^-1*(M^e4*y*x)^-1,
         B*s*B^-1*(N^e6 * r^-1*M^e5*r * s)^-1,
-        M*(dTaB*dTaF^1)^eA, N*(dTbB*dTbF^m)^eB ]);
+        M*(dTaB*dTaF^1)^eA,
+        # LOGGED FIX 2026-07-15: honest dirTbBase (dTbB slot), anti-coupled sign
+        N*((r^-1*M^(-e5)*r*B)*dTbF^m)^eB ]);
     if certify(G2) = "trivial" then
       t2 := t2 + 1;
     else

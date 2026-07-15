@@ -1,0 +1,21 @@
+=== G2 case m=1 n=1 e=[ 1, 1, 1, 1, 1, 1 ] ===
+ without R3:
+  simplified: gens=3 rels=6 len=93
+  KB: NOT CONFLUENT (inconclusive)
+ with R3:
+  simplified: gens=0 rels=0 len=0
+  KB: confluent, Size=1, all gens->1: true
+=== G2 case m=-1 n=1 e=[ 1, 1, 1, 1, 1, 1 ] ===
+ without R3:
+  simplified: gens=3 rels=6 len=131
+  KB: NOT CONFLUENT (inconclusive)
+ with R3:
+  simplified: gens=0 rels=0 len=0
+  KB: confluent, Size=1, all gens->1: true
+=== G2 case m=1 n=1 e=[ -1, 1, -1, 1, 1, -1 ] ===
+ without R3:
+  simplified: gens=3 rels=6 len=93
+  KB: NOT CONFLUENT (inconclusive)
+ with R3:
+  simplified: gens=3 rels=7 len=103
+  KB: confluent, Size=1, all gens->1: true

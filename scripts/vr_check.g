@@ -11,5 +11,7 @@ Print("fiber-only fillings (expect H1 = Z^2): ",
   AbelianInvariants(F/Concatenation(base,corr,
     [M*((r*x)^-1)^1, N*(s*r^-1*s^-1)^1])), "\n");
 Print("one base filling (expect H1 = Z):      ",
-  AbelianInvariants(F/Concatenation(base,corr, [N*B])), "\n");
+  AbelianInvariants(F/Concatenation(base,corr, [N*(r^-1*M^-1*r*B)])), "\n");
+# (2026-07-15, paper: the pushoff-basing correction — honest dirTbBase at the
+#  corr sign e5 = +1 used above.)
 QUIT_GAP(0);

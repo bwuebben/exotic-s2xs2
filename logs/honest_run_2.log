@@ -1,0 +1,461 @@
+### HONEST RUN ###
+V' m=-1 n=-1 eA=1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=-1 eA=1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=-1 eA=1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=-1 eA=1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=-1 eA=1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=-1 eA=1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=-1 eA=1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=-1 eA=1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=-1 eA=1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=-1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=-1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=-1 eA=-1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=-1 eA=-1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=-1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=-1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=-1 eA=-1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=-1 eA=-1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=-1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=-1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=-1 eA=-1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=-1 eA=-1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=-1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=-1 n=-1 eA=-1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (ph\
+ase-2 certification pending)
+V' m=-1 n=-1 eA=-1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (ph\
+ase-2 certification pending)
+V' m=-1 n=-1 eA=-1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=-1 n=0 eA=1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=-1 n=0 eA=1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=0 eA=1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=0 eA=1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=0 eA=1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=0 eA=1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=0 eA=1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=0 eA=1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=-1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=-1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=0 eA=-1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=0 eA=-1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=-1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=-1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=0 eA=-1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=0 eA=-1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=-1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=-1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=0 eA=-1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=0 eA=-1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=-1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=-1 n=0 eA=-1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=0 eA=-1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=0 eA=-1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=-1 n=1 eA=1 eB=1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=-1 n=1 eA=1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=-1 n=1 eA=1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=-1 n=1 eA=1 eB=1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=1 eA=1 eB=1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=-1 n=1 eA=1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=1 eA=1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=1 eA=1 eB=1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=1 eA=1 eB=-1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=-1 n=1 eA=1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=1 eA=1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=1 eA=1 eB=-1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=1 eA=1 eB=-1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=1 eA=1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=1 eA=1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=1 eA=1 eB=-1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=-1 n=1 eA=-1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=-1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=-1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=-1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=-1 n=1 eA=-1 eB=-1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (ph\
+ase-2 certification pending)
+V' m=0 n=-1 eA=1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=-1 eA=1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=-1 eA=1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=1 e=(-1,1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=1 e=(-1,-1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=-1 e=(1,1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=-1 e=(1,-1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=0 n=-1 eA=1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=0 n=-1 eA=1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=-1 eA=-1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=-1 eA=-1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=1 e=(-1,1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=1 e=(-1,-1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=-1 e=(1,1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=-1 e=(1,-1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=0 n=-1 eA=-1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=0 n=-1 eA=-1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=0 n=-1 eA=-1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=0 n=0 eA=1 eB=1 e=(1,-1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=0 eA=1 eB=1 e=(-1,-1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=0 eA=1 eB=-1 e=(1,-1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=0 eA=1 eB=-1 e=(-1,-1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=1 e=(1,1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=0 eA=-1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=1 e=(-1,1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=0 eA=-1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=-1 e=(1,1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=0 eA=-1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=-1 e=(-1,1,-1) | H1=0 | |G|=1
+V' m=0 n=0 eA=-1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=0 n=0 eA=-1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=0 n=1 eA=1 eB=1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-2 \
+certification pending)
+V' m=0 n=1 eA=1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=0 n=1 eA=1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=0 n=1 eA=1 eB=1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=1 eA=1 eB=1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=0 n=1 eA=1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=1 eA=1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=1 eA=1 eB=1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=1 eA=1 eB=-1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=0 n=1 eA=1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=1 eA=1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=1 eA=1 eB=-1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=1 eA=1 eB=-1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=1 eA=1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=1 eA=1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=1 eA=1 eB=-1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=0 n=1 eA=-1 eB=1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=0 n=1 eA=-1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=1 eA=-1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=1 eA=-1 eB=1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=1 eA=-1 eB=1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=1 eA=-1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=1 eA=-1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=1 eA=-1 eB=1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=0 n=1 eA=-1 eB=-1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=0 n=1 eA=-1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=1 eA=-1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=1 eA=-1 eB=-1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=0 n=1 eA=-1 eB=-1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=0 n=1 eA=-1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=0 n=1 eA=-1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=0 n=1 eA=-1 eB=-1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=1 n=-1 eA=1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=-1 eA=1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=-1 eA=1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=-1 eA=1 eB=1 e=(-1,-1,1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=-1 eA=1 eB=-1 e=(1,-1,1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=-1 eA=1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=-1 eA=1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=-1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=-1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=-1 eA=-1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=-1 eA=-1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=-1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=-1 eB=1 e=(-1,1,-1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=-1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=-1 eA=-1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=-1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=-1 eB=-1 e=(1,1,-1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=-1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=-1 eA=-1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=-1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=1 n=-1 eA=-1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=1 n=-1 eA=-1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)
+V' m=1 n=-1 eA=-1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=0 eA=1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=1 n=0 eA=1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=1 n=0 eA=1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=1 n=0 eA=1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=0 eA=1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=1 n=0 eA=1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=0 eA=1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=0 eA=1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=0 eA=1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=1 n=0 eA=1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=0 eA=1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=0 eA=1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=0 eA=1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=1 n=0 eA=1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=0 eA=1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=0 eA=1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=0 eA=-1 eB=1 e=(1,1,1) | H1=0 | |G|=1
+V' m=1 n=0 eA=-1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=0 eA=-1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=0 eA=-1 eB=1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=0 eA=-1 eB=1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=1 n=0 eA=-1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=0 eA=-1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=0 eA=-1 eB=1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=0 eA=-1 eB=-1 e=(1,1,1) | H1=0 | |G|=1
+V' m=1 n=0 eA=-1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=0 eA=-1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=0 eA=-1 eB=-1 e=(1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=0 eA=-1 eB=-1 e=(-1,1,1) | H1=0 | |G|=1
+V' m=1 n=0 eA=-1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=0 eA=-1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=0 eA=-1 eB=-1 e=(-1,-1,-1) | H1=0 | |G|=1
+V' m=1 n=1 eA=1 eB=1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-2 \
+certification pending)
+V' m=1 n=1 eA=1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=1 n=1 eA=1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=1 n=1 eA=1 eB=1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=1 eA=1 eB=1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=1 n=1 eA=1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=1 eA=1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=1 eA=1 eB=1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=1 eA=1 eB=-1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=1 n=1 eA=1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=1 eA=1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=1 eA=1 eB=-1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=1 eA=1 eB=-1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=1 eA=1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=1 eA=1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=1 eA=1 eB=-1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=1 eA=-1 eB=1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-2\
+ certification pending)
+V' m=1 n=1 eA=-1 eB=1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=1 eA=-1 eB=1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=1 eA=-1 eB=1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=1 eA=-1 eB=1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=1 eA=-1 eB=1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=1 eA=-1 eB=1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=1 eA=-1 eB=1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=1 eA=-1 eB=-1 e=(1,1,1) | H1=0 | blowup | not visibly trivial (phase-\
+2 certification pending)
+V' m=1 n=1 eA=-1 eB=-1 e=(1,1,-1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=1 eA=-1 eB=-1 e=(1,-1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=1 eA=-1 eB=-1 e=(1,-1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=1 eA=-1 eB=-1 e=(-1,1,1) | H1=0 | blowup | not visibly trivial (phase\
+-2 certification pending)
+V' m=1 n=1 eA=-1 eB=-1 e=(-1,1,-1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=1 eA=-1 eB=-1 e=(-1,-1,1) | H1=0 | blowup | not visibly trivial (phas\
+e-2 certification pending)
+V' m=1 n=1 eA=-1 eB=-1 e=(-1,-1,-1) | H1=0 | blowup | not visibly trivial (pha\
+se-2 certification pending)

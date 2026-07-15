@@ -1,0 +1,49 @@
+computing ground-truth fingerprints [0s]
+  fp(tr3) = fp(tr1)?  false   (false required for discrimination)
+  fp(par) = fp(parI)? true
+targets built: orders [ 6, 12, 36, 54, 27 ]  nonabelian 
+[ true, true, true, true, true ]
+
+=== DOUBLE-SURGERY SWEEP with lasso dimension (9 x 64) [0s] ===
+LASSO (d1,d2)=(1,1): pass=0/64 abelian=32 wrong-fp=32  types=[  ]  [174s]
+LASSO (d1,d2)=(1,b): pass=64/64 abelian=0 wrong-fp=0  types=
+[ [ "tr1", 32 ], [ "tr3", 32 ] ]  [181s]
+LASSO (d1,d2)=(1,B): pass=0/64 abelian=32 wrong-fp=32  types=[  ]  [358s]
+LASSO (d1,d2)=(b,1): pass=64/64 abelian=0 wrong-fp=0  types=
+[ [ "tr1", 32 ], [ "tr3", 32 ] ]  [365s]
+LASSO (d1,d2)=(b,b): pass=0/64 abelian=32 wrong-fp=32  types=[  ]  [544s]
+LASSO (d1,d2)=(b,B): pass=0/64 abelian=32 wrong-fp=32  types=[  ]  [726s]
+LASSO (d1,d2)=(B,1): pass=0/64 abelian=32 wrong-fp=32  types=[  ]  [907s]
+LASSO (d1,d2)=(B,b): pass=0/64 abelian=32 wrong-fp=32  types=[  ]  [1083s]
+LASSO (d1,d2)=(B,B): pass=0/64 abelian=0 wrong-fp=64  types=[  ]  [1091s]
+
+=== SINGLE-SURGERY SWEEP (8 conventions) [1091s] ===
+SINGLE L e=1 q=1: H1=[ 0, 0, 0 ] Heis-quotient=true fp-par-match=true  [1091s]
+SINGLE L e=1 q=-1: H1=
+[ 0, 0, 0 ] Heis-quotient=true fp-par-match=true  [1092s]
+SINGLE L e=-1 q=1: H1=
+[ 0, 0, 0 ] Heis-quotient=true fp-par-match=true  [1093s]
+SINGLE L e=-1 q=-1: H1=
+[ 0, 0, 0 ] Heis-quotient=true fp-par-match=true  [1093s]
+SINGLE R e=1 q=1: H1=[ 0, 0, 0 ] Heis-quotient=true fp-par-match=true  [1094s]
+SINGLE R e=1 q=-1: H1=
+[ 0, 0, 0 ] Heis-quotient=true fp-par-match=true  [1095s]
+SINGLE R e=-1 q=1: H1=
+[ 0, 0, 0 ] Heis-quotient=true fp-par-match=true  [1095s]
+SINGLE R e=-1 q=-1: H1=
+[ 0, 0, 0 ] Heis-quotient=true fp-par-match=true  [1096s]
+SINGLE SUMMARY: pass=8 fail=0
+
+=== COMPLEMENT PROBE ===
+PROBE L e=1: H1(complement) = [ 0, 0, 0, 0 ]  (expected [0,0,0,0])
+PROBE L e=-1: H1(complement) = [ 0, 0, 0, 0 ]  (expected [0,0,0,0])
+PROBE R e=1: H1(complement) = [ 0, 0, 0, 0 ]  (expected [0,0,0,0])
+PROBE R e=-1: H1(complement) = [ 0, 0, 0, 0 ]  (expected [0,0,0,0])
+
+=== BALDRIDGE-KIRK CROSS-CHECK (corroborative) [1096s] ===
+BK q=(1,1): H1=[ 0, 0 ] nonabelian=true fp=tr3
+BK q=(1,-1): H1=[ 0, 0 ] nonabelian=true fp=tr1
+BK q=(-1,1): H1=[ 0, 0 ] nonabelian=true fp=tr1
+BK q=(-1,-1): H1=[ 0, 0 ] nonabelian=true fp=tr3
+
+DONE [1097s]

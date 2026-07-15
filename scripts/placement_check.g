@@ -14,7 +14,9 @@ base := [ R0,
   B*x*B^-1*y,    B*r*B^-1*r^-1 ];;
 delta := r^-1;;
 dirTa := A*r^-1;;          # m=n=0: base directions only
-dirTb := B;;
+# LOGGED FIX 2026-07-15 (paper: the pushoff-basing correction): honest
+# dirTbBase, sign anti-coupled to e5.
+dirTb := function(e5) return delta*M^(-e5)*delta^-1 * B; end;;
 
 mk := function(conj, img, corr, side)   # relation  conj = [corr.]img[.corr]
   if side = 1 then return conj * (corr*img)^-1;
@@ -29,7 +31,7 @@ for pAs in [1,2] do for pBy in [1,2] do for pBs in [1,2] do
         [ mk(A*s*A^-1, y,   N^e3,               pAs),
           mk(B*y*B^-1, y*x, M^e4,               pBy),
           mk(B*s*B^-1, s,   delta*M^e5*delta^-1, pBs),
-          M*dirTa^eA, N*dirTb^eB ]);
+          M*dirTa^eA, N*dirTb(e5)^eB ]);
       G := F / rels;
       ab := AbelianInvariants(G);
       if Length(ab) > 0 then cnt.h1 := cnt.h1 + 1;

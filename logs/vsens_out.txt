@@ -1,0 +1,27 @@
+=== V-SENS: single-word perturbations at (0,0), e=(1,1,1,1,1) ===
+baseline (honest words)          : SILENT  (enum-trivial)
+
+-- dirTaBase (the drift word) --
+TaB := A       (drift dropped)   : SILENT  (enum-trivial)
+TaB := A*r     (drift inverted)  : SILENT  (blowup, KB-trivial)
+TaB := A*x     (other arc; legit): SILENT  (enum-trivial)
+TaB := r^-1*A  (order swapped)   : SILENT  (blowup, KB-trivial)
+
+-- dirTaFib --
+TaF := r*x     (inverted)        : SILENT  (enum-trivial)
+TaF := (rx)^-2 (doubled)         : SILENT  (enum-trivial)
+
+-- dirTbBase (the repaired word) --
+TbB := B            (pre-repair) : SILENT  (enum-trivial)
+TbB := r^-1*M*r*B   (sign flip)  : SILENT  (enum-trivial)
+TbB := B*r^-1*M^-1*r (post)      : SILENT  (enum-trivial)
+TbB := x*M^-1*x^-1*B (other arc) : SILENT  (enum-trivial)
+
+-- dirTbFib --
+TbF := r^-1    (unwhiskered)     : SILENT  (enum-trivial)
+TbF := s*r*s^-1 (core inverted)  : SILENT  (enum-trivial)
+
+-- corrections --
+By: correction dropped           : SILENT  (enum-trivial)
+Bs: arc delta'=x (legit)         : SILENT  (enum-trivial)
+As: correction dropped           : LOUD-H1  H1=[ 0 ]

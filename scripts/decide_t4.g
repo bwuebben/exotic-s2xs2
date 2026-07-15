@@ -179,6 +179,13 @@ for p1 in ["L","R"] do for e1 in [1,-1] do
 od; od;
 
 # ---------- BK cross-check (corroborative): their words, same manifold ----------
+# AUDIT NOTE (2026-07-15, session 16c): GAP's Comm(g,h) = g^-1 h^-1 g h, so
+# Comm(b^-1,y^-1) below renders BK's mu1 = [b^-1,y^-1] as a CONJUGATE (cyclic
+# permutation) of the paper-literal word, spliced into the composite relator
+# without conjugating the pushoff. Machine-checked benign here (identical
+# fingerprints in all 4 cells with paper-literal words; the two action
+# matrices are conjugate) — but "their words" is exact only up to this
+# rendering. Recorded 2026-07-15.
 Print("\n=== BALDRIDGE-KIRK CROSS-CHECK (corroborative) ", Elapsed(), " ===\n");
 for q1 in [1,-1] do for q2 in [1,-1] do
   rels := [ Comm(x,a), Comm(y,a), Comm(y, b*a*b^-1),

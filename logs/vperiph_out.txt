@@ -1,0 +1,25 @@
+=== V-PERIPH: boundary-torus commutation battery ===
+completed complement presentation (base + R3 + corrections), 8 sign convention\
+s
+
+--- convention e=(1,1,1): H1(C)=[ 0, 0 ] ---
+--- convention e=(1,1,-1): H1(C)=[ 0, 0 ] ---
+--- convention e=(1,-1,1): H1(C)=[ 0, 0 ] ---
+--- convention e=(1,-1,-1): H1(C)=[ 0, 0 ] ---
+--- convention e=(-1,1,1): H1(C)=[ 0, 0 ] ---
+--- convention e=(-1,1,-1): H1(C)=[ 0, 0 ] ---
+--- convention e=(-1,-1,1): H1(C)=[ 0, 0 ] ---
+--- convention e=(-1,-1,-1): H1(C)=[ 0, 0 ] ---
+
+=== small nonsolvable-quotient battery (convention (1,1,1)) ===
+  S3: 3 epimorphism(s)
+  A4: 4 epimorphism(s)
+  S4: 9 epimorphism(s)
+  A5: GQuotients did not return within budget (killed; known enumeration
+      blowup risk in GQuotients preprocessing on these presentations).
+=== V-PERIPH INTERIM SUMMARY (session 16c) ===
+All six must-hold commutators trivial in every computed quotient (8
+conventions x p-quotients p=2,3,5 class 4,6; S3/A4/S4 epimorphism batteries).
+NO control caught anywhere reachable: the battery is CONSISTENT but has NOT
+demonstrated power against the tested error classes in these quotients.
+Power upgrade attempted next in vperiph2.g (low-index coset actions).

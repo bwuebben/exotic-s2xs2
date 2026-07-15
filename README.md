@@ -7,7 +7,11 @@ Scripts, certificates and run logs for the papers
 - **Simple connectivity of the Lidman–Piccirillo piece: a certificate-complete
   computation** (`papers/computation.pdf`),
 
-by Bernd J. Wuebben (arXiv links to follow). Everything needed to reproduce every
+by Bernd J. Wuebben (arXiv links to follow). A step-by-step expository
+companion to the computation — every corrected relation and every direction
+word worked end to end at tutorial grain, closing with the Baldridge–Kirk T⁴
+configuration as a fully worked calibration example — is
+`papers/walkthrough.pdf`. Everything needed to reproduce every
 number in both papers is here; total runtime is minutes on a laptop (except the
 optional finite-quotient sweep, ~56 CPU-hours).
 

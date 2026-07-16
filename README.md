@@ -66,9 +66,11 @@ certificate independent even of the confluence claim. The certificates
 re-derive the entire completed-presentation grid (`kb_certify.g`, 288/288)
 and the entire second diagram (`kb_diag2_full.g`, 576/576 — all nine cells,
 all 64 conventions each), with positive and negative controls. A second,
-independently implemented engine (MAF, `maf_certify.sh`) reproduced the eight
-representative verdicts of the pre-repair word; the corrected-word exports
-for the identical MAF run are staged (`maf_export2.g`).
+independently implemented engine (MAF) reproduces the eight representative
+verdicts on the pre-repair word (`maf_certify.sh`) and, separately, on the
+**corrected** word (`maf_export2.g` + `maf_certify2.sh`): in all eight
+cases both times the word acceptor accepts exactly one word and every
+generator reduces to the identity, with the surface-group control infinite.
 
 Together: an exotic $S^2\times S^2$, the first pair of homeomorphic closed
 4-manifolds distinguished by unconstrained knot slicing, and a simply connected
@@ -119,7 +121,7 @@ python3 scripts/develop.py
 | `diag_g2_probe.g` (needs kbmag) | why diagram 2 needs R₃: representative hard cases are non-confluent without it and collapse (some to the empty presentation) with it | `logs/diag_g2_probe_out.txt` | ~1 min |
 | `tc_deep.g` | the deep-enumeration record: both former blowup cells exceed 10⁸ cosets without terminating — on groups now known trivial | `logs/tc_deep_out.txt` | ~2 min |
 | `maf_export.g` + `maf_certify.sh` | **independent-engine cross-check**: the 8 representative presentations (pre-repair word) re-decided by MAF (Alun Williams' Monoid Automata Factory — no shared code with GAP/kbmag): word acceptor = 1 word, every generator → IdWord; surface control infinite. Build MAF from https://sourceforge.net/projects/maffsa/ at `-O0` (an optimized arm64 build miscompiles) | `logs/maf_out.txt` | ~1 min |
-| `maf_export2.g` | the corrected-word exports (8 representative cases + surface control, into `maf_runs2/`) staged for the identical MAF run | writes `maf_runs2/` | <1 min |
+| `maf_export2.g` + `maf_certify2.sh` | the **corrected-word** independent-engine rerun: same 8 representative cases + surface control through MAF (author's official v2.2.1 binaries, validated by reproducing the pre-repair record line-identically): word acceptor = 1 word, every generator → IdWord, surface control infinite | `logs/maf_out2.txt` | ~1 min |
 
 All logs in `logs/` are the actual outputs of these scripts; every presented
 group in every sweep has H₁ = 0, and no run anywhere produced a finite

@@ -216,6 +216,93 @@ print("""  s-edge (based loop s = E6 from V6 to V7):
   d's corner arc (z.d = 0).  Side-of-O choice for arc1 is immaterial for words
   (O is not removed in C) and for SS23 (c misses O either way).""")
 
+# ---------------- D4CERT: chord-diagram certificate (machine check) ----------------
+# The prose above is now certified combinatorially.  Cut along the four edge
+# circles: the octagon is a disk, and each curve of {a, b, d, e, c, z} appears
+# as straight chords whose endpoints sit on the edges, tied in partner pairs
+# E_i(t) ~ E_partner(i)(1 - t).  Facts used:
+#   * two chords in a disk cross (once) iff their endpoints interleave in the
+#     boundary cyclic order, and straight chords realize ALL pairwise minimal
+#     crossing numbers simultaneously;
+#   * hence a family of arcs with prescribed pairwise geometric intersection
+#     numbers is realizable iff the interleaving matrix of the endpoint order
+#     equals the prescribed matrix -- a finite check.
+# The free data are the orders of the two crossing points on each of the four
+# edge circles (2^4 = 16 configurations); everything else (which edges each
+# arc connects) is the certified crossing structure of D1/D2/V3.  The
+# certificate below shows EXACTLY ONE configuration realizes the model's
+# intersection table, and in it the D4 orders hold; each order is forced by
+# one disjointness (c.e = 0 -> s-edge order; c.a = 0 -> y-edge order;
+# z.b = 0 and z.d = 0 -> the x/r-circle orders).
+print("\n=== D4CERT: chord-diagram planarity certificate ===")
+
+REQUIRED = {  # curve-level geometric intersection numbers of the frozen model
+    ("a","b"): 1, ("a","d"): 0, ("a","e"): 0, ("b","d"): 0, ("b","e"): 0,
+    ("d","e"): 1, ("a","c"): 0, ("b","c"): 1, ("c","d"): 1, ("c","e"): 0,
+    ("a","z"): 1, ("b","z"): 0, ("d","z"): 0, ("e","z"): 1, ("c","z"): 2,
+    ("c","c"): 0, ("z","z"): 0,
+}
+
+def _d4_arcs(fy, fx, fr, fs):
+    # One binary flag per edge circle: True = the c/z-crossing point precedes
+    # the pushoff-curve's point in the parameter of the LOW-index edge.
+    def pos(flag): return (0.35, 0.65) if flag else (0.65, 0.35)
+    p_y, q_y = pos(fy)   # E2: c_y (gamma) vs a-copy      (E4 copies at 1 - t)
+    p_x, q_x = pos(fx)   # E1: z-alpha    vs b-copy       (E3 copies)
+    p_r, q_r = pos(fr)   # E5: z-beta     vs d-copy       (E7 copies)
+    p_s, q_s = pos(fs)   # E6: P_s' (rho gamma) vs e-copy (E8 copies)
+    return {
+        ("a", 0): ((2, q_y), (4, 1 - q_y)),
+        ("b", 0): ((1, q_x), (3, 1 - q_x)),
+        ("d", 0): ((5, q_r), (7, 1 - q_r)),
+        ("e", 0): ((6, q_s), (8, 1 - q_s)),
+        ("c", 0): ((2, p_y), (8, 1 - p_s)),     # gamma:      c_y  -> P_s'
+        ("c", 1): ((6, p_s), (4, 1 - p_y)),     # rho(gamma): P_s' -> c_y
+        ("z", 0): ((1, p_x), (7, 1 - p_r)),     # alpha
+        ("z", 1): ((5, p_r), (3, 1 - p_x)),     # beta = rho(alpha)
+    }
+
+def _d4_matrix(arcs):
+    # global boundary coordinate: edge index + position in (0,1)
+    def glob(ep): return ep[0] + ep[1]
+    from collections import Counter
+    tot = Counter()
+    keys = sorted(arcs)
+    for i in range(len(keys)):
+        for j in range(i, len(keys)):
+            k1, k2 = keys[i], keys[j]
+            if k1 == k2: continue
+            a1, a2 = sorted(map(glob, arcs[k1])), sorted(map(glob, arcs[k2]))
+            inside = sum(1 for q in a2 if a1[0] < q < a1[1])
+            if inside == 1:   # interleaved <=> the straight chords cross once
+                pair = tuple(sorted((k1[0], k2[0])))
+                tot[pair] += 1
+    return {p: tot.get(p, 0) for p in REQUIRED}
+
+_passing = []
+for fy in (True, False):
+    for fx in (True, False):
+        for fr in (True, False):
+            for fs in (True, False):
+                got = _d4_matrix(_d4_arcs(fy, fx, fr, fs))
+                bad = [f"{p[0]}.{p[1]}={got[p]}(need {REQUIRED[p]})"
+                       for p in REQUIRED if got[p] != REQUIRED[p]]
+                tag = f"(c_y<a:{int(fy)} z<b:{int(fx)} z<d:{int(fr)} P_s'<e:{int(fs)})"
+                if bad:
+                    print(f"  config {tag}: FAIL  [{'; '.join(bad)}]")
+                else:
+                    print(f"  config {tag}: REALIZABLE")
+                    _passing.append((fy, fx, fr, fs))
+
+if _passing != [(True, True, True, True)]:
+    raise SystemExit("D4CERT FAILED: expected exactly the D4 configuration "
+                     f"to be realizable, got {_passing}")
+print("""  D4CERT OK: exactly one of the 16 configurations is realizable, and it is
+  the D4 table:  P_s' precedes the e-crossing on the s-edge (forced by c.e=0),
+  c_y precedes the a-crossing on the y-edge (forced by c.a=0), and z's
+  crossings precede b's resp. d's on the x/r-circles (forced by z.b=z.d=0).
+  The position table is a certificate, not a drawing.""")
+
 print("\n=== D5: the third basis element of pi_1(F - nu(c)) ===")
 # kappa_3 = tree(p -> Psb) . arc2mid . tree(Pyb -> p): a boundary-collar path of
 # the mid region R_mid from wedge V7 to wedge V3, entirely inside D0: certificate

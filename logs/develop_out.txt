@@ -67,6 +67,29 @@ swap(c@V2) == c@V6                 = RX   OK
   d's corner arc (z.d = 0).  Side-of-O choice for arc1 is immaterial for words
   (O is not removed in C) and for SS23 (c misses O either way).
 
+=== D4CERT: chord-diagram planarity certificate ===
+  config (c_y<a:1 z<b:1 z<d:1 P_s'<e:1): REALIZABLE
+  config (c_y<a:1 z<b:1 z<d:1 P_s'<e:0): FAIL  [c.e=2(need 0)]
+  config (c_y<a:1 z<b:1 z<d:0 P_s'<e:1): FAIL  [d.z=2(need 0)]
+  config (c_y<a:1 z<b:1 z<d:0 P_s'<e:0): FAIL  [c.e=2(need 0); d.z=2(need 0)]
+  config (c_y<a:1 z<b:0 z<d:1 P_s'<e:1): FAIL  [b.z=2(need 0)]
+  config (c_y<a:1 z<b:0 z<d:1 P_s'<e:0): FAIL  [c.e=2(need 0); b.z=2(need 0)]
+  config (c_y<a:1 z<b:0 z<d:0 P_s'<e:1): FAIL  [b.z=2(need 0); d.z=2(need 0)]
+  config (c_y<a:1 z<b:0 z<d:0 P_s'<e:0): FAIL  [c.e=2(need 0); b.z=2(need 0); d.z=2(need 0)]
+  config (c_y<a:0 z<b:1 z<d:1 P_s'<e:1): FAIL  [a.c=2(need 0)]
+  config (c_y<a:0 z<b:1 z<d:1 P_s'<e:0): FAIL  [a.c=2(need 0); c.e=2(need 0)]
+  config (c_y<a:0 z<b:1 z<d:0 P_s'<e:1): FAIL  [a.c=2(need 0); d.z=2(need 0)]
+  config (c_y<a:0 z<b:1 z<d:0 P_s'<e:0): FAIL  [a.c=2(need 0); c.e=2(need 0); d.z=2(need 0)]
+  config (c_y<a:0 z<b:0 z<d:1 P_s'<e:1): FAIL  [a.c=2(need 0); b.z=2(need 0)]
+  config (c_y<a:0 z<b:0 z<d:1 P_s'<e:0): FAIL  [a.c=2(need 0); c.e=2(need 0); b.z=2(need 0)]
+  config (c_y<a:0 z<b:0 z<d:0 P_s'<e:1): FAIL  [a.c=2(need 0); b.z=2(need 0); d.z=2(need 0)]
+  config (c_y<a:0 z<b:0 z<d:0 P_s'<e:0): FAIL  [a.c=2(need 0); c.e=2(need 0); b.z=2(need 0); d.z=2(need 0)]
+  D4CERT OK: exactly one of the 16 configurations is realizable, and it is
+  the D4 table:  P_s' precedes the e-crossing on the s-edge (forced by c.e=0),
+  c_y precedes the a-crossing on the y-edge (forced by c.a=0), and z's
+  crossings precede b's resp. d's on the x/r-circles (forced by z.b=z.d=0).
+  The position table is a certificate, not a drawing.
+
 === D5: the third basis element of pi_1(F - nu(c)) ===
   kappa_3 = SRyx   abel=(1, 1, -1, -1)
   <kappa_3, c> = 0   (must be 0)

@@ -1,0 +1,58 @@
+=== truth columns (rebuilt, lm = k3.r-1) [0s] ===
+truth done [32s]
+
+=== coherence filter: (M-rotation, e0, Theta(s)-form) [32s] ===
+COHERENT rot=2 eM=1 Theta(s)=M^-1.Y  #(dh,eta)=1  lasso-shaped dh=r^-1 eta=1
+COHERENT rot=2 eM=-1 Theta(s)=M.Y  #(dh,eta)=1  lasso-shaped dh=r^-1 eta=1
+COHERENT rot=5 eM=1 Theta(s)=M.Y  #(dh,eta)=1  lasso-shaped dh=x eta=1
+COHERENT rot=5 eM=-1 Theta(s)=M^-1.Y  #(dh,eta)=1  lasso-shaped dh=x eta=1
+4 coherent combos [32s]
+
+=== pairing stage: coherent combos x dir in {A.r-1, A.x} x k [32s] ===
+rot2 eM=1 Th(s)=M^-1.Y dir=A.r-1 k=1: H1=[ 0, 0 ]  matches n in [  ]  [33s]
+rot2 eM=1 Th(s)=M^-1.Y dir=A.r-1 k=-1: H1=[ 0, 0 ]  matches n in [  ]  [33s]
+rot2 eM=1 Th(s)=M^-1.Y dir=A.r-1 k=2: H1=[ 0, 0, 2 ]  matches n in [  ]  [34s]
+rot2 eM=1 Th(s)=M^-1.Y dir=A.x k=1: H1=[ 0, 0 ]  matches n in [ -1, 0 ]  [35s]
+rot2 eM=1 Th(s)=M^-1.Y dir=A.x k=-1: H1=[ 0, 0 ]  matches n in 
+[ -1, 0 ]  [35s]
+rot2 eM=1 Th(s)=M^-1.Y dir=A.x k=2: H1=[ 0, 0, 2 ]  matches n in 
+[ -1, 0 ]  [36s]
+rot2 eM=-1 Th(s)=M.Y dir=A.r-1 k=1: H1=[ 0, 0 ]  matches n in [  ]  [37s]
+rot2 eM=-1 Th(s)=M.Y dir=A.r-1 k=-1: H1=[ 0, 0 ]  matches n in [  ]  [37s]
+rot2 eM=-1 Th(s)=M.Y dir=A.r-1 k=2: H1=[ 0, 0, 2 ]  matches n in [  ]  [38s]
+rot2 eM=-1 Th(s)=M.Y dir=A.x k=1: H1=[ 0, 0 ]  matches n in [ -1, 0 ]  [38s]
+rot2 eM=-1 Th(s)=M.Y dir=A.x k=-1: H1=[ 0, 0 ]  matches n in [ -1, 0 ]  [39s]
+rot2 eM=-1 Th(s)=M.Y dir=A.x k=2: H1=[ 0, 0, 2 ]  matches n in 
+[ -1, 0 ]  [40s]
+rot5 eM=1 Th(s)=M.Y dir=A.r-1 k=1: H1=[ 0, 0 ]  matches n in [ -1, 0 ]  [40s]
+rot5 eM=1 Th(s)=M.Y dir=A.r-1 k=-1: H1=[ 0, 0 ]  matches n in [ -1, 0 ]  [41s]
+rot5 eM=1 Th(s)=M.Y dir=A.r-1 k=2: H1=[ 0, 0, 2 ]  matches n in 
+[ -1, 0 ]  [42s]
+rot5 eM=1 Th(s)=M.Y dir=A.x k=1: H1=[ 0, 0 ]  matches n in [  ]  [43s]
+rot5 eM=1 Th(s)=M.Y dir=A.x k=-1: H1=[ 0, 0 ]  matches n in [  ]  [43s]
+rot5 eM=1 Th(s)=M.Y dir=A.x k=2: H1=[ 0, 0, 2 ]  matches n in [  ]  [44s]
+rot5 eM=-1 Th(s)=M^-1.Y dir=A.r-1 k=1: H1=[ 0, 0 ]  matches n in 
+[ -1, 0 ]  [45s]
+rot5 eM=-1 Th(s)=M^-1.Y dir=A.r-1 k=-1: H1=[ 0, 0 ]  matches n in 
+[ -1, 0 ]  [45s]
+rot5 eM=-1 Th(s)=M^-1.Y dir=A.r-1 k=2: H1=[ 0, 0, 2 ]  matches n in 
+[ -1, 0 ]  [46s]
+rot5 eM=-1 Th(s)=M^-1.Y dir=A.x k=1: H1=[ 0, 0 ]  matches n in [  ]  [47s]
+rot5 eM=-1 Th(s)=M^-1.Y dir=A.x k=-1: H1=[ 0, 0 ]  matches n in [  ]  [47s]
+rot5 eM=-1 Th(s)=M^-1.Y dir=A.x k=2: H1=[ 0, 0, 2 ]  matches n in [  ]  [48s]
+
+=== PAIRING TABLE (pass = matches the n=0 truth class at all k) ===
+  Theta(s) M^-1.Y    dir A.r-1   rot=2 eM= 1   false
+  Theta(s) M^-1.Y    dir A.x     rot=2 eM= 1   true
+  Theta(s) M.Y       dir A.r-1   rot=2 eM=-1   false
+  Theta(s) M.Y       dir A.x     rot=2 eM=-1   true
+  Theta(s) M.Y       dir A.r-1   rot=5 eM= 1   true
+  Theta(s) M.Y       dir A.x     rot=5 eM= 1   false
+  Theta(s) M^-1.Y    dir A.r-1   rot=5 eM=-1   true
+  Theta(s) M^-1.Y    dir A.x     rot=5 eM=-1   false
+
+SUMMARY:  clean<->A.r-1: false   decorated<->A.x: true
+          clean<->A.x  : false   decorated<->A.r-1: true
+E2 NOT in the pre-registered pattern -- interpret per DESIGN Addendum 2 E4.
+
+DONE [48s]

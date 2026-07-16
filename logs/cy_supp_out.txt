@@ -1,0 +1,61 @@
+truth rebuilt [32s]
+Syntax warning: Unbound global variable in cy_supplement.g:62
+  hits := Filtered(c4, w -> ThM = w*Mw*w^-1 or ThM = w*Mw^-1*w^-1);
+                            ^^^
+Syntax warning: Unbound global variable in cy_supplement.g:62
+  hits := Filtered(c4, w -> ThM = w*Mw*w^-1 or ThM = w*Mw^-1*w^-1);
+                                    ^^
+Syntax warning: Unbound global variable in cy_supplement.g:62
+  hits := Filtered(c4, w -> ThM = w*Mw*w^-1 or ThM = w*Mw^-1*w^-1);
+                                               ^^^
+Syntax warning: Unbound global variable in cy_supplement.g:62
+  hits := Filtered(c4, w -> ThM = w*Mw*w^-1 or ThM = w*Mw^-1*w^-1);
+                                                       ^^
+clean-swap transport, rot=2 eM=
+1: conjugators (len<=4) found: true   e.g. r^-1*Y*x*Y^-1
+clean-swap transport, rot=2 eM=
+-1: conjugators (len<=4) found: true   e.g. r^-1*Y*x*Y^-1
+clean-swap transport, rot=5 eM=
+1: conjugators (len<=4) found: true   e.g. x*Y*x^-1*Y^-1
+clean-swap transport, rot=5 eM=
+-1: conjugators (len<=4) found: true   e.g. x*Y*x^-1*Y^-1
+
+=== arbiter: clean-Theta(s) rows, rot in {2,5} [32s] ===
+Syntax warning: Unbound global variable in cy_supplement.g:83
+      hits := Set(List(Filtered(TruthFP, t -> t.k = k and t.fp = fpG), t -> t.\
+n));
+                                                                 ^^^
+clean rot2 eM= 1 dir=A.r-1 k= 1: H1=[ 0, 0 ]  matches n in [  ]  [32s]
+clean rot2 eM= 1 dir=A.r-1 k=-1: H1=[ 0, 0 ]  matches n in [  ]  [33s]
+clean rot2 eM= 1 dir=A.r-1 k= 2: H1=[ 0, 0, 2 ]  matches n in [  ]  [33s]
+  => clean rot2 eM= 1 dir=A.r-1  ALL-k n=0 match: false
+clean rot2 eM= 1 dir=A.x k= 1: H1=[ 0, 0 ]  matches n in [  ]  [34s]
+clean rot2 eM= 1 dir=A.x k=-1: H1=[ 0, 0 ]  matches n in [  ]  [34s]
+clean rot2 eM= 1 dir=A.x k= 2: H1=[ 0, 0, 2 ]  matches n in [  ]  [35s]
+  => clean rot2 eM= 1 dir=A.x  ALL-k n=0 match: false
+clean rot2 eM=-1 dir=A.r-1 k= 1: H1=[ 0, 0 ]  matches n in [  ]  [35s]
+clean rot2 eM=-1 dir=A.r-1 k=-1: H1=[ 0, 0 ]  matches n in [  ]  [35s]
+clean rot2 eM=-1 dir=A.r-1 k= 2: H1=[ 0, 0, 2 ]  matches n in [  ]  [36s]
+  => clean rot2 eM=-1 dir=A.r-1  ALL-k n=0 match: false
+clean rot2 eM=-1 dir=A.x k= 1: H1=[ 0, 0 ]  matches n in [  ]  [36s]
+clean rot2 eM=-1 dir=A.x k=-1: H1=[ 0, 0 ]  matches n in [  ]  [36s]
+clean rot2 eM=-1 dir=A.x k= 2: H1=[ 0, 0, 2 ]  matches n in [  ]  [37s]
+  => clean rot2 eM=-1 dir=A.x  ALL-k n=0 match: false
+clean rot5 eM= 1 dir=A.r-1 k= 1: H1=[ 0, 0 ]  matches n in [  ]  [37s]
+clean rot5 eM= 1 dir=A.r-1 k=-1: H1=[ 0, 0 ]  matches n in [  ]  [38s]
+clean rot5 eM= 1 dir=A.r-1 k= 2: H1=[ 0, 0, 2 ]  matches n in [  ]  [38s]
+  => clean rot5 eM= 1 dir=A.r-1  ALL-k n=0 match: false
+clean rot5 eM= 1 dir=A.x k= 1: H1=[ 0, 0 ]  matches n in [  ]  [39s]
+clean rot5 eM= 1 dir=A.x k=-1: H1=[ 0, 0 ]  matches n in [  ]  [39s]
+clean rot5 eM= 1 dir=A.x k= 2: H1=[ 0, 0, 2 ]  matches n in [  ]  [40s]
+  => clean rot5 eM= 1 dir=A.x  ALL-k n=0 match: false
+clean rot5 eM=-1 dir=A.r-1 k= 1: H1=[ 0, 0 ]  matches n in [  ]  [40s]
+clean rot5 eM=-1 dir=A.r-1 k=-1: H1=[ 0, 0 ]  matches n in [  ]  [40s]
+clean rot5 eM=-1 dir=A.r-1 k= 2: H1=[ 0, 0, 2 ]  matches n in [  ]  [41s]
+  => clean rot5 eM=-1 dir=A.r-1  ALL-k n=0 match: false
+clean rot5 eM=-1 dir=A.x k= 1: H1=[ 0, 0 ]  matches n in [  ]  [41s]
+clean rot5 eM=-1 dir=A.x k=-1: H1=[ 0, 0 ]  matches n in [  ]  [41s]
+clean rot5 eM=-1 dir=A.x k= 2: H1=[ 0, 0, 2 ]  matches n in [  ]  [42s]
+  => clean rot5 eM=-1 dir=A.x  ALL-k n=0 match: false
+
+DONE [42s]

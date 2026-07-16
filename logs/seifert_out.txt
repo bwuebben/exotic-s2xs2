@@ -1,0 +1,601 @@
+=== PHASE 0: reference pi1(N) [0s] ===
+H1(pi1 N) = [ 0, 0, 0 ]  (expected [0,0,0])
+fpN computed [1s]
+
+=== PHASE 1: coherence constraint (free-group identities) [1s] ===
+COHERENT: rot=2 eM=1 es=-1 pl=L dh=r^-1 eta=1
+COHERENT: rot=2 eM=1 es=-1 pl=L dh=r^-1*y*x^-1*y^-1*r*s*r^-1*s^-1*x eta=1
+COHERENT: rot=2 eM=1 es=-1 pl=L dh=r^-1*x^-1*s*r*s^-1*r^-1*y*x*y^-1 eta=1
+COHERENT: rot=2 eM=-1 es=1 pl=L dh=r^-1 eta=1
+COHERENT: rot=2 eM=-1 es=1 pl=L dh=r^-1*x^-1*s*r*s^-1*r^-1*y*x*y^-1 eta=1
+COHERENT: rot=2 eM=-1 es=1 pl=L dh=r^-1*y*x^-1*y^-1*r*s*r^-1*s^-1*x eta=1
+6 coherent P1 combos [1s]
+Theta^2(M) conjugator check: Theta^2(M) = (rx)^-1 M (rx)?  true   (or with eta\
+ twists — informational)
+
+=== PHASE 2: ground truth [1s] ===
+GT-0 lm=r-1(control): H1=[ 0, 0, 0, 2 ]  [1s]
+GT-0 lm=k3.r-1: H1=[ 0, 0, 0 ]  fp=pi1(N) MATCH  [3s]
+GT-0 lm=r-1.k3: H1=[ 0, 0, 0 ]  fp=pi1(N) MATCH  [5s]
+GT-0 lm=k3-1.r-1: H1=[ 0, 0, 0 ]  fp=pi1(N) MATCH  [7s]
+GT-0 lm=r-1.k3-1: H1=[ 0, 0, 0 ]  fp=pi1(N) MATCH  [9s]
+GT-0 survivors: [ "k3.r-1", "r-1.k3", "k3-1.r-1", "r-1.k3-1" ]
+TRUTH lm=k3.r-1 k=1 n=-1 d=1: H1=[ 0, 0 ]  [9s]
+TRUTH lm=k3.r-1 k=1 n=-1 d=-1: H1=[ 0, 0 ]  [9s]
+TRUTH lm=k3.r-1 k=1 n=0 d=1: H1=[ 0, 0 ]  [9s]
+TRUTH lm=k3.r-1 k=1 n=0 d=-1: H1=[ 0, 0 ]  [9s]
+TRUTH lm=k3.r-1 k=1 n=1 d=1: H1=[ 0, 0 ]  [12s]
+TRUTH lm=k3.r-1 k=1 n=1 d=-1: H1=[ 0, 0 ]  [14s]
+TRUTH lm=k3.r-1 k=-1 n=-1 d=1: H1=[ 0, 0 ]  [14s]
+TRUTH lm=k3.r-1 k=-1 n=-1 d=-1: H1=[ 0, 0 ]  [14s]
+TRUTH lm=k3.r-1 k=-1 n=0 d=1: H1=[ 0, 0 ]  [14s]
+TRUTH lm=k3.r-1 k=-1 n=0 d=-1: H1=[ 0, 0 ]  [14s]
+TRUTH lm=k3.r-1 k=-1 n=1 d=1: H1=[ 0, 0 ]  [16s]
+TRUTH lm=k3.r-1 k=-1 n=1 d=-1: H1=[ 0, 0 ]  [19s]
+TRUTH lm=k3.r-1 k=2 n=-1 d=1: H1=[ 0, 0, 2 ]  [19s]
+TRUTH lm=k3.r-1 k=2 n=-1 d=-1: H1=[ 0, 0, 2 ]  [20s]
+TRUTH lm=k3.r-1 k=2 n=0 d=1: H1=[ 0, 0, 2 ]  [20s]
+TRUTH lm=k3.r-1 k=2 n=0 d=-1: H1=[ 0, 0, 2 ]  [21s]
+TRUTH lm=k3.r-1 k=2 n=1 d=1: H1=[ 0, 0, 2 ]  [32s]
+TRUTH lm=k3.r-1 k=2 n=1 d=-1: H1=[ 0, 0, 2 ]  [42s]
+TRUTH lm=r-1.k3 k=1 n=-1 d=1: H1=[ 0, 0 ]  [42s]
+TRUTH lm=r-1.k3 k=1 n=-1 d=-1: H1=[ 0, 0 ]  [42s]
+TRUTH lm=r-1.k3 k=1 n=0 d=1: H1=[ 0, 0 ]  [42s]
+TRUTH lm=r-1.k3 k=1 n=0 d=-1: H1=[ 0, 0 ]  [42s]
+TRUTH lm=r-1.k3 k=1 n=1 d=1: H1=[ 0, 0 ]  [46s]
+TRUTH lm=r-1.k3 k=1 n=1 d=-1: H1=[ 0, 0 ]  [47s]
+TRUTH lm=r-1.k3 k=-1 n=-1 d=1: H1=[ 0, 0 ]  [48s]
+TRUTH lm=r-1.k3 k=-1 n=-1 d=-1: H1=[ 0, 0 ]  [48s]
+TRUTH lm=r-1.k3 k=-1 n=0 d=1: H1=[ 0, 0 ]  [48s]
+TRUTH lm=r-1.k3 k=-1 n=0 d=-1: H1=[ 0, 0 ]  [48s]
+TRUTH lm=r-1.k3 k=-1 n=1 d=1: H1=[ 0, 0 ]  [50s]
+TRUTH lm=r-1.k3 k=-1 n=1 d=-1: H1=[ 0, 0 ]  [53s]
+TRUTH lm=r-1.k3 k=2 n=-1 d=1: H1=[ 0, 0, 2 ]  [54s]
+TRUTH lm=r-1.k3 k=2 n=-1 d=-1: H1=[ 0, 0, 2 ]  [55s]
+TRUTH lm=r-1.k3 k=2 n=0 d=1: H1=[ 0, 0, 2 ]  [55s]
+TRUTH lm=r-1.k3 k=2 n=0 d=-1: H1=[ 0, 0, 2 ]  [56s]
+TRUTH lm=r-1.k3 k=2 n=1 d=1: H1=[ 0, 0, 2 ]  [68s]
+TRUTH lm=r-1.k3 k=2 n=1 d=-1: H1=[ 0, 0, 2 ]  [78s]
+TRUTH lm=k3-1.r-1 k=1 n=-1 d=1: H1=[ 0, 0 ]  [79s]
+TRUTH lm=k3-1.r-1 k=1 n=-1 d=-1: H1=[ 0, 0 ]  [79s]
+TRUTH lm=k3-1.r-1 k=1 n=0 d=1: H1=[ 0, 0 ]  [79s]
+TRUTH lm=k3-1.r-1 k=1 n=0 d=-1: H1=[ 0, 0 ]  [79s]
+TRUTH lm=k3-1.r-1 k=1 n=1 d=1: H1=[ 0, 0 ]  [82s]
+TRUTH lm=k3-1.r-1 k=1 n=1 d=-1: H1=[ 0, 0 ]  [84s]
+TRUTH lm=k3-1.r-1 k=-1 n=-1 d=1: H1=[ 0, 0 ]  [84s]
+TRUTH lm=k3-1.r-1 k=-1 n=-1 d=-1: H1=[ 0, 0 ]  [84s]
+TRUTH lm=k3-1.r-1 k=-1 n=0 d=1: H1=[ 0, 0 ]  [84s]
+TRUTH lm=k3-1.r-1 k=-1 n=0 d=-1: H1=[ 0, 0 ]  [85s]
+TRUTH lm=k3-1.r-1 k=-1 n=1 d=1: H1=[ 0, 0 ]  [86s]
+TRUTH lm=k3-1.r-1 k=-1 n=1 d=-1: H1=[ 0, 0 ]  [90s]
+TRUTH lm=k3-1.r-1 k=2 n=-1 d=1: H1=[ 0, 0, 2 ]  [90s]
+TRUTH lm=k3-1.r-1 k=2 n=-1 d=-1: H1=[ 0, 0, 2 ]  [91s]
+TRUTH lm=k3-1.r-1 k=2 n=0 d=1: H1=[ 0, 0, 2 ]  [91s]
+TRUTH lm=k3-1.r-1 k=2 n=0 d=-1: H1=[ 0, 0, 2 ]  [92s]
+TRUTH lm=k3-1.r-1 k=2 n=1 d=1: H1=[ 0, 0, 2 ]  [104s]
+TRUTH lm=k3-1.r-1 k=2 n=1 d=-1: H1=[ 0, 0, 2 ]  [114s]
+TRUTH lm=r-1.k3-1 k=1 n=-1 d=1: H1=[ 0, 0 ]  [114s]
+TRUTH lm=r-1.k3-1 k=1 n=-1 d=-1: H1=[ 0, 0 ]  [114s]
+TRUTH lm=r-1.k3-1 k=1 n=0 d=1: H1=[ 0, 0 ]  [115s]
+TRUTH lm=r-1.k3-1 k=1 n=0 d=-1: H1=[ 0, 0 ]  [115s]
+TRUTH lm=r-1.k3-1 k=1 n=1 d=1: H1=[ 0, 0 ]  [118s]
+TRUTH lm=r-1.k3-1 k=1 n=1 d=-1: H1=[ 0, 0 ]  [119s]
+TRUTH lm=r-1.k3-1 k=-1 n=-1 d=1: H1=[ 0, 0 ]  [120s]
+TRUTH lm=r-1.k3-1 k=-1 n=-1 d=-1: H1=[ 0, 0 ]  [120s]
+TRUTH lm=r-1.k3-1 k=-1 n=0 d=1: H1=[ 0, 0 ]  [120s]
+TRUTH lm=r-1.k3-1 k=-1 n=0 d=-1: H1=[ 0, 0 ]  [120s]
+TRUTH lm=r-1.k3-1 k=-1 n=1 d=1: H1=[ 0, 0 ]  [122s]
+TRUTH lm=r-1.k3-1 k=-1 n=1 d=-1: H1=[ 0, 0 ]  [125s]
+TRUTH lm=r-1.k3-1 k=2 n=-1 d=1: H1=[ 0, 0, 2 ]  [125s]
+TRUTH lm=r-1.k3-1 k=2 n=-1 d=-1: H1=[ 0, 0, 2 ]  [126s]
+TRUTH lm=r-1.k3-1 k=2 n=0 d=1: H1=[ 0, 0, 2 ]  [127s]
+TRUTH lm=r-1.k3-1 k=2 n=0 d=-1: H1=[ 0, 0, 2 ]  [127s]
+TRUTH lm=r-1.k3-1 k=2 n=1 d=1: H1=[ 0, 0, 2 ]  [139s]
+TRUTH lm=r-1.k3-1 k=2 n=1 d=-1: H1=[ 0, 0, 2 ]  [149s]
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (k3.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (k3.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (k3.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (k3.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (k3.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (k3.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=1) and (k3.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=1) and (r-1.k3,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=1) and (r-1.k3,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=-1) and (r-1.k3,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=-1) and (r-1.k3,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=-1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=-1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (k3.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=1,d=1) and (r-1.k3,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=1,d=1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=1,d=1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=1,d=1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=1,d=-1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=1,d=-1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=1,d=-1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3,n=1,d=-1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=0,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=1,d=1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=1: columns (k3-1.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3-1,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3-1,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=1: columns (r-1.k3-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3-1,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=1: columns (r-1.k3-1,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (k3.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (k3.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (k3.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (k3.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (k3.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (k3.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=1) and (k3.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=1) and (r-1.k3,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=1) and (r-1.k3,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=-1) and (r-1.k3,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=-1) and (r-1.k3,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=-1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=-1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=1,d=1) and (r-1.k3,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=1,d=1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=1,d=1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=1,d=1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=1,d=-1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=1,d=-1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=1,d=-1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3,n=1,d=-1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=0,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=1,d=1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=-1: columns (k3-1.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3-1,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3-1,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3-1,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=-1: columns (r-1.k3-1,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (k3.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (k3.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (k3.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (k3.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (k3.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (k3.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=1) and (k3.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=1) and (r-1.k3,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=1) and (r-1.k3,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=-1) and (r-1.k3,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=-1) and (r-1.k3,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=-1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=-1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (k3.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (r-1.k3,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=-1) and (r-1.k3,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=-1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=1) and (r-1.k3,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=0,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=1,d=1) and (r-1.k3,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=1,d=1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=1,d=1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=1,d=1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=1,d=-1) and (k3-1.r-1,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=1,d=-1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=1,d=-1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3,n=1,d=-1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=1) and (k3-1.r-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=-1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=0,d=1) and (k3-1.r-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=0,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=1,d=1) and (k3-1.r-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=1) have EQUAL fp
+NOTE k=2: columns (k3-1.r-1,n=1,d=-1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3-1,n=-1,d=1) and (r-1.k3-1,n=-1,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3-1,n=-1,d=1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3-1,n=-1,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=1) have EQUAL fp
+NOTE k=2: columns (r-1.k3-1,n=-1,d=-1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3-1,n=0,d=1) and (r-1.k3-1,n=0,d=-1) have EQUAL fp
+NOTE k=2: columns (r-1.k3-1,n=1,d=1) and (r-1.k3-1,n=1,d=-1) have EQUAL fp
+truth columns done [149s]
+
+=== PHASE 3: pipeline side [149s] ===
+PROBE complement (no filling): H1=[ 0, 0, 0 ]  (expected [0,0,0])
+PROBE kill-M: H1=[ 0, 0, 0 ]  fp=pi1(N)? true  (must be true)  [151s]
+OURS P1(combo 1) k=1: H1=[ 0, 0 ]  matches=[  ]  [152s]
+OURS P2(combo 1) k=1: H1=[ 0, 0 ]  matches=[  ]  [153s]
+OURS P1(combo 1) k=-1: H1=[ 0, 0 ]  matches=[  ]  [153s]
+OURS P2(combo 1) k=-1: H1=[ 0, 0 ]  matches=[  ]  [154s]
+OURS P1(combo 1) k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [155s]
+OURS P2(combo 1) k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [156s]
+OURS P1(combo 2) k=1: H1=[ 0, 0 ]  matches=[  ]  [157s]
+OURS P2(combo 2) k=1: H1=[ 0, 0 ]  matches=[  ]  [157s]
+OURS P1(combo 2) k=-1: H1=[ 0, 0 ]  matches=[  ]  [158s]
+OURS P2(combo 2) k=-1: H1=[ 0, 0 ]  matches=[  ]  [159s]
+OURS P1(combo 2) k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [160s]
+OURS P2(combo 2) k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [161s]
+
+=== W-PANEL (single-slot errors inside the P1 package) [161s] ===
+W1 dir=A.r k=1: H1=[ 0, 0 ]  matches=[  ]  [162s]
+W1 dir=A.r k=-1: H1=[ 0, 0 ]  matches=[  ]  [162s]
+W1 dir=A.r k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [164s]
+W2 dir=A.x-1 k=1: H1=[ 0, 0 ]  matches=[  ]  [164s]
+W2 dir=A.x-1 k=-1: H1=[ 0, 0 ]  matches=[  ]  [165s]
+W2 dir=A.x-1 k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [166s]
+W3 dir=A.x k=1: H1=[ 0, 0 ]  matches=
+[ [ "k3.r-1", -1, 1 ], [ "k3.r-1", -1, -1 ], [ "k3.r-1", 0, 1 ], 
+  [ "k3.r-1", 0, -1 ], [ "r-1.k3", -1, 1 ], [ "r-1.k3", -1, -1 ], 
+  [ "r-1.k3", 0, 1 ], [ "r-1.k3", 0, -1 ], [ "k3-1.r-1", -1, 1 ], 
+  [ "k3-1.r-1", -1, -1 ], [ "k3-1.r-1", 0, 1 ], [ "k3-1.r-1", 0, -1 ], 
+  [ "r-1.k3-1", -1, 1 ], [ "r-1.k3-1", -1, -1 ], [ "r-1.k3-1", 0, 1 ], 
+  [ "r-1.k3-1", 0, -1 ] ]  [167s]
+W3 dir=A.x k=-1: H1=[ 0, 0 ]  matches=
+[ [ "k3.r-1", -1, 1 ], [ "k3.r-1", -1, -1 ], [ "k3.r-1", 0, 1 ], 
+  [ "k3.r-1", 0, -1 ], [ "r-1.k3", -1, 1 ], [ "r-1.k3", -1, -1 ], 
+  [ "r-1.k3", 0, 1 ], [ "r-1.k3", 0, -1 ], [ "k3-1.r-1", -1, 1 ], 
+  [ "k3-1.r-1", -1, -1 ], [ "k3-1.r-1", 0, 1 ], [ "k3-1.r-1", 0, -1 ], 
+  [ "r-1.k3-1", -1, 1 ], [ "r-1.k3-1", -1, -1 ], [ "r-1.k3-1", 0, 1 ], 
+  [ "r-1.k3-1", 0, -1 ] ]  [168s]
+W3 dir=A.x k=2: H1=[ 0, 0, 2 ]  matches=
+[ [ "k3.r-1", -1, 1 ], [ "k3.r-1", -1, -1 ], [ "k3.r-1", 0, 1 ], 
+  [ "k3.r-1", 0, -1 ], [ "r-1.k3", -1, 1 ], [ "r-1.k3", -1, -1 ], 
+  [ "r-1.k3", 0, 1 ], [ "r-1.k3", 0, -1 ], [ "k3-1.r-1", -1, 1 ], 
+  [ "k3-1.r-1", -1, -1 ], [ "k3-1.r-1", 0, 1 ], [ "k3-1.r-1", 0, -1 ], 
+  [ "r-1.k3-1", -1, 1 ], [ "r-1.k3-1", -1, -1 ], [ "r-1.k3-1", 0, 1 ], 
+  [ "r-1.k3-1", 0, -1 ] ]  [169s]
+W4 dir=A.y-1r-1y k=1: H1=[ 0, 0 ]  matches=[  ]  [170s]
+W4 dir=A.y-1r-1y k=-1: H1=[ 0, 0 ]  matches=[  ]  [171s]
+W4 dir=A.y-1r-1y k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [172s]
+W5 dir=A.r-1[x,y] k=1: H1=[ 0, 0 ]  matches=[  ]  [173s]
+W5 dir=A.r-1[x,y] k=-1: H1=[ 0, 0 ]  matches=[  ]  [174s]
+W5 dir=A.r-1[x,y] k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [175s]
+W8 dir=A.r-1.M k=1: H1=[ 0, 0 ]  matches=[  ]  [176s]
+W8 dir=A.r-1.M k=-1: H1=[ 0, 0 ]  matches=[  ]  [176s]
+W8 dir=A.r-1.M k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [178s]
+W6 Theta(s) x-route k=1: H1=[ 0, 0 ]  matches=[  ]  [178s]
+W6 Theta(s) x-route k=-1: H1=[ 0, 0 ]  matches=[  ]  [179s]
+W6 Theta(s) x-route k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [181s]
+W7 drift-blind k=1: H1=[ 0, 0 ]  matches=[  ]  [181s]
+W7 drift-blind k=-1: H1=[ 0, 0 ]  matches=[  ]  [181s]
+W7 drift-blind k=2: H1=[ 0, 0, 2 ]  matches=[  ]  [182s]
+
+DONE [182s]

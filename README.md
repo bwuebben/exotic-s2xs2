@@ -43,6 +43,18 @@ exactly one such error in an earlier version of one direction word
 documents the found-and-fixed derivation), after which **every verdict was
 re-established with the corrected, sign-coupled word**.
 
+A second calibration targets the one input T⁴ cannot see — the
+monodromy-drift word: torus surgery along the drift section of
+MT(φ₀)×S¹, where the ground truths are classified torus-twist graph
+manifolds (`decide_seifert.g`). With the basing-coherent words the pipeline
+reproduces the classified groups at three surgery coefficients in both
+mirror packages, and seven wrong-word families — including the
+whisker-conjugate family no earlier instrument could see — fail visibly.
+This test's own first run caught (and fixed) a basing incoherence in its
+construction (`confirm_coherent.g` records the localization); the arc
+convention it exposed shifts one sweep index and is covered by the
+both-arc grid certification above.
+
 Six cells are decided by coset enumeration; the corrected word makes the rest
 enumeration-blind — past 10⁸ cosets on the two hardest cells (`tc_deep.g`),
 which also survived a 56-CPU-hour finite-quotient search in their pre-repair
@@ -90,6 +102,8 @@ python3 scripts/develop.py
 | `pi1_v2b.g` | controls + E2 sensitivity (120 seeded trials) | `SUMMARY C: TRIVIAL=58 FINITE=0 H1=7 BLOWUP=55` | ~5 s |
 | `ap_check.g` | E3: Akhmedov–Park Lemma 8 ⇒ π₁(Mₙᵖ) = ℤ/p | ℤ/1, ℤ/1, ℤ/1, ℤ/2, ℤ/3 | ~6 min |
 | `decide_t4.g` | **known-answer calibration** on the Baldridge–Kirk T⁴ configuration: derived lassos (1, b) pass 64/64 with the exact tr 3/tr 1 fingerprint split; every wrong lasso pair fails 0/64 (half abelian); single surgery = H₃(ℤ)×ℤ 8/8; BK's own words cross-check | `logs/t4_out.txt` | ~20 min |
+| `decide_seifert.g` | **Seifert drift calibration**: surgery along the drift section λ×S¹ ⊂ MT(φ₀)×S¹ against classified torus-twist ground truths; free-group coherence constraints pin the input package (transport conjugator = the lasso r⁻¹, signs anti-coupled); coherent words reproduce the classified groups at k ∈ {1, −1, 2}; seven wrong-word families separated at every k | `logs/seifert_out.txt` | ~3 min |
+| `confirm_coherent.g` | localization follow-up to the above: the basing-coherent drift words pass (predictions C1–C2), the incoherent mix fails (C3) — the arc goes with the basing | `logs/confirm_out.txt` | ~1 min |
 | `decide.g` | phase-1 harness (self-test mode without inputs; honest 288-case sweep with the derived, sign-coupled direction words) | see `logs/honest_run_2.log` (pre-repair record: `honest_run_1.log`) | ~1 min |
 | `diag_dirTbBase.g`, `diag_kb.g`, `diag_fullgrid.g`, `diag_r3.g` | the found-and-fixed audit trail: all 8 candidate resolutions of the pushoff-basing correction at the LP cell (enum + KB certification of every blowup, 256/256 trivial) and both lasso arcs across the full completed grid (576/576 certified trivial) | `logs/diag_*_out.txt` | ~30 min total |
 | `placement_check.g` | correction-placement robustness at the LP cell | `TRIVIAL=192 BLOWUP=64 FINITE>1=0 H1nonzero=0` (blowups decided by the KB certificates) | ~1 min |

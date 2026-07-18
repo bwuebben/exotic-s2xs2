@@ -11,7 +11,10 @@ by Bernd J. Wuebben (arXiv links to follow). A step-by-step expository
 companion to the computation — every corrected relation and every direction
 word worked end to end at tutorial grain, closing with the Baldridge–Kirk T⁴
 configuration as a fully worked calibration example — is
-`papers/walkthrough.pdf`. Everything needed to reproduce every
+`papers/walkthrough.pdf`, and a one-page relator sheet — every relator of the
+completed $(0,0)$ presentation with its certificate pointer, plus the
+diff-protocol equivalences for comparing against an independently derived
+presentation — is `papers/relator_sheet_00.pdf`. Everything needed to reproduce every
 number in both papers is here; total runtime is minutes on a laptop (except the
 optional finite-quotient sweep, ~56 CPU-hours).
 
@@ -143,7 +146,7 @@ committed logs.
 ## Layout
 
 ```
-papers/    the two papers (PDF)
+papers/    the two papers, the walkthrough companion, and the relator sheet (PDF)
 scripts/   GAP scripts + the developing engine (Python)
 logs/      outputs of every run referenced in the papers
 docs/      GAP install notes

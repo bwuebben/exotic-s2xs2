@@ -1,0 +1,4 @@
+h fixes [x,y] (top convention): true
+h^6 = conj by c^-1: true
+h^6 = conj by c:    false
+h^3(x)=y*x^-1*y^-1  h^3(y)=y*x*y^-1*x^-1*y^-1

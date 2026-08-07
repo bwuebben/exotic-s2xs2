@@ -1,0 +1,10 @@
+COMPLETE m=-1 n=-1: triv=32 blow=0 fin=0 h1=0
+COMPLETE m=-1 n=0: triv=32 blow=0 fin=0 h1=0
+COMPLETE m=-1 n=1: triv=0 blow=32 fin=0 h1=0
+COMPLETE m=0 n=-1: triv=32 blow=0 fin=0 h1=0
+COMPLETE m=0 n=0: triv=32 blow=0 fin=0 h1=0
+COMPLETE m=0 n=1: triv=0 blow=32 fin=0 h1=0
+COMPLETE m=1 n=-1: triv=32 blow=0 fin=0 h1=0
+COMPLETE m=1 n=0: triv=32 blow=0 fin=0 h1=0
+COMPLETE m=1 n=1: triv=0 blow=32 fin=0 h1=0
+DONE

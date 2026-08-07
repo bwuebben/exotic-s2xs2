@@ -1,0 +1,8 @@
+### SELF-TEST MODE (direction words unset) ###
+selftest pi1(R) | H1=[ 0, 0 ]
+selftest uncorrected LP | H1=0 | |G|=1
+selftest one surgery | H1=[ 0 ]
+### SMOKE: H1 of the honest-shape presentation (placeholder directions,
+###        verdicts suppressed — NOT an honest run) ###
+smoke m=0 n=0 | H1=0 (verdict suppressed)
+smoke m=1 n=-1 | H1=0 (verdict suppressed)

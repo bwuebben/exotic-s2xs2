@@ -1,0 +1,4 @@
+deep TC cell(1,1) e=[ 1, 1, 1, 1, 1 ] max=1e8 [0s]
+  blowup at 1e8 [65s]
+deep TC cell(-1,1) e=[ 1, 1, 1, 1, 1 ] max=1e8 [65s]
+  blowup at 1e8 [128s]

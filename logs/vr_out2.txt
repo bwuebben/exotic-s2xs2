@@ -1,0 +1,3 @@
+no fillings (expect H1 = Z^2):        [ 0, 0 ]
+fiber-only fillings (expect H1 = Z^2): [ 0, 0 ]
+one base filling (expect H1 = Z):      [ 0 ]

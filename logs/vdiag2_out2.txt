@@ -1,0 +1,10 @@
+DIAG2 m=-1 n=-1: triv=0 blow=64 fin=0 h1=0
+DIAG2 m=-1 n=0: triv=0 blow=64 fin=0 h1=0
+DIAG2 m=-1 n=1: triv=0 blow=64 fin=0 h1=0
+DIAG2 m=0 n=-1: triv=8 blow=56 fin=0 h1=0
+DIAG2 m=0 n=0: triv=0 blow=64 fin=0 h1=0
+DIAG2 m=0 n=1: triv=0 blow=64 fin=0 h1=0
+DIAG2 m=1 n=-1: triv=0 blow=64 fin=0 h1=0
+DIAG2 m=1 n=0: triv=0 blow=64 fin=0 h1=0
+DIAG2 m=1 n=1: triv=0 blow=64 fin=0 h1=0
+DIAG2 TOTAL: triv=8 blow=568 fin=0 h1=0

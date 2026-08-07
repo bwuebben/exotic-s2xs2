@@ -1,0 +1,27 @@
+=== 1. meridian words: ours vs BK (conjugator, sign) ===
+mu1: [b,y] = w [b^-1,y^-1]^eps w^-1 for (w,eps) in 
+[ [ "b*y", 1 ], [ "y*b", 1 ] ]
+mu1 conjugate of BK's: true
+mu2: b^-1[b,x]b = w [x^-1,b]^eps w^-1 for (w,eps) in 
+[ [ "b^-1*x", 1 ], [ "x*b^-1", 1 ] ]
+mu2 conjugate of BK's: true
+
+=== 2. pushoff words: literal string diff ===
+m1 = x (literal): true
+m2 = y (literal): true
+l1 = a (literal): true
+l2 ours = b a b^-1 = BK's l2 (literal, SAME chirality): true
+
+=== 3. the chirality is a puncture datum ===
+mirror gap (bab^-1)^-1(b^-1ab) = b*a^-1*b^-2*a*b
+gap nontrivial in the free (punctured) group: true
+gap abelianizes to 0  (=> gap in <<[a,b]>> = derived subgroup: dies iff the pu\
+ncture is capped): true
+
+=== 4. relator lists: ours vs BK, as sets ===
+relator lists coincide as sets (up to conj/inv): true
+
+GT1 DIFF: ALL CHECKS PASS -- our punctured-model package matches
+Baldridge-Kirk's word for word (mu's up to explicit conjugators, the
+rest literally), with the l2-chirality agreeing and certified to be a
+genuinely punctured-model datum.

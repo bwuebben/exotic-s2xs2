@@ -1,6 +1,6 @@
 # exotic-s2xs2
 
-Scripts, certificates and run logs for
+Scripts and run logs for
 
 - **An exotic S²×S² and an exotic ℂP²#ℂP̄²**
   (`papers/exotic-s2xs2-and-cp2.pdf`), 32 pp: Part I the reduction
@@ -9,14 +9,16 @@ Scripts, certificates and run logs for
 
 by Bernd Johannes Wuebben.
 
-A step-by-step expository companion to the computation (every corrected
-relation and every direction word worked end to end at tutorial grain, closing
-with the Baldridge–Kirk T⁴ configuration as a fully worked calibration example)
-is `papers/walkthrough.pdf`; its section pointers refer to an earlier version
-of the manuscript. Table 1 of the manuscript (§9.1) lists every relation of the
-system decided at the Lidman–Piccirillo surgery with its record pointer, and
-Appendix A.4 gives the protocol for diffing an independently derived relation
-sheet against it. Everything needed to reproduce every number in the
+A step-by-step expository companion to the computation is
+`papers/walkthrough.pdf` (11 pp). It follows the August 15 proof boundary: the
+marked-surface bridge, every corrected relation and direction word, the
+drilled-fiber relation, and the epimorphism onto $\pi_1(V)$ are worked at
+tutorial grain; the fixed-$V$ $4{,}096$-case decision is separated from the
+nine-pair diagnostic grids; and the Baldridge–Kirk T⁴ configuration is a fully
+worked calibration example. Table 1 of the manuscript (§9.1) lists every
+relation of the system used at the specified Lidman–Piccirillo surgery with
+its verification pointer, and Appendix A.4 gives the protocol for diffing an
+independently derived relation sheet against it. Everything needed to reproduce every number in the
 manuscript is here; total runtime is minutes on a laptop (except the optional
 finite-quotient sweep, ~56 CPU-hours).
 

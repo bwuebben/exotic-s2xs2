@@ -4,7 +4,7 @@ baseline (honest words)          : SILENT  (enum-trivial)
 -- dirTaBase (the drift word) --
 TaB := A       (drift dropped)   : SILENT  (enum-trivial)
 TaB := A*r     (drift inverted)  : SILENT  (blowup, KB-trivial)
-TaB := A*x     (other arc; legit): SILENT  (enum-trivial)
+TaB := A*r^-1  (adjacent n=1)    : SILENT  (enum-trivial)
 TaB := r^-1*A  (order swapped)   : SILENT  (blowup, KB-trivial)
 
 -- dirTaFib --

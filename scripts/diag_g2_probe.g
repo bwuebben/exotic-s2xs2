@@ -1,4 +1,6 @@
 # diag_g2_probe.g — DIAGNOSTIC (2026-07-15). Why does kb_certify G2 (diagram 2,
+# Historical pre-T_alpha-reindex probe; its Ar^-1 zero section and log are
+# retained for reproducibility and are not used by the current theorem.
 # cells (+-1,+1), honest dirTbBase) return NOT CERTIFIED uniformly (0/128)?
 # Distinguish: inconclusive (KB no confluence) vs nontrivial-or-mixed.
 # Then: same case with the additional true, diagram-independent relation R3

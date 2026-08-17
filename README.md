@@ -10,12 +10,14 @@ Scripts and run logs for
 by Bernd Johannes Wuebben.
 
 A step-by-step expository companion to the computation is
-`papers/walkthrough.pdf` (11 pp). It follows the August 15 proof boundary: the
-marked-surface bridge, every corrected relation and direction word, the
+`papers/walkthrough.pdf` (11 pp). It follows the August 16 basing repair and
+proof boundary: the marked-surface bridge, every corrected relation and direction word, the
 drilled-fiber relation, and the epimorphism onto $\pi_1(V)$ are worked at
-tutorial grain; the fixed-$V$ $4{,}096$-case decision is separated from the
+tutorial grain; the specified $y_1/Ax$ $4{,}096$-case decision is separated
+from the adjacent $y_2/Ar^{-1}$ run and from the
 nine-pair diagnostic grids; and the Baldridge–Kirk T⁴ configuration is a fully
-worked calibration example. Table 1 of the manuscript (§9.1) lists every
+worked finite-fingerprint calibration example. Table 1 of the manuscript
+(§9.1) lists every
 relation of the system used at the specified Lidman–Piccirillo surgery with
 its verification pointer, and Appendix A.4 gives the protocol for diffing an
 independently derived relation sheet against it. Everything needed to reproduce every number in the
@@ -58,12 +60,15 @@ the consistency tests, and the finite-presentation decisions. The relation
 system is proved to **surject** onto π₁(V) (§10), so a trivial outcome is a
 proof and a nontrivial one would concern the presented group alone.
 
-The proof-level decision is `fixed_v_certify.g`: for the fixed piece, coset
-enumeration terminates with order one in **all 4,096** cases of the robustness
+The proof-level decision is `fixed_v_certify.g`: for the specified piece with
+the $y_1$-based direction word $Ax$, coset enumeration terminates with order
+one in **all 4,096** cases of the robustness
 family, which independently varies the five signs of the relation sheet, the
 left/right placement of all three transport corrections, both conjugating arcs
 for the $Bs$ correction, and both arc/sign/placement choices in the $T_\beta$
-push off (Remark 11.1). It uses core GAP only.
+push off (Remark 11.1). The script separately repeats the $4{,}096$ cases with
+the adjacent $y_2$-based word $Ar^{-1}=Ax(rx)^{-1}$; that run is also entirely
+trivial but is not used for the specified $n=0$ piece. It uses core GAP only.
 
 The remaining grids — the nine formal exponent pairs $(m,n)\in\{-1,0,1\}^2$ in
 two based diagrams, 1,408 relation systems in all — are **diagnostics**. Every
@@ -72,12 +77,15 @@ finite nontrivial group; the enumeration overflows recorded below carry no
 group-theoretic conclusion, and no simple connectivity is claimed for the
 eight additional parametrizations.
 
-The derivation is calibrated on a configuration with an independently known
-answer, the Baldridge–Kirk double-Luttinger tori in T⁴ (`decide_t4.g`): with
-correctly derived lasso data the harness reproduces the published non-abelian
-fundamental groups in all 64 conventions, with the exact tr 3 / tr 1 split, and
-every wrong lasso pair fails all 64, half of them abelian, the signature of a
-missed whisker crossing. That calibration found (and led to the repair of)
+The derivation is calibrated on the Baldridge–Kirk double-Luttinger tori in T⁴
+(`decide_t4.g`). With correctly derived lasso data, all 64 conventions have
+the expected abelianization, an explicit non-abelian finite quotient, and the
+expected low-index subgroup fingerprint through index 5, including the exact
+tr 3 / tr 1 split. Every wrong lasso pair fails this comparison in all 64
+cases; half of six wrong families are abelian, the signature of a missed
+whisker crossing. These finite fingerprints are discriminating checks, not
+proofs that two finitely presented groups are isomorphic. The calibration
+found (and led to the repair of)
 exactly one such error in an earlier version of one direction word
 (`dir_Tβ^base`; §8.5 of the manuscript documents the found-and-fixed
 derivation), after which **every conclusion was re-established with the
@@ -85,10 +93,11 @@ corrected, sign-coupled word**.
 
 A second calibration targets the one input T⁴ cannot see, the
 monodromy-drift word: torus surgery along the drift section of
-MT(φ₀)×S¹, where the known answers are classified torus-twist graph
-manifolds (`decide_seifert.g`). With the basing-coherent words the derivation
-reproduces the classified groups at three surgery coefficients in both
-mirror packages, and seven wrong-word families (including the
+MT(φ₀)×S¹, compared with independently presented torus-twist graph
+manifolds (`decide_seifert.g`). With the basing-coherent words, the
+abelianizations and low-index subgroup fingerprints through index 6 match at
+three surgery coefficients in both mirror packages, while seven wrong-word
+families (including the
 whisker-conjugate family no earlier instrument could see) fail visibly.
 This test's own first run caught (and fixed) a basing incoherence in its
 construction (`confirm_coherent.g` records the localization); the arc
@@ -117,9 +126,10 @@ python3 scripts/develop.py
 ```
 
 The proof-level check is `gap -q -A scripts/fixed_v_certify.g`; it needs core
-GAP only and must report `TOTAL=4096 TRIVIAL=4096` with no overflows, no
-finite nontrivial outcomes and no nonzero abelianizations. The Knuth–Bendix
-scripts concern the diagnostic grids.
+GAP only and must report `TOTAL=4096 TRIVIAL=4096` with no overflows, finite
+nontrivial outcomes, or nonzero abelianizations first for `FIXED V (y1/Ax)`
+and then for `ADJACENT T_ALPHA SECTION (y2/Ar^-1)`. The first run is the one
+used by the theorem. The Knuth–Bendix scripts concern the diagnostic grids.
 
 ## What each script certifies
 
@@ -127,16 +137,16 @@ scripts concern the diagnostic grids.
 |---|---|---|---|
 | `monodromy_check2.g` | the trefoil monodromy model (fixes [x,y] exactly; h⁶ = boundary twist; h³ = −id) | `true / true / false` + h³ images | <1 s |
 | `model_check3.g` | h = T_a∘T_b (order pinned); relation preservation; ψφψ⁻¹φ = h∗h⁻¹; fiber-H₁ Smith form | all `true`, diagonal `[1,1,1,1]` | <1 s |
-| `develop.py` | the development algorithm + validations V1–V5; derived words: a, b, d, e; c ≃ (rx)⁻¹; z ≃ sy; lasso δ = r⁻¹; κ₃ = s⁻¹r⁻¹yx | all `OK`; see `logs/develop_out.txt` | <1 s |
+| `develop.py` | the development algorithm + validations V1–V5; derived words: a, b, d, e; c ≃ (rx)⁻¹; source homology check $[z]=[y]-[s]$; lasso δ = r⁻¹; κ₃ = s⁻¹r⁻¹yx | all `OK`; see `logs/develop_out.txt` | <1 s |
 | `pi1_grid.g` | experiment E1: all 72 uncorrected candidate presentations collapse | 72 × `\|G\| = 1` | ~1 s |
 | `pi1_v2b.g` | controls + E2 sensitivity (120 seeded trials): both nondegenerate outcomes are generic, so a trivial outcome obtained from guessed words is worthless | `SUMMARY C: TRIVIAL=69 FINITE=0 H1=7 BLOWUP=44` | ~5 s |
 | `ap_check.g` | E3: Akhmedov–Park Lemma 8 ⇒ π₁(Mₙᵖ) = ℤ/p at five parameter values | ℤ/1, ℤ/1, ℤ/1, ℤ/2, ℤ/3 | ~6 min |
-| **`fixed_v_certify.g`** | **the proof-level decision**: the fixed piece V = V′₀,₀ with R₃, over all 4,096 sign, arc and placement choices; core GAP only | `FIXED V WITH R3: TOTAL=4096 TRIVIAL=4096 OVERFLOW=0 FINITE>1=0 H1nonzero=0` (`logs/fixed_v_certify_out.txt`) | ~10 min |
-| `decide_t4.g` | **known-answer calibration** on the Baldridge–Kirk T⁴ configuration: derived lassos (1, b) pass 64/64 with the exact tr 3/tr 1 split; every wrong lasso pair fails 0/64 (half abelian); single surgery = H₃(ℤ)×ℤ 8/8; BK's own words cross-check | `logs/t4_out.txt` | ~20 min |
+| **`fixed_v_certify.g`** | **the proof-level decision**: the specified $y_1/Ax$ piece V = V′₀,₀ with R₃ over all 4,096 sign, arc, and placement choices, followed by the adjacent $y_2/Ar^{-1}$ section over the same 4,096 choices; core GAP only | both lines report `TOTAL=4096 TRIVIAL=4096 OVERFLOW=0 FINITE>1=0 H1nonzero=0` (`logs/fixed_v_certify_out.txt`) | ~20 min |
+| `decide_t4.g` | **finite-fingerprint calibration** on the Baldridge–Kirk T⁴ configuration: derived lassos (1, b) pass 64/64 in abelianization, explicit non-abelian quotients, and low-index subgroup invariants through index 5, including the tr 3/tr 1 split; every wrong lasso pair fails; BK's own words agree case by case | `logs/t4_out.txt` | ~20 min |
 | `gt1_diff.g` | string-level word diff against Baldridge–Kirk Theorem 1 in the punctured model: meridians match up to explicit basing conjugators, push offs match literally including the ℓ₂ = bab⁻¹ chirality (derived, not chosen), the mirror chirality is certified to be a puncture word, and the two relation lists coincide as sets | `logs/gt1_out.txt` | <1 s |
-| `decide_seifert.g` | **Seifert drift calibration**: surgery along the drift section λ×S¹ ⊂ MT(φ₀)×S¹ against classified torus-twist known answers; free-group coherence constraints pin the input package (transport conjugator = the lasso r⁻¹, signs anti-coupled); coherent words reproduce the classified groups at k ∈ {1, −1, 2}; seven wrong-word families separated at every k | `logs/seifert_out.txt` | ~3 min |
+| `decide_seifert.g` | **Seifert drift calibration**: surgery along the drift section λ×S¹ ⊂ MT(φ₀)×S¹ compared with independently presented torus-twist groups; coherent words match abelianization and low-index subgroup fingerprints through index 6 at k ∈ {1, −1, 2}; seven wrong-word families are separated at every k | `logs/seifert_out.txt` | ~3 min |
 | `confirm_coherent.g` | localization follow-up to the above: the basing-coherent drift words pass (predictions C1–C2), the incoherent mix fails (C3); the arc goes with the basing | `logs/confirm_out.txt` | ~1 min |
-| `cy_pairing.g` (+ `cy_supplement.g`) | the **degenerate-basing pairing derived**: split-generator model at the basing point itself; the whisker's approach side determines transport conjugator and push-off label (y₁-side ⟷ r⁻¹ ⟷ Ax; y₂-side ⟷ x ⟷ Ar⁻¹), cross-pairings fail, and no undecorated transport survives the known answer (the supplement sends the clean rows to the arbiter directly) | `logs/cy_out.txt`, `logs/cy_supp_out.txt` | ~2 min |
+| `cy_pairing.g` (+ `cy_supplement.g`) | the **degenerate-basing pairing derived**: split-generator model at the basing point itself; the whisker's approach side determines transport conjugator and push-off label (y₁-side ⟷ r⁻¹ ⟷ Ax; y₂-side ⟷ x ⟷ Ar⁻¹), cross-pairings fail, and no undecorated transport survives the finite-fingerprint comparison | `logs/cy_out.txt`, `logs/cy_supp_out.txt` | ~2 min |
 | `decide.g` | phase-1 harness (self-test mode without inputs; production 288-case sweep of the initial relation system with the derived, sign-coupled direction words) | see `logs/honest_run_2.log` (earlier record: `honest_run_1.log`) | ~1 min |
 | `vsens.g` | one-at-a-time perturbation of the derived input words at the surgery variant (drift dropped, push off inverted, pre-repair word restored, correction sign flipped): 14 of 15 perturbations still present the trivial group, H₁ = 0 throughout — the quantitative reason the decision procedures alone settle nothing about geometric correctness | `logs/vsens_out.txt` | ~1 min |
 | `vperiph.g`, `vperiph2.g` | peripheral-class probes of the relation group (quotient battery, then low-index coset actions); diagnostic only, since the relation group is known to surject onto the complement group, not to present it | `logs/vperiph_out.txt`, `logs/vperiph2_out.txt` | ~2 min |
@@ -144,15 +154,15 @@ scripts concern the diagnostic grids.
 | `placement_check.g` | correction-placement robustness at the LP cell with R₃ (2³ placements × signs) | `PLACEMENT SWEEP WITH R3 (m=0,n=0): ENUM_TRIVIAL=256 KB_TRIVIAL=0 INCONCLUSIVE=0 FINITE>1=0 H1nonzero=0` | ~1 min |
 | `vdiag2.g` | the independently derived second based diagram (576 diagnostic systems; enumeration only, since the corrected word is enumeration-hostile here; H₁ = 0 in all, zero finite>1) | see `logs/vdiag2_out2.txt`; rewriting in `kb_diag2_full.g` | ~2 min |
 | `vr_check.g` | known-answer probes (no fillings → ℤ²; fiber-only → ℤ²; one filling → ℤ) | `[0,0] / [0,0] / [0]` | <1 s |
-| `decide2.g` | the R₃-augmented relation system: the full formal sweep | `logs/decide2_out2.txt`: 6 of the 9 formal exponent pairs trivial in all 32 conventions, the LP pair (0,0) among them; the n=+1 column overflows (decided by rewriting below) | ~2 min |
-| `phase2_parallel.sh` (+ `phase2_common.g`, `phase2_worker.g`) | the two hardest formal systems, 8 representative sign cases: Tietze to 3 gen/7 relations; enumeration past 8×10⁶ cosets; no subgroup of index ≤ 6; no quotient onto the 17 simples ≤ 14880 (except U₃(3)) | `logs/phase2_par_out.txt` | ~6 min (8-wide) |
-| `phase3_resume.sh` (+ `phase3_worker.g`; `phase3_parallel.sh` from scratch) | same 8 cases: no subgroup of index ≤ 7; no quotient onto the remaining simples ≤ 10⁵ (U₃(3), A₈, L₃(4), …, U₃(4), L₂(53), M₁₂) ⇒ **no nontrivial finite quotient of order ≤ 10⁵** | `logs/phase3_out.txt`, manifest `logs/phase3_done.txt` (122 jobs, zero hits) | ~56 CPU-h |
+| `decide2.g` | the R₃-augmented relation system: the current $y_1/Ax$ formal sweep | `logs/decide2_out2.txt`: 6 of the 9 formal exponent pairs trivial in all 32 conventions, the LP pair (0,0) among them; the n=−1 column overflows (decided by rewriting below) | ~2 min |
+| `phase2_parallel.sh` (+ `phase2_common.g`, `phase2_worker.g`) | historical pre-reindex finite-quotient diagnostics on 8 representative sign cases; these retain the old $Ar^{-1}$ coordinate, with $n_{\rm current}=n_{\rm old}+1$, so the archived logs remain reproducible | `logs/phase2_par_out.txt` | ~6 min (8-wide) |
+| `phase3_resume.sh` (+ `phase3_worker.g`; `phase3_parallel.sh` from scratch) | continuation of the same historical cases: no proper subgroup of index ≤ 7 and no nontrivial finite quotient of order ≤ 10⁵; diagnostic evidence, not a proof of triviality | `logs/phase3_out.txt`, manifest `logs/phase3_done.txt` (122 jobs, zero hits) | ~56 CPU-h |
 | `kb_certify.g` (needs kbmag; run from `scripts/` or repo root) | the diagnostic rewriting certificates for diagram 1: Knuth–Bendix trivializes the full R₃-augmented grid (G1: 288/288), every generator reduced to the identity; positive control (surface group → Size ∞) and negative control (partial relations → no completion) | `logs/kb_certify_out.txt` | ~5 min |
 | `kb_diag2_full.g` (needs kbmag) | the same for the second diagram, with the (true, diagram-independent) relation R₃: 576/576 certified trivial, all nine formal exponent pairs, all 64 sign conventions each | `logs/kb_diag2_full_out.txt` | ~10 min |
 | `diag_g2_probe.g` (needs kbmag) | why diagram 2 needs R₃: representative hard cases are non-confluent without it and collapse (some to the empty presentation) with it | `logs/diag_g2_probe_out.txt` | ~1 min |
-| `tc_deep.g` | the deep-enumeration record: both hardest formal systems exceed 10⁸ cosets without terminating, on groups the rewriting decides trivial | `logs/tc_deep_out.txt` | ~2 min |
+| `tc_deep.g` | historical pre-reindex deep-enumeration record: two formal systems exceed 10⁸ cosets without terminating; retained in the old coordinate for reproducibility | `logs/tc_deep_out.txt` | ~2 min |
 | `maf_export.g` + `maf_certify.sh` | **independent-engine cross-check**: the 8 representative presentations (pre-repair word) re-decided by MAF (Alun Williams' Monoid Automata Factory; no shared code with GAP/kbmag): word acceptor = 1 word, every generator → IdWord; surface control infinite. Build MAF from https://sourceforge.net/projects/maffsa/ at `-O0` (an optimized arm64 build miscompiles) | `logs/maf_out.txt` | ~1 min |
-| `maf_export2.g` + `maf_certify2.sh` | the **corrected-word** independent-engine rerun: same 8 representative cases + surface control through MAF (author's official v2.2.1 binaries, validated by reproducing the earlier record line-identically): word acceptor = 1 word, every generator → IdWord, surface control infinite | `logs/maf_out2.txt` | ~1 min |
+| `maf_export2.g` + `maf_certify2.sh` | the current $y_1/Ax$ independent-engine run: 8 representative cases + surface control through MAF (author's official v2.2.1 binaries): word acceptor = 1 word, every generator → IdWord, surface control infinite | `logs/maf_out2.txt` | ~1 min |
 
 All logs in `logs/` are the actual outputs of these scripts. Enumerations are
 capped at 4×10⁵ cosets; an overflow means only that the enumeration exceeded

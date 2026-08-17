@@ -1,4 +1,6 @@
 # diag_dirTbBase.g — DIAGNOSTIC (2026-07-15). NOT a verdict run.
+# Historical pre-T_alpha-reindex probe; its Ar^-1 zero section and log are
+# retained for reproducibility and are not used by the current theorem.
 #
 # Hypothesis under test (from the T4 known-answer calibration, decide_t4.g): the input
 # word dirTbBase = B is missing one M-meridian conjugate. The based-pushoff

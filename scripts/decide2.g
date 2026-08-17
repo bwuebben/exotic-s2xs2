@@ -1,4 +1,4 @@
-# decide2.g — COMPLETED presentation v1 (2026-07-09, session 8; logged extension).
+# decide2.g — completed presentation, re-indexed to y1/Ax on 2026-08-16.
 # = phase-1 relation system + the true T_alpha transport relation R3:
 #     R3:  B kappa3 B^-1 = psi(kappa3),  kappa3 = s^-1 r^-1 y x  (engine D5),
 #          psi(kappa3) = r^-1 s^-1 x.
@@ -13,7 +13,7 @@ R0 := comm(x,y)*comm(r,s);;
 kappa3 := s^-1*r^-1*y*x;;  psik3 := r^-1*s^-1*x;;
 base := [R0, A*x*A^-1*r^-1, A*y*A^-1*s^-1, A*r*A^-1*x^-1, B*x*B^-1*y, B*r*B^-1*r^-1,
          B*kappa3*B^-1*psik3^-1];;   # R3 appended to the clean set
-dirTaBase := A*r^-1;;  dirTaFib := (r*x)^-1;;
+dirTaBase := A*x;;  dirTaFib := (r*x)^-1;;
 # LOGGED FIX 2026-07-15 (paper: the pushoff-basing correction): honest
 # dirTbBase, sign anti-coupled to e5.
 dirTbBase := function(e5) return r^-1*M^(-e5)*r * B; end;;

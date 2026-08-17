@@ -18,7 +18,7 @@ base := [ R0,
   B*x*B^-1*y,    B*r*B^-1*r^-1,
   B*(s^-1*r^-1*y*x)*B^-1*(r^-1*s^-1*x)^-1 ];;
 delta := r^-1;;
-dirTa := A*r^-1;;          # m=n=0: base directions only
+dirTa := A*x;;             # m=n=0: y1-side base directions only
 # LOGGED FIX 2026-07-15 (paper: the pushoff-basing correction): honest
 # dirTbBase, sign anti-coupled to e5.
 dirTb := function(e5) return delta*M^(-e5)*delta^-1 * B; end;;

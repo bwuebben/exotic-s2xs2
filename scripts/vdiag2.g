@@ -1,4 +1,4 @@
-# vdiag2.g — V-DIAG second diagram (2026-07-09).
+# vdiag2.g — V-DIAG second diagram (2026-07-09; y1/Ax re-index 2026-08-16).
 # Diagram 2 = detour representative of beta-bar; only the Bs relation changes:
 #   B s B^-1 = N^e6 . (r^-1 M^e5 r) . s     (extra N-term, lasso = N's whisker;
 # M-part unchanged since the detour-transport loop D(u_c) = 1 by the position
@@ -8,7 +8,7 @@ x:=F.1;;y:=F.2;;r:=F.3;;s:=F.4;;A:=F.5;;B:=F.6;;M:=F.7;;N:=F.8;;
 comm := function(u,v) return u*v*u^-1*v^-1; end;;
 R0 := comm(x,y)*comm(r,s);;
 base := [R0, A*x*A^-1*r^-1, A*y*A^-1*s^-1, A*r*A^-1*x^-1, B*x*B^-1*y, B*r*B^-1*r^-1];;
-dirTaBase := A*r^-1;;  dirTaFib := (r*x)^-1;;
+dirTaBase := A*x;;  dirTaFib := (r*x)^-1;;
 # LOGGED FIX 2026-07-15 (paper: the pushoff-basing correction): honest
 # dirTbBase, sign anti-coupled to e5 (element identity holds in both diagrams).
 dirTbBase := function(e5) return r^-1*M^(-e5)*r * B; end;;

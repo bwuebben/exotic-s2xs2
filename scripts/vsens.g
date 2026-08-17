@@ -30,7 +30,7 @@ delta := r^-1;;
 hAs := A*s*A^-1*(N*y)^-1;;
 hBy := B*y*B^-1*(M*y*x)^-1;;
 hBs := B*s*B^-1*(delta*M*delta^-1*s)^-1;;
-hTaB := A*r^-1;;  hTaF := (r*x)^-1;;
+hTaB := A*x;;  hTaF := (r*x)^-1;;
 hTbB := r^-1*M^-1*r*B;;  hTbF := s*r^-1*s^-1;;
 
 mkRels := function(rAs, rBy, rBs, taB, taF, tbB, tbF)
@@ -78,7 +78,7 @@ probe("baseline (honest words)          ",
 Print("\n-- dirTaBase (the drift word) --\n");
 probe("TaB := A       (drift dropped)   ", mkRels(hAs,hBy,hBs, A,        hTaF, hTbB,hTbF));
 probe("TaB := A*r     (drift inverted)  ", mkRels(hAs,hBy,hBs, A*r,      hTaF, hTbB,hTbF));
-probe("TaB := A*x     (other arc; legit)", mkRels(hAs,hBy,hBs, A*x,      hTaF, hTbB,hTbF));
+probe("TaB := A*r^-1  (adjacent n=1)    ", mkRels(hAs,hBy,hBs, A*r^-1,   hTaF, hTbB,hTbF));
 probe("TaB := r^-1*A  (order swapped)   ", mkRels(hAs,hBy,hBs, r^-1*A,   hTaF, hTbB,hTbF));
 
 Print("\n-- dirTaFib --\n");

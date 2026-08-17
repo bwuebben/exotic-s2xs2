@@ -16,9 +16,9 @@ rels := Concatenation(base,
   [ A*s*A^-1*(N*y)^-1, B*y*B^-1*(M*y*x)^-1, B*s*B^-1*(r^-1*M*r*s)^-1 ]);;
 G := F / rels;;
 words := [
-  [ "w1 [M,TaB]",  comm(M, A*r^-1),                  true  ],
+  [ "w1 [M,TaB]",  comm(M, A*x),                     true  ],
   [ "w2 [M,TaF]",  comm(M, (r*x)^-1),                true  ],
-  [ "w3 [TaB,TaF]",comm(A*r^-1, (r*x)^-1),           true  ],
+  [ "w3 [TaB,TaF]",comm(A*x, (r*x)^-1),              true  ],
   [ "w4 [N,TbB]",  comm(N, r^-1*M^-1*r*B),           true  ],
   [ "w5 [N,TbF]",  comm(N, s*r^-1*s^-1),             true  ],
   [ "w6 [TbB,TbF]",comm(r^-1*M^-1*r*B, s*r^-1*s^-1), true  ],

@@ -1,5 +1,5 @@
-# kb_diag2_full.g — Knuth–Bendix certification of the FULL diagram-2 grid
-# (2026-07-15; logged extension).
+# kb_diag2_full.g — Knuth–Bendix certification of the full diagram-2 grid
+# (2026-07-15; y1/Ax re-index 2026-08-16).
 #
 # Why: with the honest dirTbBase (logged fix, 2026-07-15) diagram 2 becomes
 # almost entirely enumeration-blind (vdiag2_out2.txt: 8/576 enum-trivial,
@@ -29,7 +29,7 @@ comm := function(u,v) return u*v*u^-1*v^-1; end;;
 base := [comm(x,y)*comm(r,s), A*x*A^-1*r^-1, A*y*A^-1*s^-1, A*r*A^-1*x^-1,
          B*x*B^-1*y, B*r*B^-1*r^-1,
          B*(s^-1*r^-1*y*x)*B^-1*(r^-1*s^-1*x)^-1];;  # R3 (true, diagram-independent)
-dirTaBase := A*r^-1;;  dirTaFib := (r*x)^-1;;
+dirTaBase := A*x;;  dirTaFib := (r*x)^-1;;
 # honest dirTbBase (logged fix, 2026-07-15): sign anti-coupled to e5
 dirTbBase := function(e5) return r^-1*M^(-e5)*r * B; end;;
 dirTbFib := s*r^-1*s^-1;;

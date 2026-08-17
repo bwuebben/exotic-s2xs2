@@ -1,5 +1,5 @@
-# kb_certify.g — Knuth–Bendix certification of the FULL admissible grid
-# (session 14, 2026-07-10). FROZEN once run.
+# kb_certify.g — Knuth–Bendix certification of the full formal grid
+# (session 14, 2026-07-10; y1/Ax re-index 2026-08-16).
 #
 # Method: for each presented group, run Knuth–Bendix completion (kbmag 1.5.11,
 # shortlex) on the Tietze-simplified presentation. A certificate of triviality
@@ -43,7 +43,7 @@ mkG := function(m, n, e3, e4, e5, eA, eB)
   return F / Concatenation(base,
     [ A*s*A^-1*(N^e3*y)^-1, B*y*B^-1*(M^e4*y*x)^-1,
       B*s*B^-1*(r^-1*M^e5*r*s)^-1,
-      M*((A*r^-1)*((r*x)^-1)^n)^eA,
+      M*((A*x)*((r*x)^-1)^n)^eA,
       N*((r^-1*M^(-e5)*r*B)*(s*r^-1*s^-1)^m)^eB ]);
 end;;
 

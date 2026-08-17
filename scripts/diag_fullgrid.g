@@ -1,4 +1,6 @@
 # diag_fullgrid.g — DIAGNOSTIC part 3 (2026-07-15). NOT a verdict run.
+# Historical pre-T_alpha-reindex probe; its Ar^-1 zero section and log are
+# retained for reproducibility and are not used by the current theorem.
 # Full 9-cell x 32-sign grid with the corrected dirTbBase candidates
 # (lasso-conjugated M inserted; see diag_dirTbBase.g header). Enumeration
 # first, KB certification of every blowup. Two representative candidates

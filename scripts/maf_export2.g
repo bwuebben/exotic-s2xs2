@@ -1,6 +1,7 @@
 # maf_export2.g — session-16 version of maf_export.g: writes the 8
-# representative (±1,+1)-cell presentations WITH THE HONEST dirTbBase
-# (logged fix, logged fix 2026-07-15: r^-1*M^(-e5)*r*B, sign anti-coupled to e5)
+# representative (±1,+1)-cell presentations with the y1/Ax T_alpha zero
+# section and the honest dirTbBase (logged fix 2026-07-15:
+# r^-1*M^(-e5)*r*B, sign anti-coupled to e5)
 # as GASP/KBMAG rewriting-system files for MAF, into maf_runs2/.
 # Run:   gap -q -A -T maf_export2.g
 # Then on a machine with MAF:  MAFDIR=maf_runs2 ./maf_certify.sh   (or copy
@@ -17,7 +18,7 @@ mkG := function(m, n, e3, e4, e5, eA, eB)
   return F / Concatenation(base,
     [ A*s*A^-1*(N^e3*y)^-1, B*y*B^-1*(M^e4*y*x)^-1,
       B*s*B^-1*(r^-1*M^e5*r*s)^-1,
-      M*((A*r^-1)*((r*x)^-1)^n)^eA,
+      M*((A*x)*((r*x)^-1)^n)^eA,
       N*((r^-1*M^(-e5)*r*B)*(s*r^-1*s^-1)^m)^eB ]);
 end;;
 CASES := [ [ [1,1],  [ 1, 1, 1, 1, 1] ], [ [1,1],  [-1,-1,-1,-1,-1] ],

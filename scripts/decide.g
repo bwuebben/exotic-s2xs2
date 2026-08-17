@@ -1,7 +1,6 @@
-# decide.g — FROZEN decision harness for the octagon computation (frozen under
-# the pre-registered protocol).
-# v2, 2026-07-09 (session 4) — meridian-generator architecture; change logged
-# BEFORE any honest run. Do not edit further except via logged fixes.
+# decide.g — decision harness for the octagon computation.
+# v3, 2026-08-16 — the T_alpha zero section is re-indexed to the y1/Ax word
+# after the side-resolved audit; the former Ar^-1 zero is now n=1.
 #
 # Architecture (paper: the correction architecture): the corrections are conjugated meridians with
 # DERIVED lassos, so the meridians M (of T_alpha, based along the partial-y
@@ -26,7 +25,7 @@ comm := function(u,v) return u*v*u^-1*v^-1; end;;
 INPUT := rec(
   # DERIVED 2026-07-09 (paper: the direction words). Filling the slots per
   # the pre-registered protocol — this enables the honest run. Outcome provisional until V-DIAG.
-  dirTaBase := A*r^-1,         # lambda = A.delta: half-rotation drift = the lasso
+  dirTaBase := A*x,            # y1-side half-rotation section; n=0 by definition
   dirTaFib  := (r*x)^-1,       # c-pushoff at the y1-basing (engine: c@V2 = XR)
   # LOGGED FIX 2026-07-15 (paper: the pushoff-basing correction): the s2-based
   # pushoff's bundle identity sweeps s2 around beta-bar; that membrane crosses

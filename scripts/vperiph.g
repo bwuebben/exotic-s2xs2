@@ -43,7 +43,7 @@ mkAs := function(e) return A*s*A^-1 * (N^e*y)^-1; end;;
 mkBy := function(e) return B*y*B^-1 * (M^e*y*x)^-1; end;;
 mkBs := function(e) return B*s*B^-1 * (delta*M^e*delta^-1*s)^-1; end;;
 
-dirTaBase := A*r^-1;;
+dirTaBase := A*x;;
 dirTaFib  := (r*x)^-1;;
 dirTbFib  := s*r^-1*s^-1;;
 dirTbBase := function(e5) return r^-1*M^(-e5)*r * B; end;;

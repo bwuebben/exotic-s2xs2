@@ -1,4 +1,6 @@
 # diag_kb.g — DIAGNOSTIC part 2 (2026-07-15). NOT a verdict run.
+# Historical pre-T_alpha-reindex probe; its Ar^-1 zero section and log are
+# retained for reproducibility and are not used by the current theorem.
 # KB-certify the blowup conventions produced by the corrected dirTbBase
 # candidates at the LP cell (0,0)  (see diag_dirTbBase.g).
 # Question: hard-trivial (like the old (+-1,+1) cells) or genuinely not trivial?

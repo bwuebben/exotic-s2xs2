@@ -35,7 +35,7 @@ This simple-connectivity theorem yields three conclusions:
    slice.
 3. The regluing construction of Lidman and Piccirillo produces a simply
    connected manifold homeomorphic but not diffeomorphic to
-   $\mathbb{CP}^2\#\overline{\mathbb{CP}}^2$.
+   $\mathbb{CP}^2\sharp\overline{\mathbb{CP}}^2$.
 
 The fundamental-group claim is for the explicitly parametrized piece
 $V=V'_{0,0}$. The additional surgery parameters evaluated by some of the

@@ -1,15 +1,20 @@
 # An exotic S²×S² and an exotic ℂP²#ℂP̄²
 
+**Author's note:** Issues have been identified in the geometric derivation of the fundamental-group relations in Part II, so the claimed simple connectivity and its exotic-manifold consequences are not established by the current proof. I am currently working on a repair.
+
 This repository accompanies Bernd Johannes Wuebben's paper
 [*An exotic S²×S² and an exotic ℂP²#ℂP̄²*](papers/exotic-s2xs2-and-cp2.pdf),
 posted as [arXiv:2608.17267v1](https://arxiv.org/abs/2608.17267) on
 August 18, 2026.
 
+The linked PDF is the September 27, 2026 revision with the author's note
+directly below the abstract; the arXiv link identifies the original posting.
+
 The repository contains the 32-page paper, an 11-page expository walkthrough,
 and the scripts and run logs for every computation reported in the paper. The
 manuscript is an arXiv preprint and has not been submitted to a journal.
 
-## The result
+## The claimed result
 
 Lidman and Piccirillo construct two closed smooth 4-manifolds, $B$ and $W$,
 with isomorphic integer cohomology rings. The figure-eight knot is smoothly
@@ -20,13 +25,13 @@ The manifold $W$ is the quotient $V/\sigma$. The piece $V$ is obtained from
 a genus-2 surface bundle by two Luttinger surgeries, and $\sigma$ is a free
 involution on its boundary. The surgery curves must be specified before $V$
 denotes a unique manifold. The paper fixes one explicit choice, written
-$V=V'_{0,0}$, and proves
+$V=V'_{0,0}$, and claims
 
 $$
 \pi_1(V)=1.
 $$
 
-This simple-connectivity theorem yields three conclusions:
+If established, this simple-connectivity statement would yield three conclusions:
 
 1. The double $V\cup_\sigma V$ is homeomorphic but not diffeomorphic to
    $S^2\times S^2$.
@@ -41,14 +46,7 @@ The fundamental-group claim is for the explicitly parametrized piece
 $V=V'_{0,0}$. The additional surgery parameters evaluated by some of the
 scripts are consistency tests and are not additional manifold theorems.
 
-## Current status
-
-Lidman and Piccirillo have reported that their own computation gives
-$\pi_1(V)\ne1$. The two computations have not been reconciled. The paper and
-this repository provide the full argument and reproducibility record for the
-claim above.
-
-## The proof at a glance
+## The proposed proof at a glance
 
 The paper is organized in two parts.
 
@@ -64,7 +62,7 @@ fiber is represented by a marked octagon and the base by a cut square. In
 this model the meridians and Lagrangian push offs are written as based group
 words, including the paths that connect every loop to a common basepoint.
 
-These words define a finitely presented group $G$. Section 10 proves that
+These words define a finitely presented group $G$. Section 10 claims that
 there is a surjection
 
 $$
@@ -73,14 +71,14 @@ $$
 
 GAP coset enumeration proves that $G$ is trivial. The calculation is repeated
 over 4,096 choices of signs, paths, and correction placements, including the
-geometrically derived relation system, and every case gives the trivial
-group. Since every quotient of the trivial group is trivial, the surjection
-implies $\pi_1(V)=1$.
+stated relation system, and every case gives the trivial
+group. Since every quotient of the trivial group is trivial, a valid surjection
+would imply $\pi_1(V)=1$; the current geometric derivation does not establish it.
 
 The scripts reproduce the algebraic calculations from the relations stated
-in the paper. The geometric construction of those relations is proved in
-Sections 7--10. Appendix A connects each relation to its geometric source and
-to the corresponding verification record.
+in the paper. The proposed geometric derivation of those relations appears in
+Sections 7--10 and is the subject of the author's note above. Appendix A connects
+each relation to its proposed geometric source and corresponding verification record.
 
 ## A reading guide
 
@@ -104,15 +102,15 @@ the surgery parameters, and prove the reduction theorem.
 The [step-by-step walkthrough](papers/walkthrough.pdf) develops the same
 calculation more slowly than the journal-style paper. It explains the marked
 surface, the based loops, every input relation, the additional drilled-fiber
-relation, and the final surjection onto $\pi_1(V)$.
+relation, and the claimed surjection onto $\pi_1(V)$.
 
-The corresponding proof in the paper is Sections 7--11:
+The corresponding proposed argument in the paper is Sections 7--11:
 
 - Section 7 fixes the marked octagon and cut-square model.
 - Section 8 derives the meridians, transport relations, and surgery
   directions.
 - Section 9 assembles the complete relation sheet.
-- Section 10 proves that the relation group maps onto $\pi_1(V)$.
+- Section 10 claims that the relation group maps onto $\pi_1(V)$.
 - Section 11 decides that relation group.
 
 ### For verification
@@ -141,7 +139,7 @@ For a minimal GAP installation on macOS, see
 [`docs/INSTALL_GAP.md`](docs/INSTALL_GAP.md). On Linux, GAP is generally
 available through the system package manager.
 
-### The proof-level group decision
+### The algebraic group decision
 
 From the repository root, run:
 
@@ -156,11 +154,12 @@ FIXED V (y1/Ax) WITH R3: TOTAL=4096 TRIVIAL=4096 OVERFLOW=0 FINITE>1=0 H1nonzero
 ADJACENT T_ALPHA SECTION (y2/Ar^-1) WITH R3: TOTAL=4096 TRIVIAL=4096 OVERFLOW=0 FINITE>1=0 H1nonzero=0
 ```
 
-The first line is the calculation used in the theorem. In that label,
+The first line is the calculation used in the claimed theorem. In that label,
 `y1/Ax` identifies the based surgery direction chosen for $V=V'_{0,0}$. The
-label `R3` refers to the additional relation derived from an explicit basis
-of the drilled fiber in Section 10. The second line records a neighboring
-choice included as a consistency check; it is not needed for the theorem. The
+label `R3` refers to the additional relation whose geometric derivation is
+claimed in Section 10. The second line records a neighboring
+choice included as a consistency check. Neither calculation validates the
+geometric derivation. The
 committed output is
 [`logs/fixed_v_certify_out.txt`](logs/fixed_v_certify_out.txt).
 
@@ -184,7 +183,7 @@ principal files are grouped below by purpose.
 
 | Purpose | Principal files |
 |---|---|
-| Main theorem | `fixed_v_certify.g`, `develop.py` |
+| Claimed main theorem | `fixed_v_certify.g`, `develop.py` |
 | Surface-bundle model and controls | `monodromy_check2.g`, `model_check3.g`, `vr_check.g` |
 | Baldridge--Kirk calibration | `decide_t4.g`, `gt1_diff.g` |
 | Seifert-fibered calibration | `decide_seifert.g`, `confirm_coherent.g` |

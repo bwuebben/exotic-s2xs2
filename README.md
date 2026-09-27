@@ -1,6 +1,6 @@
 # An exotic S²×S² and an exotic ℂP²#ℂP̄²
 
-**Author's note:** Issues have been identified in the geometric derivation of the fundamental-group relations in Part II, so the claimed simple connectivity and its exotic-manifold consequences are not established by the current proof. I am currently working on a repair.
+**Author's note:** Issues have been identified in the geometric derivation of the fundamental-group relations in Part II, so the claimed simple connectivity and its exotic-manifold consequences are not established by the current proof. The author is currently working on a repair.
 
 This repository accompanies Bernd Johannes Wuebben's paper
 [*An exotic S²×S² and an exotic ℂP²#ℂP̄²*](papers/exotic-s2xs2-and-cp2.pdf),

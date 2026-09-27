@@ -1,6 +1,10 @@
 # An exotic S²×S² and an exotic ℂP²#ℂP̄²
 
-**Author's note:** Issues have been identified in the geometric derivation of the fundamental-group relations in Part II, so the claimed simple connectivity and its exotic-manifold consequences are not established by the current proof. The author is currently working on a repair.
+> **Author's note:** Issues have been identified in the geometric derivation of the fundamental-group relations in Part II, so the claimed simple connectivity and its exotic-manifold consequences are not established by the current proof.
+>
+> The existence of an exotic S²×S² is a major open problem in four-dimensional topology: it asks whether one of the simplest four-dimensional spaces admits a different smooth structure. The problem has resisted decades of work. Earlier claimed constructions include that of Akhmedov and Park ([arXiv:1005.3346](https://arxiv.org/abs/1005.3346), 2010), which has not provided an established resolution. The present paper is another attempt at this difficult problem, and its current shortcomings are acknowledged here explicitly.
+>
+> The author remains committed to pursuing the problem and is currently working on a repair.
 
 This repository accompanies Bernd Johannes Wuebben's paper
 [*An exotic S²×S² and an exotic ℂP²#ℂP̄²*](papers/exotic-s2xs2-and-cp2.pdf),
@@ -10,7 +14,7 @@ August 18, 2026.
 The linked PDF is the September 27, 2026 revision with the author's note
 directly below the abstract; the arXiv link identifies the original posting.
 
-The repository contains the 32-page paper, an 11-page expository walkthrough,
+The repository contains the 33-page paper, an 11-page expository walkthrough,
 and the scripts and run logs for every computation reported in the paper. The
 manuscript is an arXiv preprint and has not been submitted to a journal.
 

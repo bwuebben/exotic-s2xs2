@@ -1,0 +1,58 @@
+{
+  "verification": "PASS",
+  "original_relations": 15,
+  "forward_original_row_checks": 15,
+  "reverse_retained_row_checks": 5,
+  "reversible_beta_elimination": true,
+  "exact_final_two_row_replacement": true,
+  "theta_and_inverse_checked": true,
+  "abelianization_minor": 1,
+  "rank_three_source": [
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      1
+    ]
+  ],
+  "rank_three_target": [
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      1
+    ]
+  ],
+  "cotangent_meridian_signs": [
+    1,
+    -1
+  ],
+  "normal_reflections_checked": 2,
+  "geometric_inclusions_proved_by_program": false,
+  "full_group_decided": false,
+  "J_in_final_group": "unknown"
+}

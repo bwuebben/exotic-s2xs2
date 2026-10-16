@@ -1,0 +1,21 @@
+{
+  "verification": "PASS",
+  "central_identity_factors": 19,
+  "central_signed_counts": [
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "central_lift_matrix": true,
+  "crossing_and_boundary_identities": true,
+  "trefoil_dictionary": true,
+  "corrected_mixed_sign_conjugator": "b^-1 a^-1 c u",
+  "modular_action_states": 30,
+  "whitehead_differences": 96,
+  "pair_exterior_algebra": true,
+  "trefoil_intersection_product_vertices": 10,
+  "geometric_arguments_verified_by_program": false,
+  "full_group_decided": false
+}

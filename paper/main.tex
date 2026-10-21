@@ -33,7 +33,10 @@
 \author{Bernd Johannes Wuebben}
 \address{New York, NY}
 \email{wuebben@gmail.com}
-\date{October 16, 2026}
+\date{October 21, 2026}
+\thanks{Working revision. The proposed additions in
+Sections~\ref{sec:lagrangian-capacity} and \ref{sec:handle-homology}
+await independent mathematical verification.}
 \subjclass[2020]{57K40, 57R17, 20F05, 20E06}
 \keywords{Smooth four-manifolds, Luttinger surgery, fundamental group,
  surface bundles, HNN extensions}
@@ -51,8 +54,11 @@ quotient of an iterated HNN extension containing the genus-two surface
 group. The filled group is trivial exactly when the final relation
 kills a specified fiber commutator. We also determine its universal
 central extension with cyclic kernel, construct geometric realizations
-of it, and extend the boundary involution over the filling. The final
-filling problem remains unresolved.
+of it, and extend the boundary involution over the filling. A proposed
+extension constructs a Lagrangian torus with a negative area--Maslov
+relation and applies it to symplectic-cohomology nonvanishing; a simply
+connected comparison identifies the limitation of this approach.
+The final filling problem remains unresolved.
 \end{abstract}
 \maketitle
 \clearpage
@@ -262,6 +268,17 @@ Its central fiber offers a sufficient test for nontriviality, not a
 second equivalent test for triviality. The final discussion distinguishes
 these logical directions and explains the restrictions on several
 natural approaches.
+
+The working extension in Sections~\ref{sec:lagrangian-capacity} and
+\ref{sec:handle-homology} develops the exact symplectic realization.
+Its principal construction is a nullhomologous Lagrangian torus whose
+Liouville class is a negative multiple of its Maslov class. Li's
+disk-existence theorem then gives a proposed obstruction to finite
+first Gutt--Hutchings capacity. A simply connected comparison contains
+a torus with the same area--Maslov relation, so this obstruction alone
+cannot detect the central meridian. The discussion of handle surgery
+separates a conditional symplectic-homology calculation from the
+fundamental-group information still required.
 
 \begin{center}
 \begin{adjustbox}{max width=\textwidth}
@@ -2873,6 +2890,302 @@ of its fundamental group. For the filling constructed here, reattaching
 the two handles restores exactly $Q_X/\nc{[\mu,x],[\mu,y]}$.
 The same centralization problem remains.
 
+\section{A proposed capacity obstruction from a Lagrangian torus}
+\label{sec:lagrangian-capacity}
+
+We use the Liouville form $\lambda_k$ from
+Proposition~\ref{prop:liouville} and the determinant trivialization
+$\mathfrak d$ from Proposition~\ref{prop:two-handles}. For an oriented
+Lagrangian torus $L$, write $m_L\in H^1(L;\Z)$ for its Maslov class:
+it is twice the winding of the complex determinant of an oriented
+tangent frame relative to $\mathfrak d$. Thus a positively oriented
+circle in the standard complex line has Maslov index two. Since
+$H^1(X;\Z)=0$, the homotopy class of $\mathfrak d$ is unique.
+
+\subsection{The torus and its periods}
+
+Write $S=\Sigma_O$. On a collar of its removed normal disk bundle,
+the formulas in Proposition~\ref{prop:liouville} read
+\begin{equation}\label{eq:torus-collar}
+\begin{aligned}
+ \Omega_k&=dI\wedge\eta+k p_\Sigma^*\sigma_\Sigma,\\
+ \lambda_k&=(I-1)\eta+p_\Sigma^*\zeta
+                         +k p_\Sigma^*\beta_\Sigma,\\
+ d\eta&=d\zeta=0,\qquad d\beta_\Sigma=\sigma_\Sigma.
+\end{aligned}
+\end{equation}
+The angular form $\eta$ has period one on the positive normal circle.
+Fix $I_0$ strictly inside this collar, with $I_0<1$, and set
+$c=1-I_0>0$.
+
+\begin{proposition}[The area--Maslov relation]\label{prop:negative-torus}
+For all sufficiently large $k$, the interior of $X$ contains a
+nullhomologous Lagrangian torus $L$ with an integral basis
+$\mu,\nu$ of $H_1(L)$ satisfying
+\begin{equation}\label{eq:torus-periods}
+\begin{array}{c|rr}
+ &\mu&\nu\\ \hline
+ \displaystyle\int\lambda_k&-c&c/3\\
+ m_L&6&-2.
+\end{array}
+\end{equation}
+In particular,
+\begin{equation}\label{eq:negative-maslov}
+                  [\lambda_k|_L]=-\frac{c}{6}m_L.
+\end{equation}
+The same identity holds in every auxiliary domain $\mathcal Z$
+of Proposition~\ref{prop:two-handles} for which the determinant
+trivialization extends across the handles.
+\end{proposition}
+\begin{proof}
+Choose a compact once-punctured torus $S'\subset\operatorname{int}S$
+whose $\sigma_\Sigma$-area is
+\[
+                         a=\frac{c}{3k}.
+\]
+Such a subsurface exists for large $k$: regular neighborhoods of a
+two-loop spine of $S$ have arbitrarily small area, and enlarging the
+boundary through the remaining annulus varies the area continuously.
+Put $\ell'=\partial S'$, with its boundary orientation, and define
+\[
+                  L=\{I=I_0\}\cap p_\Sigma^{-1}(\ell').
+\]
+This is a torus. Both terms of $\Omega_k$ vanish on its tangent
+planes: $dI$ vanishes, and their projection to $S$ is one-dimensional.
+The normal circle bundle at radius $I_0$ over $S'$ is an embedded
+three-manifold bounded by $L$, so $[L]=0$ in $H_2(X;\Z)$.
+
+Let $\mu$ be its positive normal-circle class. The normal circle
+bundle over $S'$ is topologically trivial because $H^2(S';\Z)=0$.
+Choose a unit section $s_0$ and let $\nu$ be its boundary lift of
+$\ell'$. These classes form an integral basis. The one-form
+$s_0^*\eta$ is closed, hence
+\[
+ \int_\nu\eta=0,\qquad
+ \int_{\ell'}\zeta=0,\qquad
+ \int_{\ell'}\beta_\Sigma=a.
+\]
+Equation~\eqref{eq:torus-collar} gives the first row of
+\eqref{eq:torus-periods}. This use of Stokes' theorem does not
+require a horizontal section for the flat normal connection.
+
+The normal-circle determinant winding, with a fixed nonzero base
+vector, is locally constant as the base point varies in $S$.
+For the Maslov index of $\mu$, we may therefore evaluate it at
+an untouched genus-two fiber punctured at radius $I_0$.
+Its oriented boundary is $-\mu$, and its Euler
+characteristic is $-3$. Its complex normal line has the product
+frame from the base disk. The relative Euler-number calculation in
+\eqref{eq:orbit-index} therefore gives determinant winding $-3$
+along $-\mu$. A tangent frame of $L$ along that circle differs
+from the outward fiber-normal frame and this product normal frame
+by constant nonzero complex factors. Its Maslov index along $-\mu$
+is consequently $-6$, giving $m_L(\mu)=6$.
+
+For $\nu$, use the displaced section $S'_{s_0}$ at radius $I_0$.
+The restriction of $\Omega_k$ is $k\sigma_\Sigma$, so it is
+symplectic. The angular vector field is everywhere nonzero and
+symplectically normal to this section: its contraction with
+$dI\wedge\eta$ vanishes on all tangent vectors of $S'_{s_0}$.
+It therefore frames the normal complex line. Choose a compatible
+almost complex structure preserving this tangent-normal splitting.
+Along $\nu$, the angular vector and the oriented boundary tangent
+span $TL$. Their determinant winding is the relative Euler number
+of $TS'$, namely $\chi(S')=-1$. Thus $m_L(\nu)=-2$.
+The space of compatible almost complex structures is contractible,
+so these two adapted computations determine the same Maslov class.
+
+The two rows of \eqref{eq:torus-periods} prove
+\eqref{eq:negative-maslov} on an integral basis. The torus and its
+bounding three-manifold lie in the unchanged interior of $X$.
+The Liouville form there is unchanged by the auxiliary handles,
+and the determinant trivialization extends by hypothesis. All the
+assertions therefore persist in $\mathcal Z$.
+\end{proof}
+
+The torus is not exact, since its meridional period is nonzero.
+For every smooth relative disk $u:(D^2,\partial D^2)\to(M,L)$,
+where $M$ is the completion of $X$ or $\mathcal Z$, exactness and
+the determinant trivialization give
+\begin{equation}\label{eq:disk-negative-maslov}
+ \int_{D^2}u^*\Omega_k
+    =\int_{\partial D^2}u^*\lambda_k
+    =-\frac{c}{6}\,\mu_L(u).
+\end{equation}
+Here $\mu_L(u)$ is the relative Maslov index of the disk.
+This identity assumes neither injectivity of $\pi_1(L)\to\pi_1(M)$
+nor nontriviality of $t$. In particular a nonconstant compatible
+pseudoholomorphic disk cannot have Maslov index two, since its
+symplectic area would be $-c/3$.
+
+\subsection{The capacity consequence}
+
+Use real coefficients for symplectic cohomology and its
+$S^1$-equivariant version. We use the convention of \cite{Li26}
+for the first Gutt--Hutchings capacity $c_1^{\mathrm{GH}}$.
+By \cite[Proposition 5]{Li26}, its finiteness is equivalent to
+vanishing of the equivariant image of the unit under
+\[
+ I:\operatorname{SH}^0(M;\mathbb R)
+                    \longrightarrow\operatorname{SH}_{S^1}^0(M;\mathbb R).
+\]
+It is also equivalent to a cyclic dilation reaching the unit in the
+sense of that reference.
+
+\begin{corollary}\label{cor:capacity}
+For the Liouville forms and rotation-zero auxiliary handles above,
+\[
+ c_1^{\mathrm{GH}}(X)=c_1^{\mathrm{GH}}(\mathcal Z)=\infty,
+ \qquad
+ \operatorname{SH}^0(X;\mathbb R)\ne0,
+ \quad\operatorname{SH}^0(\mathcal Z;\mathbb R)\ne0.
+\]
+In each completion the equivariant image $I(1)$ is nonzero.
+\end{corollary}
+\begin{proof}
+The torus $L$ is closed, oriented, spin, and a $K(\Z^2,1)$.
+It is relatively spin with background class zero, and the ambient
+first Chern class vanishes. If the first capacity were finite,
+\cite[Corollary 8]{Li26} would give a loop on $L$ with Maslov
+class two and positive symplectic area. In this exact ambient
+manifold that area is its $\lambda_k$-period, contradicting
+\eqref{eq:negative-maslov}. Thus the capacity is infinite.
+Proposition 5 of the same reference gives $I(1)\ne0$, which
+implies that the ordinary symplectic-cohomology unit is nonzero.
+\end{proof}
+
+This excludes cyclic dilations reaching the unit. It does not
+exclude a cyclic quasi-dilation reaching another invertible class.
+The construction gives no obstruction to a continuous disk bounded
+by $\gamma=-\mu$: such a disk would have area $c$ and Maslov
+index $-6$, consistently with \eqref{eq:disk-negative-maslov}.
+
+\subsection{A simply connected comparison}
+
+The area--Maslov relation itself does not imply survival of a torus
+loop in the ambient group. The following comparison also retains
+nullhomology of the torus.
+
+\begin{proposition}\label{prop:simply-connected-torus}
+There is a simply connected Liouville four-manifold $M_0$ with
+$c_1(TM_0)=0$ and a nullhomologous Lagrangian torus $L_0$ such that,
+for some $\tau>0$,
+\[
+                 [\lambda_0|_{L_0}]=-\tau m_{L_0}.
+\]
+In an integral basis the periods are $(-6\tau,2\tau)$ and
+the Maslov indices are $(6,-2)$. Moreover $H_2(M_0)=\Z^8$,
+$H_1(M_0)=H_3(M_0)=0$, and $c_1^{\mathrm{GH}}(M_0)=\infty$.
+\end{proposition}
+\begin{proof}
+Let $F_0$ and $B_0$ be Liouville surfaces of genus two and one,
+respectively, each with one boundary component. Round the corners
+of their product $W_0=F_0\times B_0$. Each tangent complex line
+is trivial, so fix a product determinant trivialization on $W_0$.
+Choose interior subsurfaces $F'_0,B'_0$ of the same genera and
+scale the area forms so that their areas are $6\tau$ and $2\tau$.
+The product
+\[
+                     L_0=\partial F'_0\times\partial B'_0
+\]
+is Lagrangian and bounds $F'_0\times\partial B'_0$.
+Take $\mu_0=-\partial F'_0$ and $\nu_0=\partial B'_0$.
+Stokes' theorem gives periods $-6\tau,2\tau$. Twice the relative
+Euler numbers gives Maslov indices $6,-2$, proving the stated
+relation in $W_0$.
+
+The boundary inclusion surjects onto
+$\pi_1(W_0)=F_4\times F_2$: each factor's generators can be
+placed over a boundary point of the other factor. Represent the
+six generators by disjoint boundary knots and choose Legendrian
+approximations. Positive and negative stabilizations make each
+rotation zero relative to the chosen determinant trivialization.
+Attach six Weinstein two-handles along these knots. Van Kampen
+gives $\pi_1(M_0)=1$, and the rotation-zero condition extends
+the determinant trivialization over the handles, as in
+Proposition~\ref{prop:two-handles}. The torus, its bounding
+three-manifold, and its Liouville and Maslov classes are unchanged.
+
+The relative handle boundary map
+\[
+ H_2(M_0,W_0)=\Z^6\longrightarrow H_1(W_0)=\Z^6
+\]
+is an isomorphism, since the attaching knots are the six generators.
+The pair sequence and the K\"unneth formula give
+$H_2(M_0)=H_2(W_0)=\Z^8$ and $H_1(M_0)=H_3(M_0)=0$.
+The proof of Corollary~\ref{cor:capacity} applies to $L_0$ and
+gives infinite first capacity and nonzero symplectic cohomology.
+\end{proof}
+
+All torus loops contract in this example. Its six attaching knots
+kill generators, whereas the two knots in our construction impose
+centrality of a meridian. Thus the actual attaching data remain
+essential to a fundamental-group argument.
+
+\section{Symplectic homology and the auxiliary handles}
+\label{sec:handle-homology}
+
+There is a further possible calculation for a choice of the two
+auxiliary handles. Stabilize each rotation-zero attaching Legendrian
+once positively and once negatively, away from the retained orbit.
+The rotations and smooth free homotopy classes are unchanged, while
+the auxiliary framings decrease. Denote the resulting domain by
+$\mathcal Z_{\mathrm{st}}$. It still has
+\[
+ \pi_1(\mathcal Z_{\mathrm{st}})=\widehat G,\qquad
+ c_1(T\mathcal Z_{\mathrm{st}})=0,
+ \qquad H_2(\mathcal Z_{\mathrm{st}})=\Z^4.
+\]
+
+The Legendrian surgery formula of Bourgeois--Ekholm--Eliashberg
+\cite[Section 5, Theorem 5.6]{BEE12} allows a Liouville base with
+a critical Weinstein attaching cobordism. If the anchored
+Chekanov--Eliashberg algebra of each successive attaching knot has
+an element $a$ with $\partial a=1$, its handle contribution is
+acyclic by \cite[Section 7.2]{BEE12}. Under that hypothesis,
+\begin{equation}\label{eq:conditional-sh}
+ \operatorname{SH}_*(\mathcal Z_{\mathrm{st}};\Q)
+                 \cong\operatorname{SH}_*(X;\Q)
+\end{equation}
+as graded vector spaces, with all free homotopy classes included.
+No Weinstein structure on the base $X$ is required for this
+conditional application.
+
+The local stabilized-knot computation in standard contact
+three-space gives a short chord with differential one
+\cite[Proposition 3.12]{EN20}. To apply it to the anchored algebra
+here, one must also exclude disks leaving the Darboux neighborhood
+and contributions with negative closed-orbit punctures, at both
+successive attachments. A possible argument uses a sufficiently
+small chord action, lower action bounds for other asymptotics, and
+a uniform monotonicity bound on the surrounding annulus. We do not
+establish that localization assertion in this revision; consequently
+\eqref{eq:conditional-sh} is retained with the stated algebraic
+hypothesis.
+
+Even such an isomorphism would not prove that $\mu$ survives.
+The inclusion $j:X\to\mathcal Z_{\mathrm{st}}$ can identify
+distinct free homotopy classes. A class formerly represented by
+$\mu$ can then belong to the contractible sector in the larger
+domain without changing total symplectic homology. An isomorphism
+of the total graded vector spaces is not an injection of the
+ambient fundamental groups.
+
+Ambient local systems make the missing condition explicit. A
+representation $\rho$ of $Q_X$ extends across the two handles
+exactly when
+\[
+ \rho([\mu,x])=\rho([\mu,y])=1.
+\]
+To detect the central element it must also satisfy
+$\rho(\mu)\ne1$. Constructing it therefore still requires a
+representation of the full quotient $Q_X/C_\mu$ with the specified
+nonidentity image. Rank-one ambient local systems are trivial
+because $H_1(X)=0$. Likewise, based-loop coefficients attached to
+a Legendrian stop concern that stop's loop space
+\cite[Section 4.5]{Ekh24}; they do not by themselves identify
+the invariant with loops in the filling.
+
 \section{The remaining questions and their logical relations}\label{sec:open}
 
 The established constructions can be organized as follows:
@@ -2957,7 +3270,10 @@ For the central route, the following three statements are equivalent:
 Each implies $G\ne1$. Equivalently the retained orbit $\gamma$ does
 not bound a mapped disk in $\mathcal Z$. None follows from its
 infinite order in the boundary, the index calculation, or exactness
-of the filling. Conversely $t=1$ would leave the decision of $G$
+of the filling. The proposed capacity obstruction and the conditional
+total-homology isomorphism in Sections~\ref{sec:lagrangian-capacity}
+and \ref{sec:handle-homology} do not supply this implication either.
+Conversely $t=1$ would leave the decision of $G$
 open. A proof about arbitrary spherical classes or arbitrary relations
 in \eqref{eq:universal-central} is required.
 
@@ -3498,6 +3814,12 @@ Glasg. Math. J. \textbf{53} (2011), 637--656.
 R.~I.~Baykur, \emph{Exotic $S^2\times S^2$ candidates that are just fake},
 \href{https://arxiv.org/abs/2610.04634v2}{arXiv:2610.04634v2} (2026).
 
+\bibitem[BEE12]{BEE12}
+F.~Bourgeois, T.~Ekholm, and Y.~Eliashberg,
+\emph{Effect of Legendrian surgery}, Geom. Topol. \textbf{16}
+(2012), 301--389.
+\href{https://arxiv.org/abs/0911.0026v4}{arXiv:0911.0026v4}.
+
 \bibitem[BK06]{BK06}
 G.~Bande and D.~Kotschick, \emph{The geometry of symplectic pairs},
 Trans. Amer. Math. Soc. \textbf{358} (2006), 1643--1655.
@@ -3528,6 +3850,17 @@ F.~Dahmani, V.~Guirardel, and D.~Osin, \emph{Hyperbolically embedded
 subgroups and rotating families in groups acting on hyperbolic spaces},
 Mem. Amer. Math. Soc. \textbf{245} (2017), no.~1156.
 \href{https://arxiv.org/abs/1111.7048}{arXiv:1111.7048}.
+
+\bibitem[Ekh24]{Ekh24}
+T.~Ekholm, \emph{Legendrian surgery}, Celebratio Mathematica,
+Yakov M.~Eliashberg collection (2024).
+\href{https://celebratio.org/Eliashberg_Y/article/1191/}{Author's text}.
+
+\bibitem[EN20]{EN20}
+J.~Etnyre and L.~Ng, \emph{Legendrian contact homology in
+$\mathbb R^3$}, Surveys in Differential Geometry \textbf{25}
+(2020), 103--161. Corrected version:
+\href{https://arxiv.org/abs/1811.10966v5}{arXiv:1811.10966v5} (2023).
 
 \bibitem[Fre82]{Fre82}
 M.~H.~Freedman, \emph{The topology of four-dimensional manifolds},
@@ -3572,6 +3905,12 @@ version 3 (2021).
 M.~Kwon and O.~van Koert, \emph{Brieskorn manifolds in contact topology},
 Bull. Lond. Math. Soc. \textbf{48} (2016), 173--241.
 \href{https://arxiv.org/abs/1310.0343v3}{arXiv:1310.0343v3}.
+
+\bibitem[Li26]{Li26}
+Y.~Li, \emph{Aspherical Lagrangian submanifolds, Audin's
+conjecture and cyclic dilations},
+\href{https://arxiv.org/abs/2308.05086v6}{arXiv:2308.05086v6}
+(2026), to appear in Selecta Mathematica.
 
 \bibitem[LP25]{LP25}
 T.~Lidman and L.~Piccirillo, \emph{Distinguishing closed

@@ -1,7 +1,8 @@
 # Exact algebra verification
 
 Ancillary files for *Toward an exotic S²×S² and an exotic ℂP²#ℂP̄²*,
-Bernd Johannes Wuebben, October 16, 2026.
+Bernd Johannes Wuebben. The October 16 algebra checks also apply to
+the unchanged finite algebraic data in the October 21 working revision.
 
 These checks supplement the proofs and explicit data in the manuscript.
 They require Python 3 and its standard library only. Keep the two scripts
@@ -43,5 +44,7 @@ The programs do not prove geometric inclusions, HNN injectivity, or
 four-manifold classification, and do not decide triviality or
 nontriviality of the final group. The geometric and group-theoretic
 arguments establishing the roles of these calculations are in the paper.
+The checks do not verify the proposed symplectic arguments added in
+Sections 17 and 18 of the working revision.
 
 The scripts are distributed under the MIT license in `LICENSE.txt`.

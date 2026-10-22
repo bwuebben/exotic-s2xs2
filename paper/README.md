@@ -2,7 +2,7 @@
 
 **Toward an exotic S²×S² and an exotic ℂP²#ℂP̄²**
 
-Bernd Johannes Wuebben · Working revision, October 21, 2026 · 53 pages, 2 figures
+Bernd Johannes Wuebben · Working revision, October 21, 2026 · 56 pages, 2 figures
 
 - [Latest version (PDF)](main.pdf)
 - [Self-contained LaTeX source](main.tex)
@@ -14,10 +14,14 @@ W(+1,−1;0,0), its complete fundamental-group presentation, structural
 reductions, and geometric models. The final filling question is open;
 the exotic homeomorphism conclusions are conditional.
 
-Sections 17 and 18 add a proposed Lagrangian-torus capacity obstruction,
-a simply connected comparison, and a conditional handle-surgery argument
-for symplectic homology. These additions await independent mathematical
-verification, as indicated on the first page. This working revision has
+Sections 17--19 add a proposed Lagrangian-torus capacity obstruction,
+a simply connected comparison, exact tori detecting a transfer kernel,
+and a conditional handle-surgery argument for symplectic homology. These
+additions await independent mathematical verification, as indicated on
+the first page. Section 20 gives an elementary group-algebra criterion
+for infinite order of the central element, without proving that condition.
+The handle discussion retains separate localization and SFT/Hamiltonian
+comparison assumptions. This working revision has
 not replaced the October 16 arXiv manuscript.
 
 Build from this directory with `latexmk -pdf main.tex`. The figures and

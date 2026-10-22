@@ -45,6 +45,7 @@ four-manifold classification, and do not decide triviality or
 nontriviality of the final group. The geometric and group-theoretic
 arguments establishing the roles of these calculations are in the paper.
 The checks do not verify the proposed symplectic arguments added in
-Sections 17 and 18 of the working revision.
+Sections 17--19 of the working revision or the new group-algebra argument
+in Section 20.
 
 The scripts are distributed under the MIT license in `LICENSE.txt`.

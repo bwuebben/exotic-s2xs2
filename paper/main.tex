@@ -35,7 +35,8 @@
 \email{wuebben@gmail.com}
 \date{October 21, 2026}
 \thanks{Working revision. The proposed additions in
-Sections~\ref{sec:lagrangian-capacity} and \ref{sec:handle-homology}
+Sections~\ref{sec:lagrangian-capacity}, \ref{sec:exact-tori}, and
+\ref{sec:handle-homology}
 await independent mathematical verification.}
 \subjclass[2020]{57K40, 57R17, 20F05, 20E06}
 \keywords{Smooth four-manifolds, Luttinger surgery, fundamental group,
@@ -54,10 +55,11 @@ quotient of an iterated HNN extension containing the genus-two surface
 group. The filled group is trivial exactly when the final relation
 kills a specified fiber commutator. We also determine its universal
 central extension with cyclic kernel, construct geometric realizations
-of it, and extend the boundary involution over the filling. A proposed
-extension constructs a Lagrangian torus with a negative area--Maslov
-relation and applies it to symplectic-cohomology nonvanishing; a simply
-connected comparison identifies the limitation of this approach.
+of it, and extend the boundary involution over the filling. Proposed
+symplectic extensions construct a torus with a negative area--Maslov
+relation and exact tori detecting a nonzero transfer kernel for a
+choice of auxiliary handles. These constructions do not establish
+survival of the central element.
 The final filling problem remains unresolved.
 \end{abstract}
 \maketitle
@@ -269,16 +271,22 @@ second equivalent test for triviality. The final discussion distinguishes
 these logical directions and explains the restrictions on several
 natural approaches.
 
-The working extension in Sections~\ref{sec:lagrangian-capacity} and
+The working extension in Sections~\ref{sec:lagrangian-capacity},
+\ref{sec:exact-tori}, and
 \ref{sec:handle-homology} develops the exact symplectic realization.
 Its principal construction is a nullhomologous Lagrangian torus whose
 Liouville class is a negative multiple of its Maslov class. Li's
 disk-existence theorem then gives a proposed obstruction to finite
 first Gutt--Hutchings capacity. A simply connected comparison contains
 a torus with the same area--Maslov relation, so this obstruction alone
-cannot detect the central meridian. The discussion of handle surgery
-separates a conditional symplectic-homology calculation from the
-fundamental-group information still required.
+cannot detect the central meridian. A different construction chooses
+the auxiliary attaching knots so that their handle cores cap exact
+Lagrangian punctured tori. Cotangent neighborhoods of the resulting
+closed tori detect two classes in the kernel of symplectic-cohomology
+transfer. The discussion of stabilized handles keeps its analytic
+comparison hypotheses explicit. Finally, an elementary group-algebra
+criterion reformulates infinite order of the central element as a
+nonvanishing problem; that nonvanishing remains unproved.
 
 \begin{center}
 \begin{adjustbox}{max width=\textwidth}
@@ -3122,6 +3130,208 @@ kill generators, whereas the two knots in our construction impose
 centrality of a meridian. Thus the actual attaching data remain
 essential to a fundamental-group argument.
 
+\section{A proposed exact-torus realization}\label{sec:exact-tori}
+
+The torus in Section~\ref{sec:lagrangian-capacity} lies inside $X$
+and is not exact. We now choose the two auxiliary attaching knots
+so that closed exact tori appear outside $X$. The construction and
+its application below are proposed additions awaiting independent
+verification. They preserve the quotient $Q_X/C_\mu$, but prescribe
+different Legendrian representatives and auxiliary framings from the
+stabilized choice in Section~\ref{sec:handle-homology}.
+
+\subsection{Exact fillings of commutators}
+
+An exact Lagrangian cobordism in the symplectization
+$(\mathbb R\times Y,d(e^s\alpha))$ is cylindrical outside a compact
+set, and the primitive of $e^s\alpha$ on it is constant on each
+entire end. In particular the constants agree across the components
+of a disconnected end. This convention permits concatenation of
+the elementary cobordisms used below \cite[Definition 2.1]{SVW24}.
+
+\begin{lemma}\label{lem:commutator-filling}
+Let $(Y,\ker\alpha)$ be a cooriented contact three-manifold and
+let $a,b\in\pi_1(Y)$ be based loops. There is a Legendrian knot
+representing $[a,b]$, up to conjugacy and inversion, with an embedded
+orientable exact Lagrangian filling of genus one in the
+symplectization. Its two band generators project to $a,b$.
+Finitely many such fillings may be constructed with disjoint
+supports, away from a prescribed embedded curve in $Y$.
+\end{lemma}
+\begin{proof}
+Start with a standard maximal Legendrian unknot $U$ in a Darboux
+ball disjoint from the prescribed curve. Choose four points on $U$
+in cyclic order, and two disjoint arcs joining the first to the
+third and the second to the fourth. Closing each arc by a path in
+the ball, with fixed paths to the basepoint, prescribes the classes
+$a,b$. General position in $Y$ permits embedded arcs with these
+relative homotopy classes, disjoint from the protected curve and
+from $U$ except at their endpoints.
+
+Prescribe Legendrian endpoint germs satisfying the orientation
+condition for ambient surgery: if $T$ is the oriented tangent to
+$U$ and $G$ is the outward tangent of the arc, require
+$d\alpha(G,T)>0$ at both endpoints. These are the local conditions
+of \cite[Section 2.2]{SVW24}. Relative Legendrian approximation
+in disjoint small tubes, fixing the endpoint germs, gives
+Legendrian arcs with the same relative homotopy classes; see
+\cite[Theorem 2.5 and its arc construction]{Etn05}.
+The resulting graph is a Legendrian handle graph.
+
+Fill $U$ by the elementary exact Lagrangian zero-handle, and
+perform the two ambient surgeries. Their traces are orientable
+exact Lagrangian one-handles, supported near the arcs
+\cite[Section 4]{DR16}, \cite[Theorem 2.2]{SVW24}.
+The alternating endpoints make the first surgery split the
+boundary and the second rejoin it. Thus the connected filling has
+one positive boundary and Euler characteristic $1-2=-1$.
+The end-constant primitives of the elementary cobordisms glue;
+in particular the intermediate two-component end introduces no
+mismatch of constants. The filling is therefore exact.
+
+Collapsing the initial disk gives a ribbon graph with one vertex
+and two alternating bands. Its boundary word is
+$aba^{-1}b^{-1}$, up to orientation and choice of starting point.
+The disk projects into the Darboux ball, and the band cores follow
+the prescribed arcs, so the two band generators have the asserted
+images. For finitely many pairs, choose disjoint balls and arcs.
+Locality of the zero-handles and ambient surgeries then gives
+disjoint supports.
+\end{proof}
+
+If the ambient complex determinant line is trivialized, the
+positive boundary of this filling has rotation zero. Indeed its
+Maslov class evaluates trivially on the boundary, which is zero
+in the first homology of the filling. At a cylindrical end that
+evaluation is twice the Legendrian rotation. This argument does
+not assert that the whole Maslov class of the filling vanishes.
+
+\subsection{The tori and the transfer map}
+
+Use the two based pairs $(\mu,x)$ and $(\mu,y)$ in
+$\pi_1(\partial X)$ from Proposition~\ref{prop:two-handles}.
+Apply Lemma~\ref{lem:commutator-filling} away from the retained
+orbit $\gamma$. Place both fillings in a sufficiently long
+positive collar of $X$, and attach a Weinstein two-handle along
+each positive boundary. Write $\mathcal Z_L$ for this auxiliary
+domain. Let
+\[
+ \tau_X:\operatorname{SH}^*(\mathcal Z_L;\Ftwo)
+                  \longrightarrow\operatorname{SH}^*(X;\Ftwo)
+\]
+be Hamiltonian Viterbo restriction, and let
+$c_M:H^*(M;\Ftwo)\to\operatorname{SH}^*(M;\Ftwo)$ denote the
+canonical map. We use the cohomological grading in which $c_M$
+has degree zero.
+
+\begin{proposition}\label{prop:exact-torus-transfer}
+The domain $\mathcal Z_L$ contains disjoint closed exact
+Lagrangian tori $T_x,T_y$ in the complement of $X$, and
+\[
+ \pi_1(\mathcal Z_L)=\widehat G,\qquad
+ c_1(T\mathcal Z_L)=0,\qquad
+ H_1(\mathcal Z_L)=H_3(\mathcal Z_L)=0,\quad
+ H_2(\mathcal Z_L)=\Z^4.
+\]
+The tori map to the two standard generators of
+$H_2(\mathcal Z_L,X)=\Z^2$. For
+\[
+ K_L=\ker\bigl(H^2(\mathcal Z_L;\Ftwo)
+                         \longrightarrow H^2(X;\Ftwo)\bigr),
+\]
+the restriction of $c_{\mathcal Z_L}$ to $K_L\cong\Ftwo^2$
+is injective, and its image lies in $\ker\tau_X$. In particular,
+\begin{equation}\label{eq:exact-transfer-kernel}
+ \dim_{\Ftwo}\ker\bigl(\operatorname{SH}^2(\mathcal Z_L;\Ftwo)
+               \longrightarrow\operatorname{SH}^2(X;\Ftwo)\bigr)
+                         \ge2.
+\end{equation}
+These detected classes belong to the contractible free-homotopy
+summand.
+\end{proposition}
+\begin{proof}
+Translation in the symplectization rescales the primitive and
+places the compact parts of the fillings outside the original
+$X$. Extending the collar changes neither its homotopy type nor
+its symplectic cohomology. The core disk of each new handle caps
+the corresponding punctured torus. Normalize its primitive to
+zero at its single positive end, matching the core primitive.
+This produces disjoint closed exact tori $T_x,T_y$ outside $X$.
+Their boundary rotations vanish by the preceding argument, so the
+determinant trivialization extends across both handles.
+
+Van Kampen imposes exactly $[\mu,x]=[\mu,y]=1$, giving
+$\pi_1(\mathcal Z_L)=Q_X/C_\mu=\widehat G$.
+The band generators induce the marked maps
+\[
+\begin{aligned}
+ \pi_1(T_x)=\Z^2&\longrightarrow\widehat G,
+       &(m,n)&\longmapsto t^m x^n,\\
+ \pi_1(T_y)=\Z^2&\longrightarrow\widehat G,
+       &(m,n)&\longmapsto t^m y^n.
+\end{aligned}
+\]
+No injectivity is asserted. The relative handle sequence gives
+\[
+ 0\longrightarrow H_2(X)\longrightarrow H_2(\mathcal Z_L)
+       \longrightarrow\Z^2\longrightarrow0
+\]
+and the stated homology. Each torus uses its own handle core once
+and the other core zero times, so their classes split this sequence.
+Evaluation on them consequently identifies $K_L$ with $\Ftwo^2$.
+
+Choose disjoint exact cotangent neighborhoods
+$N_j\cong D^*T_j$, disjoint from $X$, for $j=x,y$.
+The ambient primitive and the cotangent primitive differ by an
+exact form: their difference is closed and has zero periods on
+the zero section. A cutoff change of primitive therefore makes
+each $N_j$ a Liouville subdomain without changing $X$ or the
+external boundary \cite[Example 9.1 and Lemma 9.2]{Rit13}.
+Naturality of the canonical maps gives
+\begin{equation}\label{eq:exact-transfer-naturality}
+ \tau_j c_{\mathcal Z_L}(h)=c_{N_j}(h|_{N_j}),
+ \qquad
+ \tau_X c_{\mathcal Z_L}(h)=c_X(h|_X),
+\end{equation}
+where $\tau_j$ is restriction to $N_j$
+\cite[Theorem 9.5]{Rit13}.
+
+For a cotangent neighborhood of a torus, $c_{N_j}$ is injective.
+Under the cotangent-bundle identification
+\[
+ \operatorname{SH}^*(D^*T^2;\Ftwo)
+                    \cong H_{2-*}(\mathcal L T^2;\Ftwo),
+\]
+where $\mathcal L T^2$ is the free loop space, it is Poincare
+duality followed by inclusion of constant loops
+\cite[Section 14, Remark 14.1]{Rit13}. Evaluation at a fixed
+time is a left inverse to that inclusion. The restricted ambient
+determinant trivialization need not be the canonical cotangent
+one; the two give the same grading on contractible loops, where
+$c_{N_j}$ takes values. No Maslov-zero assertion about $T_j$ or
+injection of its fundamental group is used.
+
+For $0\ne h\in K_L$, its restriction to at least one $N_j$ is
+nonzero by the evaluation isomorphism. The first equality in
+\eqref{eq:exact-transfer-naturality} implies
+$c_{\mathcal Z_L}(h)\ne0$, and the second implies
+$\tau_Xc_{\mathcal Z_L}(h)=0$. Canonical images are represented
+by constant Hamiltonian orbits, proving the final assertion.
+\end{proof}
+
+This construction gives specific classes in a transfer kernel;
+it does not compute all of either symplectic cohomology group.
+Its exact tori are homologically essential and lie outside $X$,
+whereas the non-exact torus of Section~\ref{sec:lagrangian-capacity}
+is nullhomologous and lies inside $X$.
+Neither argument establishes that the marked torus loops survive
+in $\widehat G$. For example, applying
+Lemma~\ref{lem:commutator-filling} to $a=b=1$ in $\partial B^4$
+and attaching one handle gives a simply connected Liouville
+domain containing an exact torus with primitive second-homology
+class. The same cotangent-neighborhood argument detects that
+class in symplectic cohomology.
+
 \section{Symplectic homology and the auxiliary handles}
 \label{sec:handle-homology}
 
@@ -3142,7 +3352,10 @@ The Legendrian surgery formula of Bourgeois--Ekholm--Eliashberg
 a critical Weinstein attaching cobordism. If the anchored
 Chekanov--Eliashberg algebra of each successive attaching knot has
 an element $a$ with $\partial a=1$, its handle contribution is
-acyclic by \cite[Section 7.2]{BEE12}. Under that hypothesis,
+acyclic by \cite[Section 7.2]{BEE12}. To interpret the resulting
+isomorphism in Hamiltonian symplectic homology, we also assume
+compatibility of the SFT surgery construction with that theory.
+Under these hypotheses,
 \begin{equation}\label{eq:conditional-sh}
  \operatorname{SH}_*(\mathcal Z_{\mathrm{st}};\Q)
                  \cong\operatorname{SH}_*(X;\Q)
@@ -3161,7 +3374,21 @@ small chord action, lower action bounds for other asymptotics, and
 a uniform monotonicity bound on the surrounding annulus. We do not
 establish that localization assertion in this revision; consequently
 \eqref{eq:conditional-sh} is retained with the stated algebraic
-hypothesis.
+hypothesis and the comparison assumption above. These are separate
+analytic issues. The discussion following
+\cite[Theorem 6.13]{Sei13} explicitly assumes equivalence of the
+SFT and Hamiltonian constructions in deriving the stabilized-handle
+statement. Identifying the resulting map with Hamiltonian Viterbo
+restriction requires the corresponding naturality comparison;
+an abstract isomorphism of graded vector spaces does not provide it.
+
+The domain $\mathcal Z_{\mathrm{st}}$ is not identified with
+$\mathcal Z_L$ from Section~\ref{sec:exact-tori}. The Legendrian
+representatives and auxiliary framings differ. Moreover,
+\eqref{eq:exact-transfer-kernel} uses $\Ftwo$, whereas
+\eqref{eq:conditional-sh} uses $\Q$. Their common marked
+fundamental group does not identify the domains, coefficient
+theories, or transfer maps.
 
 Even such an isomorphism would not prove that $\mu$ survives.
 The inclusion $j:X\to\mathcal Z_{\mathrm{st}}$ can identify
@@ -3270,13 +3497,74 @@ For the central route, the following three statements are equivalent:
 Each implies $G\ne1$. Equivalently the retained orbit $\gamma$ does
 not bound a mapped disk in $\mathcal Z$. None follows from its
 infinite order in the boundary, the index calculation, or exactness
-of the filling. The proposed capacity obstruction and the conditional
-total-homology isomorphism in Sections~\ref{sec:lagrangian-capacity}
-and \ref{sec:handle-homology} do not supply this implication either.
+of the filling. The proposed capacity obstruction, exact-torus
+transfer classes, and conditional total-homology isomorphism in
+Sections~\ref{sec:lagrangian-capacity}--\ref{sec:handle-homology}
+do not supply this implication either.
 Conversely $t=1$ would leave the decision of $G$
 open. A proof about arbitrary spherical classes or arbitrary relations
 in \eqref{eq:universal-central} is required.
 
+\subsection*{A group-algebra criterion for infinite order}
+There is also an elementary algebraic formulation of a stronger
+sufficient condition. Let $\mathbb F=\Ftwo(q)$, with $q$
+transcendental, and use the group algebra with finite group support.
+Since $t$ is central, the quotient
+\begin{equation}\label{eq:central-character-algebra}
+             B_q=\mathbb F[\widehat G]/(qt-1)
+\end{equation}
+is a unital $\mathbb F$-algebra, possibly the zero algebra.
+
+\begin{proposition}\label{prop:central-character-algebra}
+The algebra $B_q$ is nonzero if and only if $t$ has infinite order.
+It has no nonzero finite-dimensional unital module over $\mathbb F$.
+\end{proposition}
+\begin{proof}
+If $t$ has finite order $d$, then
+\[
+ (qt-1)\bigl(1+qt+\cdots+(qt)^{d-1}\bigr)=q^d-1.
+\]
+The right side is a nonzero scalar, so $qt-1$ is invertible and
+$B_q=0$. If $t$ has infinite order, decompose
+$\mathbb F[\widehat G]$ into the direct sum of its
+$\langle t\rangle$-orbit subspaces. Each is a copy of
+$\mathbb F[z,z^{-1}]$, on which multiplication by $qt-1$
+is multiplication by $qz-1$. Its cokernel is $\mathbb F$,
+by evaluation at $z=q^{-1}$. Centrality of $t$ identifies this
+cokernel with the quotient by the two-sided ideal in
+\eqref{eq:central-character-algebra}, so $B_q\ne0$.
+
+A unital module of positive finite dimension $N$ would give a
+representation of $\widehat G$ with $t=q^{-1}\operatorname{id}$.
+The determinant character is trivial because $\widehat G$ is
+perfect, whereas this matrix has determinant $q^{-N}\ne1$.
+This contradiction proves the second assertion.
+\end{proof}
+
+The algebra has a concrete presentation using the invertible
+generators $A,x,y$ and the words
+$\mathcal R,\mathcal T,\mathcal X,\mathcal Y,\mathcal S$ of
+\eqref{eq:five}: impose
+\[
+ \mathcal R=q^{-1},\qquad
+ \mathcal T=\mathcal X=\mathcal Y=\mathcal S=1.
+\]
+This is the central-extension presentation with scalar central
+character; it does not replace the surface relation of $G$.
+A nonzero module for this algebra would prove that $t$ has
+infinite order, hence $G\ne1$. No such module or independent
+nonvanishing argument is supplied here. This criterion does not
+detect finite nontrivial order of $t$.
+
+Finite group support is essential. In the larger ring
+$\Ftwo[\widehat G]((q))$, which allows group support to grow
+with the power of $q$, the series
+$-\sum_{n\ge0}q^nt^n$ inverts $qt-1$ for every $t$.
+That completion destroys the criterion; it is different from
+$\Ftwo((q))[\widehat G]$, whose elements retain finite group
+support.
+
+\subsection*{The full group remains undecided}
 For a triviality argument, any one of the collapse relations in
 Proposition~\ref{prop:collapse}, proved from the existing relations
 rather than added as a hypothesis, would suffice. The cyclic-centralizer
@@ -3851,6 +4139,12 @@ subgroups and rotating families in groups acting on hyperbolic spaces},
 Mem. Amer. Math. Soc. \textbf{245} (2017), no.~1156.
 \href{https://arxiv.org/abs/1111.7048}{arXiv:1111.7048}.
 
+\bibitem[DR16]{DR16}
+G.~Dimitroglou Rizell, \emph{Legendrian ambient surgery and
+Legendrian contact homology}, J. Symplectic Geom. \textbf{14}
+(2016), 811--901.
+\href{https://arxiv.org/abs/1205.5544v6}{arXiv:1205.5544v6}.
+
 \bibitem[Ekh24]{Ekh24}
 T.~Ekholm, \emph{Legendrian surgery}, Celebratio Mathematica,
 Yakov M.~Eliashberg collection (2024).
@@ -3861,6 +4155,12 @@ J.~Etnyre and L.~Ng, \emph{Legendrian contact homology in
 $\mathbb R^3$}, Surveys in Differential Geometry \textbf{25}
 (2020), 103--161. Corrected version:
 \href{https://arxiv.org/abs/1811.10966v5}{arXiv:1811.10966v5} (2023).
+
+\bibitem[Etn05]{Etn05}
+J.~B.~Etnyre, \emph{Legendrian and transversal knots},
+in \emph{Handbook of Knot Theory}, Elsevier, Amsterdam, 2005,
+105--185.
+\href{https://etnyre.math.gatech.edu/preprints/papers/legsur.pdf}{Author's text}.
 
 \bibitem[Fre82]{Fre82}
 M.~H.~Freedman, \emph{The topology of four-dimensional manifolds},
@@ -3948,6 +4248,23 @@ P.~Ozsv\'ath and Z.~Szab\'o, \emph{Holomorphic triangles and
 invariants for smooth four-manifolds}, Adv. Math. \textbf{202}
 (2006), 326--400.
 \href{https://arxiv.org/abs/math/0110169}{arXiv:math/0110169}.
+
+\bibitem[Rit13]{Rit13}
+A.~F.~Ritter, \emph{Topological quantum field theory structure
+on symplectic cohomology}, Geom. Topol. \textbf{17} (2013),
+1239--1345.
+\href{https://arxiv.org/abs/1003.1781v5}{arXiv:1003.1781v5}.
+
+\bibitem[SVW24]{SVW24}
+J.~M.~Sabloff, D.~Shea Vela-Vick, and C.-M.~M.~Wong,
+\emph{Upper bounds for the Lagrangian cobordism relation on
+Legendrian links}, Algebr. Geom. Topol. \textbf{24} (2024),
+4237--4263. \href{https://doi.org/10.2140/agt.2024.24.4237}{doi:10.2140/agt.2024.24.4237}.
+
+\bibitem[Sei13]{Sei13}
+P.~Seidel, \emph{Lectures on categorical dynamics and symplectic
+topology}, MIT lecture notes, version 0.2 (2013).
+\href{https://math.mit.edu/~seidel/texts/937-lecture-notes.pdf}{Author's text}.
 
 \bibitem[Ser80]{Serre80}
 J.-P.~Serre, \emph{Trees}, translated from the French by John Stillwell,

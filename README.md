@@ -1,6 +1,6 @@
 # Toward an exotic S²×S² and an exotic ℂP²#ℂP̄²
 
-Bernd Johannes Wuebben · Working revision, October 21, 2026 · 53 pages
+Bernd Johannes Wuebben · Working revision, October 21, 2026 · 56 pages
 
 [Latest version (PDF)](paper/main.pdf) · [LaTeX source](paper/main.tex) · [arXiv version](https://arxiv.org/abs/2608.17267v3) · [Verification scripts](paper/anc/README.md)
 
@@ -14,10 +14,12 @@ constructs geometric realizations of it, and extends the specified
 boundary involution over the filling.
 
 The October 21 working revision adds a proposed capacity obstruction
-from a Lagrangian torus, a simply connected comparison, and a conditional
-discussion of symplectic homology after the auxiliary handles. These
-additions in Sections 17 and 18 await independent mathematical
-verification. The October 16 manuscript remains available as
+from a Lagrangian torus, a simply connected comparison, exact tori detecting
+a nonzero transfer kernel for a choice of auxiliary handles, and a
+conditional symplectic-homology discussion. The geometric additions in
+Sections 17--19 await independent mathematical verification. Section 20
+also gives a group-algebra criterion for infinite order of the central
+element; its required nonvanishing remains unproved. The October 16 manuscript remains available as
 [arXiv:2608.17267v3](https://arxiv.org/abs/2608.17267v3).
 
 **The final filling problem remains unresolved.** The commutator J = [x,y]
